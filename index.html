@@ -11,91 +11,69 @@
     <link rel="stylesheet" href="assets/font-awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>MyHouse - Düzenleme Denemesi - 2</title>
-
-    <style>
-        .ts-homepage h1 {
-            font-size: 2.25rem;
-        }
-        #ts-hero {
-            background-size: auto;
-            background-repeat: no-repeat;
-        }
-        main section {
-            padding-bottom: 3rem;
-        }
-        .badge {
-            font-size: 50%;
-            vertical-align: middle;
-        }
-        .ts-preview a::before {
-            background-color: #000;
-            box-shadow: 0 0 20px 8px rgba(0,0,0,.3);
-            bottom: 0;
-            content: "";
-            left: 0;
-            height: 0;
-            margin: auto;
-            position: absolute;
-            right: 0;
-            width: 80%;
-            z-index: -1;
-        }
-        .ts-preview a::after {
-            background-color: rgba(0,0,0,.7);
-            bottom: 0;
-            content: "View";
-            color: white;
-            text-align: center;
-            left: 0;
-            height: 100%;
-            margin: auto;
-            position: absolute;
-            padding: 25%;
-            right: 0;
-            width: 100%;
-            z-index: 1;
-            opacity: 0;
-            transition: .4s ease;
-        }
-        .ts-preview {
-            margin-bottom: 3rem;
-        }
-        .ts-preview a {
-            display: block;
-            position: relative;
-            z-index: 1;
-        }
-        .ts-preview a:hover::after {
-            opacity: 1;
-        }
-        .ts-preview h6 {
-            margin-bottom: 1.5rem;
-        }
-        .ts-preview img {
-            max-width: 100%;
-        }
-        .ts-page-wrapper {
-            overflow-x: visible;
-        }
-    </style>
+    <title>Anasayfa - Tasarım Etkisi</title>
 
 </head>
 
 <body>
 
 <!-- WRAPPER
-    =================================================================================================================-->
-<div class="ts-page-wrapper ts-homepage">
+=====================================================================================================================-->
+<div class="ts-page-wrapper ts-homepage" id="page-top">
 
     <!--*********************************************************************************************************-->
     <!--HEADER **************************************************************************************************-->
     <!--*********************************************************************************************************-->
-    <header id="ts-header" class="ts-shadow__none pb-3">
+    <header id="ts-header" class="fixed-top">
+
+        <!-- SECONDARY NAVIGATION
+        =============================================================================================================-->
+        <nav id="ts-secondary-navigation" class="navbar p-0">
+            <div class="container justify-content-end justify-content-sm-between">
+
+                <!--Left Side-->
+                <div class="navbar-nav d-none d-sm-block">
+                    <!--Phone-->
+                    <span class="mr-4">
+                            <i class="fa fa-phone-square mr-1"></i>
+                            +1 123 456 789
+                        </span>
+                    <!--Email-->
+                    <a href="#">
+                        <i class="fa fa-envelope mr-1"></i>
+                        hello@example.com
+                    </a>
+                </div>
+
+                <!--Right Side-->
+                <div class="navbar-nav flex-row">
+
+                    <!--Search Input-->
+                    <input type="text" class="form-control p-2 border-left bg-transparent w-auto" placeholder="Search">
+
+                    <!--Currency Select-->
+                    <select class="custom-select bg-transparent ts-text-small border-left" id="currency" name="currency">
+                        <option value="1">GBP</option>
+                        <option value="2">USD</option>
+                        <option value="3">EUR</option>
+                    </select>
+
+                    <!--Language Select-->
+                    <select class="custom-select bg-transparent ts-text-small border-left border-right" id="language" name="language">
+                        <option value="1">EN</option>
+                        <option value="2">FR</option>
+                        <option value="3">DE</option>
+                    </select>
+
+                </div>
+                <!--end navbar-nav-->
+            </div>
+            <!--end container-->
+        </nav>
 
         <!--PRIMARY NAVIGATION
         =============================================================================================================-->
-        <nav id="ts-primary-navigation" class="navbar bg-transparent">
+        <nav id="ts-primary-navigation" class="navbar navbar-expand-md navbar-light">
             <div class="container">
 
                 <!--Brand Logo-->
@@ -103,10 +81,547 @@
                     <img src="assets/img/logo.png" alt="">
                 </a>
 
-                <a href="" class="ts-circle ts-bg-primary p-4 ts-shadow__md">
-                    <i class="fa fa-shopping-cart text-white"></i>
-                </a>
+                <!--Responsive Collapse Button-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrimary" aria-controls="navbarPrimary" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <!--Collapsing Navigation-->
+                <div class="collapse navbar-collapse" id="navbarPrimary">
+
+                    <!--LEFT NAVIGATION MAIN LEVEL
+                    =================================================================================================-->
+                    <ul class="navbar-nav">
+
+                        <!--HOME (Main level)
+                        =============================================================================================-->
+                        <li class="nav-item ts-has-child">
+
+                            <!--Main level link-->
+                            <a class="nav-link active" href="#">
+                                Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+
+                            <!-- List (1st level) -->
+                            <ul class="ts-child">
+
+                                <!-- MAP (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item ts-has-child">
+
+                                    <a href="#" class="nav-link">Map</a>
+
+                                    <!--List (2nd level) -->
+                                    <ul class="ts-child">
+
+                                        <!-- OPENSTREETMAP (2nd level level)
+                                        =============================================================================-->
+                                        <li class="nav-item ts-has-child">
+
+                                            <a href="#" class="nav-link">OpenStreetMap</a>
+
+                                            <!--List (3rd level) -->
+                                            <ul class="ts-child">
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-leaflet-fullscreen.html" class="nav-link">Full Screen</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-leaflet-form-bottom.html" class="nav-link">Form Bottom</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-leaflet-half-map.html" class="nav-link">Half Map</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-leaflet-left-results.html" class="nav-link">Left Results</a>
+                                                </li>
+
+                                            </ul>
+
+                                        </li>
+                                        <!--end OpenStreetMap-->
+
+                                        <!-- MAPBOX (2nd level level)
+                                        =============================================================================-->
+                                        <li class="nav-item ts-has-child">
+
+                                            <a href="#" class="nav-link">MapBox</a>
+
+                                            <!--List (3rd level) -->
+                                            <ul class="ts-child">
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-mapbox-fullscreen.html" class="nav-link">Full Screen</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-mapbox-form-bottom.html" class="nav-link">Form Bottom</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-mapbox-half-map.html" class="nav-link">Half Map</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-mapbox-left-results.html" class="nav-link">Left Results</a>
+                                                </li>
+
+                                            </ul>
+
+                                        </li>
+                                        <!--end MapBox-->
+
+                                        <!-- GOOGLE (2nd level level)
+                                        =============================================================================-->
+                                        <li class="nav-item ts-has-child">
+
+                                            <a href="#" class="nav-link">Google</a>
+
+                                            <!--List (3rd level) -->
+                                            <ul class="ts-child">
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-google-fullscreen.html" class="nav-link">Full Screen</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-google-form-bottom.html" class="nav-link">Form Bottom</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-google-half-map.html" class="nav-link">Half Map</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-google-left-results.html" class="nav-link">Left Results</a>
+                                                </li>
+
+                                            </ul>
+
+                                        </li>
+                                        <!--end Google-->
+
+                                        <!-- HERE (2nd level level)
+                                        =============================================================================-->
+                                        <li class="nav-item ts-has-child">
+
+                                            <a href="#" class="nav-link">Here</a>
+
+                                            <!--List (3rd level) -->
+                                            <ul class="ts-child">
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-here-fullscreen.html" class="nav-link">Full Screen</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-here-form-bottom.html" class="nav-link">Form Bottom</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-here-half-map.html" class="nav-link">Half Map</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-here-left-results.html" class="nav-link">Left Results</a>
+                                                </li>
+
+                                            </ul>
+
+                                        </li>
+                                        <!--end Here-->
+
+                                        <!-- BING (2nd level level)
+                                        =============================================================================-->
+                                        <li class="nav-item ts-has-child">
+
+                                            <a href="#" class="nav-link">Bing</a>
+
+                                            <!--List (3rd level) -->
+                                            <ul class="ts-child">
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-bing-fullscreen.html" class="nav-link">Full Screen</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-bing-form-bottom.html" class="nav-link">Form Bottom</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-bing-half-map.html" class="nav-link">Half Map</a>
+                                                </li>
+
+                                                <li class="nav-item">
+                                                    <a href="index-map-bing-left-results.html" class="nav-link">Left Results</a>
+                                                </li>
+
+                                            </ul>
+
+                                        </li>
+                                        <!--end Bing-->
+
+                                    </ul>
+                                    <!--end List (2nd level)-->
+
+                                </li>
+                                <!--end MAP (1st level)-->
+
+                                <!-- SLIDER (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item ts-has-child">
+
+                                    <a href="#" class="nav-link">Slider</a>
+
+                                    <!--List (2nd level) -->
+                                    <ul class="ts-child">
+
+                                        <li class="nav-item">
+                                            <a href="index-slider.html" class="nav-link">Slider Default</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="index-slider-fullscreen.html" class="nav-link">Full Screen</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="index-slider-form-vertical.html" class="nav-link">Vertical Form</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="index-slider-form-horizontal.html" class="nav-link">Horizontal Form</a>
+                                        </li>
+
+                                    </ul>
+                                    <!--end List (2nd level) -->
+
+                                </li>
+                                <!--end SLIDER (1st level)-->
+
+                                <!-- IMAGE (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item ts-has-child">
+
+                                    <a href="#" class="nav-link">Image</a>
+
+                                    <!--List (2nd level) -->
+                                    <ul class="ts-child">
+
+                                        <li class="nav-item">
+                                            <a href="index-image-form-horizontal-dark.html" class="nav-link">Horizontal Form</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="index-image-form-vertical-light.html" class="nav-link">Vertical Form</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="index-image-fullscreen.html" class="nav-link">Full Screen</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="index-video-background.html" class="nav-link">Video Background</a>
+                                        </li>
+
+                                    </ul>
+                                    <!--end List (2nd level) -->
+
+                                </li>
+                                <!--end SLIDER (1st level)-->
+
+                            </ul>
+                            <!--end List (1st level) -->
+
+                        </li>
+                        <!--end HOME nav-item-->
+
+                        <!--LISTING (Main level)
+                        =============================================================================================-->
+                        <li class="nav-item ts-has-child">
+
+                            <!--Main level link-->
+                            <a class="nav-link" href="#">Listing</a>
+
+                            <!-- List (1st level) -->
+                            <ul class="ts-child">
+
+                                <!-- CATEGORY ICONS (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item">
+
+                                    <a href="listing-category-icons.html" class="nav-link">Category Icons</a>
+
+                                </li>
+                                <!--end CATEGORY ICONS (1st level)-->
+
+                                <!-- GRID (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item ts-has-child">
+
+                                    <a href="#" class="nav-link">Grid</a>
+
+                                    <!--List (2nd level) -->
+                                    <ul class="ts-child">
+
+                                        <li class="nav-item">
+                                            <a href="listing-grid-3-columns.html" class="nav-link">Grid 3 Columns</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="listing-grid-4-columns.html" class="nav-link">Grid 4 Columns</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="listing-grid-mixed.html" class="nav-link">Mixed</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="listing-grid-sidebar-left.html" class="nav-link">Sidebar Left</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="listing-grid-sidebar-right.html" class="nav-link">Sidebar Right</a>
+                                        </li>
+
+                                    </ul>
+                                    <!--end List (2nd level) -->
+
+                                </li>
+                                <!--end GRID (1st level)-->
+
+                                <!-- LIST (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item ts-has-child">
+
+                                    <a href="#" class="nav-link">List</a>
+
+                                    <!--List (2nd level) -->
+                                    <ul class="ts-child">
+
+                                        <li class="nav-item">
+                                            <a href="listing-list-sidebar-left.html" class="nav-link">Sidebar Left</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="listing-list-sidebar-right.html" class="nav-link">Sidebar Right</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="listing-list-compact-sidebar.html" class="nav-link">Compact with Sidebar</a>
+                                        </li>
+
+                                    </ul>
+                                    <!--end List (2nd level) -->
+
+                                </li>
+                                <!--end LIST (1st level)-->
+
+                                <!-- PROPERTY (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item ts-has-child">
+
+                                    <a href="#" class="nav-link">Property</a>
+
+                                    <!--List (2nd level) -->
+                                    <ul class="ts-child">
+
+                                        <li class="nav-item">
+                                            <a href="detail-01.html" class="nav-link">Property Detail v1</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="detail-02.html" class="nav-link">Property Detail v2</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="detail-03.html" class="nav-link">Property Detail v3</a>
+                                        </li>
+
+                                    </ul>
+                                    <!--end List (2nd level) -->
+
+                                </li>
+                                <!--end PROPERTY (1st level)-->
+
+                            </ul>
+                            <!--end List (1st level) -->
+
+                        </li>
+                        <!--end LISTING nav-item-->
+
+                        <!--PAGES (Main level)
+                        =============================================================================================-->
+                        <li class="nav-item ts-has-child">
+
+                            <!--Main level link-->
+                            <a class="nav-link" href="#">Pages</a>
+
+                            <!-- List (1st level) -->
+                            <ul class="ts-child">
+
+                                <!-- AGENCY (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item ts-has-child">
+
+                                    <a href="#" class="nav-link">Agency</a>
+
+                                    <!--List (2nd level) -->
+                                    <ul class="ts-child">
+
+                                        <li class="nav-item">
+                                            <a href="agencies-list.html" class="nav-link">Agencies List</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="agency-detail.html" class="nav-link">Agency Detail</a>
+                                        </li>
+
+                                    </ul>
+                                    <!--end List (2nd level) -->
+
+                                </li>
+                                <!--end AGENCY (1st level)-->
+
+                                <!-- AGENTS (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item ts-has-child">
+
+                                    <a href="#" class="nav-link">Agents</a>
+
+                                    <!--List (2nd level) -->
+                                    <ul class="ts-child">
+
+                                        <li class="nav-item">
+                                            <a href="agencies-list.html" class="nav-link">Agents List</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="agent-detail-01.html" class="nav-link">Agent Detail v1</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="agent-detail-02.html" class="nav-link">Agent Detail v2</a>
+                                        </li>
+
+                                    </ul>
+                                    <!--end List (2nd level) -->
+
+                                </li>
+                                <!--end LIST (1st level)-->
+
+                                <!-- EDIT PROPERTY (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item">
+                                    <a href="edit-property.html" class="nav-link">Edit Property</a>
+                                </li>
+                                <!--end EDIT PROPERTY (1st level)-->
+
+                                <!-- FAQ (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item">
+                                    <a href="faq.html" class="nav-link">FAQ</a>
+                                </li>
+                                <!--end FAQ (1st level)-->
+
+                                <!-- LOGIN (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item">
+                                    <a href="login.html" class="nav-link">Login</a>
+                                </li>
+                                <!--end LOGIN (1st level)-->
+
+                                <!-- PRICING (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item">
+                                    <a href="pricing.html" class="nav-link">Pricing</a>
+                                </li>
+                                <!--end PRICING (1st level)-->
+
+                                <!-- REGISTER (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item">
+                                    <a href="register.html" class="nav-link">Register</a>
+                                </li>
+                                <!--end REGISTER (1st level)-->
+
+                                <!-- SUBMIT (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item">
+                                    <a href="submit.html" class="nav-link">Submit Property</a>
+                                </li>
+                                <!--end SUBMIT (1st level)-->
+
+                                <!-- SUBMIT PREVIEW (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item">
+                                    <a href="preview.html" class="nav-link">Submit Preview</a>
+                                </li>
+                                <!--end SUBMIT PREVIEW (1st level)-->
+
+                                <!-- SUBMITTED (1st level)
+                                =====================================================================================-->
+                                <li class="nav-item">
+                                    <a href="submitted.html" class="nav-link">Submitted</a>
+                                </li>
+                                <!--end SUBMITTED(1st level)-->
+
+                            </ul>
+                            <!--end List (1st level) -->
+
+                        </li>
+                        <!--end PAGES nav-item-->
+
+                        <!--ABOUT US (Main level)
+                        =============================================================================================-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">About Us</a>
+                        </li>
+                        <!--end ABOUT US nav-item-->
+
+                        <!--CONTACT (Main level)
+                        =============================================================================================-->
+                        <li class="nav-item">
+                            <a class="nav-link mr-2" href="contact.html">Contact</a>
+                        </li>
+                        <!--end CONTACT nav-item-->
+
+                    </ul>
+                    <!--end Left navigation main level-->
+
+                    <!--RIGHT NAVIGATION MAIN LEVEL
+                    =================================================================================================-->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!--LOGIN (Main level)
+                        =============================================================================================-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+
+                        <!--REGISTER (Main level)
+                        =============================================================================================-->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="register.html">Register</a>
+                        </li>
+
+                        <!--SUBMIT (Main level)
+                        =============================================================================================-->
+                        <li class="nav-item">
+                            <a class="btn btn-outline-primary btn-sm m-1 px-3" href="submit.html">
+                                <i class="fa fa-plus small mr-2"></i>
+                                Add Property
+                            </a>
+                        </li>
+
+                    </ul>
+                    <!--end Right navigation-->
+
+                </div>
+                <!--end navbar-collapse-->
             </div>
             <!--end container-->
         </nav>
@@ -115,26 +630,76 @@
     </header>
     <!--end Header-->
 
-    <!-- HERO
+
+    <!-- HERO SLIDER
     =================================================================================================================-->
-    <section id="ts-hero" data-bg-image="assets/img/index-images/logo-bg.png" class="py-5">
+    <section id="ts-hero" class="ts-separate-bg-element mb-0" data-bg-image="assets/img/bg-bedroom.jpg" data-bg-color="#fff" data-bg-image-opacity=".5">
 
-        <div class="w-100 ts-min-h__30vh ts-center__vertical">
+        <!--Container-->
+        <div class="container text-dark py-5">
+            <div class="row ts-center__both ts-h__auto ts-min-h__40vh">
 
-            <div class="container text-center">
-
-                <h1 class="position-relative d-inline-block">
-                    <span class="position-absolute ts-top__0 ts-right__0 h6 ts-opacity__50 ts-push-up__100">HTML</span>
-                    The <abbr data-toggle="tooltip" data-placement="top" title="The First With 5 Map Providers">Most Advanced</abbr> <strong>Real Estate Template</strong>
-                </h1>
-
-                <div class="ts-group">
-                    <a href="#demos" class="btn btn-secondary mx-1 ts-scroll">Demos</a>
-                    <a href="#" class="btn btn-primary mx-1">Buy Now</a>
+                <!-- LEFT SIDE (TITLE)
+                =====================================================================================================-->
+                <div class="col-sm-6 col-md-8">
+                    <!--Title-->
+                    <h1 class="mb-2">Find a Nice Place To Live</h1>
+                    <!--Subtitle-->
+                    <h4 class="ts-opacity__50">Buy or Rent Properties at Great Prices</h4>
+                    <!--More properties button-->
+                    <a href="#featured-properties" class="ts-scroll btn btn-outline-dark btn-sm d-none d-md-inline-block">Show More Properties</a>
                 </div>
+
+                <!-- RIGHT SIDE (FORM)
+                =====================================================================================================-->
+                <div class="col-sm-6 col-md-4">
+
+                    <!--Form-->
+                    <form class="ts-form py-3 px-4 ts-border-radius__md ts-shadow__md" data-bg-color="rgba(255,255,255,.9)">
+
+                        <!--Keyword-->
+                        <div class="form-group my-2">
+                            <input type="text" class="form-control" id="keyword" name="keyword" placeholder="Address, City or ZIP">
+                        </div>
+
+                        <!--Type-->
+                        <select class="custom-select my-2" id="type" name="type">
+                            <option value="">Type</option>
+                            <option value="1">Apartment</option>
+                            <option value="2">Villa</option>
+                            <option value="3">Land</option>
+                            <option value="4">Garage</option>
+                        </select>
+
+                        <!--Status-->
+                        <select class="custom-select my-2" id="status" name="status">
+                            <option value="">Status</option>
+                            <option value="1">Rent</option>
+                            <option value="2">Sale</option>
+                        </select>
+
+                        <!--Max Price-->
+                        <select class="custom-select my-2" id="price" name="status">
+                            <option value="">Max Price</option>
+                            <option value="1">$ 5,000</option>
+                            <option value="2">$ 10,000</option>
+                            <option value="3">$ 20,000</option>
+                            <option value="4">$ 50,000</option>
+                        </select>
+
+                        <!--Submit button-->
+                        <div class="form-group my-2">
+                            <button type="submit" class="btn btn-primary w-100" id="search-btn">Search</button>
+                        </div>
+
+                    </form>
+                </div>
+
             </div>
+            <!--end row-->
 
         </div>
+        <!--end container-->
 
     </section>
     <!--end ts-hero-->
@@ -143,563 +708,1413 @@
     <!-- MAIN ***************************************************************************************************-->
     <!--*********************************************************************************************************-->
 
-    <main id="ts-main" class="bg-white py-5">
+    <main id="ts-main">
 
-        <section id="icons" class="mt-4">
-            <div class="container">
-
-                <h2>Features</h2>
-
-                <div class="row">
-
-                    <div class="col-md-4">
-                        <div class="mt-3">
-                            <img src="assets/img/index-images/icon-map-providers.png" alt="">
-                            <h4 class="my-3 pb-3 font-weight-bold border-bottom">5 Map Providers!</h4>
-                            <p>
-                                MyHouse is the first template that brings not just a Google Maps, but also OpenStreetMap,
-                                MapBox, Here Maps and Bing Maps support.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="mt-3">
-                            <img src="assets/img/index-images/icon-pages.png" alt="">
-                            <h4 class="my-3 pb-3 font-weight-bold border-bottom">28 Homepage Variants</h4>
-                            <p>
-                                Choose between twenty map homepages, four slider or four static background image homepages.
-                                Every with different form style.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="mt-3">
-                            <img src="assets/img/index-images/icon-headers.png" alt="">
-                            <h4 class="my-3 pb-3 font-weight-bold border-bottom">2 Header Versions</h4>
-                            <p>
-                                Light or dark header version will fit to your design. Also you can set if you want a
-                                default header position or fixed, visible when you scroll.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <div class="container">
-            <h2>Demos</h2>
-        </div>
-
-        <section id="demos" class="sticky-top pt-2 mb-5">
-            <div class="container">
-
-                <div class="rounded p-3 ts-bg-light d-flex">
-                    <span>
-                        <strong>Map Homepage:</strong>
-                        <span class="ts-opacity__50">
-                            <a href="#osm" class="mx-1 ts-scroll">OpenStreetMap</a>
-                            <a href="#mapbox" class="mx-1 ts-scroll">MapBox</a>
-                            <a href="#google" class="mx-1 ts-scroll">Google</a>
-                            <a href="#here" class="mx-1 ts-scroll">Here</a>
-                            <a href="#bing" class="mx-1 ts-scroll">Bing</a>
-                        </span>
-                    </span>
-                    <span class="ml-auto">
-                        <a href="#slider" class="ts-scroll">Slider Homepage</a>
-                        <a href="#image" class="ml-3 ts-scroll">Image Homepage</a>
-                    </span>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- OPEN STREET MAP
+        <!-- CATEGORY SELECT
         =============================================================================================================-->
-        <section id="osm">
-            <div class="container">
+        <section id="category-select" class="ts-icons-select" data-bg-color="#eeeeee">
 
-                <h2 class="border-bottom pb-4 mb-5">
-                    OpenStreetMap
-                    <span class="badge badge-primary">Free</span>
-                </h2>
+            <!--Cabins-->
+            <a href="listing-category-icons.html">
+                <aside>17</aside>
+                <img src="assets/svg/icon-cabins.svg" alt="">
+                <figure>
+                    <h6>Cabins</h6>
+                    <small>Explore</small>
+                </figure>
+            </a>
 
-                <div class="row">
+            <!--Apartments-->
+            <a href="listing-category-icons.html">
+                <aside>32</aside>
+                <img src="assets/svg/icon-apartment.svg" alt="">
+                <figure>
+                    <h6>Apartments</h6>
+                    <small>Explore</small>
+                </figure>
+            </a>
 
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Full Screen</h6>
-                            <a href="index-map-leaflet-fullscreen.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-osm-fs.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
+            <!--Houses-->
+            <a href="listing-category-icons.html">
+                <aside>86</aside>
+                <img src="assets/svg/icon-house.svg" alt="">
+                <figure>
+                    <h6>Houses</h6>
+                    <small>Explore</small>
+                </figure>
+            </a>
 
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Half Map</h6>
-                            <a href="index-map-leaflet-half-map.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-osm-hm.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
+            <!--Offices-->
+            <a href="listing-category-icons.html">
+                <aside>64</aside>
+                <img src="assets/svg/icon-offices.svg" alt="">
+                <figure>
+                    <h6>Offices</h6>
+                    <small>Explore</small>
+                </figure>
+            </a>
 
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Form Bottom</h6>
-                            <a href="index-map-leaflet-form-bottom.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-osm-fb.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
+            <!--Garages-->
+            <a href="listing-category-icons.html">
+                <aside>21</aside>
+                <img src="assets/svg/icon-garages.svg" alt="">
+                <figure>
+                    <h6>Garages</h6>
+                    <small>Explore</small>
+                </figure>
+            </a>
 
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Left Results</h6>
-                            <a href="index-map-leaflet-left-results.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-osm-lr.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
+            <!--Lands-->
+            <a href="listing-category-icons.html">
+                <aside>46</aside>
+                <img src="assets/svg/icon-land.svg" alt="">
+                <figure>
+                    <h6>Lands</h6>
+                    <small>Explore</small>
+                </figure>
+            </a>
 
-                </div>
-
-            </div>
         </section>
 
-        <!-- MAPBOX
+        <!-- FEATURED PROPERTIES
         =============================================================================================================-->
-        <section id="mapbox">
+        <section id="featured-properties" class="ts-block pt-5">
             <div class="container">
 
-                <h2 class="border-bottom pb-4 mb-5">
-                    MapBox
-                    <span class="badge badge-primary">Free</span>
-                </h2>
+                <!--Title-->
+                <div class="ts-title text-center">
+                    <h2>Featured Properties</h2>
+                </div>
 
                 <div class="row">
 
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Full Screen</h6>
-                            <a href="index-map-mapbox-fullscreen.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-mapbox-fs.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
+                    <!--Item-->
+                    <div class="col-sm-6 col-lg-4">
 
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Half Map</h6>
-                            <a href="index-map-mapbox-half-map.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-mapbox-hm.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
+                        <div class="card ts-item ts-card ts-item__lg">
 
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Form Bottom</h6>
-                            <a href="index-map-mapbox-form-bottom.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-mapbox-fb.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
+                            <!--Ribbon-->
+                            <div class="ts-ribbon">
+                                <i class="fa fa-thumbs-up"></i>
+                            </div>
 
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Left Results</h6>
-                            <a href="index-map-mapbox-left-results.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-mapbox-lr.jpg" alt="">
+                            <!--Card Image-->
+                            <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-01.jpg">
+                                <div class="ts-item__info-badge">
+                                    $350,000
+                                </div>
+                                <figure class="ts-item__info">
+                                    <h4>Big Luxury Apartment</h4>
+                                    <aside>
+                                        <i class="fa fa-map-marker mr-2"></i>
+                                        1350 Arbutus Drive
+                                    </aside>
+                                </figure>
                             </a>
-                        </div>
-                    </div>
 
+                            <!--Card Body-->
+                            <div class="card-body">
+                                <div class="ts-description-lists">
+                                    <dl>
+                                        <dt>Area</dt>
+                                        <dd>325m<sup>2</sup></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bedrooms</dt>
+                                        <dd>2</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bathrooms</dt>
+                                        <dd>1</dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                            <!--Card Footer-->
+                            <a href="detail-01.html" class="card-footer">
+                                <span class="ts-btn-arrow">Detail</span>
+                            </a>
+
+                        </div>
+                        <!--end ts-item-->
+                    </div>
+                    <!--end Item col-md-4-->
+
+                    <!--Item-->
+                    <div class="col-sm-6 col-lg-4">
+
+                        <div class="card ts-item ts-card ts-item__lg">
+
+                            <!--Ribbon-->
+                            <div class="ts-ribbon-corner">
+                                <span>Updated</span>
+                            </div>
+
+                            <!--Card Image-->
+                            <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-02.jpg">
+                                <figure class="ts-item__info">
+                                    <h4>Cozy Design Studio</h4>
+                                    <aside>
+                                        <i class="fa fa-map-marker mr-2"></i>
+                                        4831 Worthington Drive
+                                    </aside>
+                                </figure>
+                                <div class="ts-item__info-badge">$125,000</div>
+                            </a>
+
+                            <!--Card Body-->
+                            <div class="card-body ts-item__body">
+                                <div class="ts-description-lists">
+                                    <dl>
+                                        <dt>Area</dt>
+                                        <dd>325m<sup>2</sup></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bedrooms</dt>
+                                        <dd>2</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bathrooms</dt>
+                                        <dd>1</dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                            <!--Card Footer-->
+                            <a href="detail-01.html" class="card-footer">
+                                <span class="ts-btn-arrow">Detail</span>
+                            </a>
+
+                        </div>
+                        <!--end ts-item ts-card-->
+                    </div>
+                    <!--end Item col-md-4-->
+
+                    <!--Item-->
+                    <div class="col-sm-6 col-lg-4">
+
+                        <div class="card ts-item ts-card ts-item__lg">
+
+                            <!--Card Image-->
+                            <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-03.jpg">
+                                <figure class="ts-item__info">
+                                    <h4>Family Villa</h4>
+                                    <aside>
+                                        <i class="fa fa-map-marker mr-2"></i>
+                                        4127 Winding Way
+                                    </aside>
+                                </figure>
+                                <div class="ts-item__info-badge">$45,900</div>
+                            </a>
+
+                            <!--Card Body-->
+                            <div class="card-body ts-item__body">
+                                <div class="ts-description-lists">
+                                    <dl>
+                                        <dt>Area</dt>
+                                        <dd>325m<sup>2</sup></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bedrooms</dt>
+                                        <dd>2</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bathrooms</dt>
+                                        <dd>1</dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                            <!--Card Footer-->
+                            <a href="detail-01.html" class="card-footer">
+                                <span class="ts-btn-arrow">Detail</span>
+                            </a>
+
+                        </div>
+                        <!--end ts-item ts-card-->
+                    </div>
+                    <!--end Item col-md-4-->
+
+                </div>
+                <!--end row-->
+
+                <!--All properties button-->
+                <div class="text-center mt-3">
+                    <a href="listing-category-icons.html" class="btn btn-outline-dark ts-btn-border-muted">Show All Properties</a>
                 </div>
 
             </div>
+            <!--end container-->
         </section>
 
-        <!-- GOOGLE
+        <!-- FEATURES
         =============================================================================================================-->
-        <section id="google">
-            <div class="container">
-
-                <h2 class="border-bottom pb-4 mb-5">
-                    Google
-                </h2>
-
+        <section class="ts-block bg-white">
+            <div class="container py-4">
                 <div class="row">
 
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Full Screen</h6>
-                            <a href="index-map-google-fullscreen.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-google-fs.jpg" alt="">
-                            </a>
+                    <!--Feature-->
+                    <div class="col-sm-6 col-md-3">
+                        <div class="ts-feature">
+
+                            <figure class="ts-feature__icon p-2">
+                                    <span class="ts-circle">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                <img src="assets/img/icon-house.png" alt="">
+                            </figure>
+
+                            <h4>Properties at Great Prices</h4>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
                         </div>
                     </div>
 
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Half Map</h6>
-                            <a href="index-map-google-half-map.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-google-hm.jpg" alt="">
-                            </a>
+                    <!--Feature-->
+                    <div class="col-sm-6 col-md-3">
+                        <div class="ts-feature">
+
+                            <figure class="ts-feature__icon p-2">
+                                    <span class="ts-circle">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                <img src="assets/img/icon-pin.png" alt="">
+                            </figure>
+
+                            <h4>Everything on One Place</h4>
+
+                            <p>In dictum ac augue et suscipit. Vivamus ac tellus ut massa</p>
+
                         </div>
                     </div>
 
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Form Bottom</h6>
-                            <a href="index-map-google-form-bottom.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-google-fb.jpg" alt="">
-                            </a>
+                    <!--Feature-->
+                    <div class="col-sm-6 col-md-3">
+                        <div class="ts-feature">
+
+                            <figure class="ts-feature__icon p-2">
+                                    <span class="ts-circle">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                <img src="assets/img/icon-agent.png" alt="">
+                            </figure>
+
+                            <h4>Local Agents</h4>
+
+                            <p>Vivamus ac tellus ut massa bibendum aliquam vitae ac diam. </p>
+
                         </div>
                     </div>
 
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Left Results</h6>
-                            <a href="index-map-google-left-results.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-google-lr.jpg" alt="">
-                            </a>
+                    <!--Feature-->
+                    <div class="col-sm-6 col-md-3">
+                        <div class="ts-feature">
+
+                            <figure class="ts-feature__icon p-2">
+                                    <span class="ts-circle">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                <img src="assets/img/icon-calculator.png" alt="">
+                            </figure>
+
+                            <h4>Free Mortgage Calculation</h4>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
                         </div>
                     </div>
 
                 </div>
-
+                <!--end row-->
             </div>
+            <!--end container-->
         </section>
+        <!--end ts-block-->
 
-        <!-- HERE
+        <!-- SUBSCRIBE
         =============================================================================================================-->
-        <section id="here">
+        <section id="subscribe" class="ts-block" data-bg-pattern="assets/img/bg-pattern-topo.png" data-bg-color="#f4f4f4">
             <div class="container">
+                <div class="offset-lg-1 col-lg-10">
 
-                <h2 class="border-bottom pb-4 mb-5">
-                    Here
-                    <span class="badge badge-primary">Free</span>
-                </h2>
+                    <h3>Subscribe for great offers!</h3>
 
-                <div class="row">
+                    <form class="ts-form ts-form-email" data-php-path="assets/php/email.php">
+                        <div class="row">
 
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Full Screen</h6>
-                            <a href="index-map-here-fullscreen.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-here-fs.jpg" alt="">
-                            </a>
+                            <!--Input-->
+                            <div class="col-sm-8 col-md-10">
+                                <div class="form-group mb-0">
+                                    <input type="email" class="form-control" id="email-subscribe" aria-describedby="subscribe" name="email" placeholder="Email Address" required>
+                                    <small class="form-text mt-2 ts-opacity__50">*You’ll get only relevant news once a week </small>
+                                </div>
+
+                            </div>
+
+                            <!--Button-->
+                            <div class="col-sm-4 col-md-2">
+                                <button type="submit" class="btn btn-outline-dark w-100">Submit</button>
+                            </div>
+
                         </div>
-                    </div>
-
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Half Map</h6>
-                            <a href="index-map-here-half-map.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-here-hm.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Form Bottom</h6>
-                            <a href="index-map-here-form-bottom.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-here-fb.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Left Results</h6>
-                            <a href="index-map-here-left-results.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-here-lr.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
+                    </form>
 
                 </div>
-
             </div>
         </section>
 
-        <!-- BING
+        <!--LATEST LISTINGS
         =============================================================================================================-->
-        <section id="bing">
+        <section id="latest-listings" class="ts-block">
             <div class="container">
 
-                <h2 class="border-bottom pb-4 mb-5">
-                    Bing
-                    <span class="badge badge-primary">Free</span>
-                </h2>
-
-                <div class="row">
-
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Full Screen</h6>
-                            <a href="index-map-bing-fullscreen.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-bing-fs.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Half Map</h6>
-                            <a href="index-map-bing-half-map.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-bing-hm.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Form Bottom</h6>
-                            <a href="index-map-bing-form-bottom.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-bing-fb.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Left Results</h6>
-                            <a href="index-map-bing-left-results.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-bing-lr.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
+                <!--Title-->
+                <div class="ts-title">
+                    <h2>Latest Listings</h2>
                 </div>
 
+                <!--Row-->
+                <div class="row">
+
+                    <!--Item-->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card ts-item ts-card">
+
+                            <!--Ribbon-->
+                            <div class="ts-ribbon">
+                                <i class="fa fa-thumbs-up"></i>
+                            </div>
+
+                            <!--Card Image-->
+                            <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-01.jpg">
+                                <div class="ts-item__info-badge">
+                                    $350,000
+                                </div>
+                                <figure class="ts-item__info">
+                                    <h4>Big Luxury Apartment</h4>
+                                    <aside>
+                                        <i class="fa fa-map-marker mr-2"></i>
+                                        1350 Arbutus Drive
+                                    </aside>
+                                </figure>
+                            </a>
+
+                            <!--Card Body-->
+                            <div class="card-body">
+                                <div class="ts-description-lists">
+                                    <dl>
+                                        <dt>Area</dt>
+                                        <dd>325m<sup>2</sup></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bedrooms</dt>
+                                        <dd>2</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bathrooms</dt>
+                                        <dd>1</dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                            <!--Card Footer-->
+                            <a href="detail-01.html" class="card-footer">
+                                <span class="ts-btn-arrow">Detail</span>
+                            </a>
+
+                        </div>
+                        <!--end ts-item-->
+                    </div>
+                    <!--end Item col-md-4-->
+
+                    <!--Item-->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card ts-item ts-card">
+
+                            <!--Ribbon-->
+                            <div class="ts-ribbon-corner">
+                                <span>Updated</span>
+                            </div>
+
+                            <!--Card Image-->
+                            <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-02.jpg">
+                                <figure class="ts-item__info">
+                                    <h4>Cozy Design Studio</h4>
+                                    <aside>
+                                        <i class="fa fa-map-marker mr-2"></i>
+                                        4831 Worthington Drive
+                                    </aside>
+                                </figure>
+                                <div class="ts-item__info-badge">$125,000</div>
+                            </a>
+
+                            <!--Card Body-->
+                            <div class="card-body ts-item__body">
+                                <div class="ts-description-lists">
+                                    <dl>
+                                        <dt>Area</dt>
+                                        <dd>325m<sup>2</sup></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bedrooms</dt>
+                                        <dd>2</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bathrooms</dt>
+                                        <dd>1</dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                            <!--Card Footer-->
+                            <a href="detail-01.html" class="card-footer">
+                                <span class="ts-btn-arrow">Detail</span>
+                            </a>
+
+                        </div>
+                        <!--end ts-item ts-card-->
+                    </div>
+                    <!--end Item col-md-4-->
+
+                    <!--Item-->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card ts-item ts-card">
+
+                            <!--Card Image-->
+                            <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-03.jpg">
+                                <figure class="ts-item__info">
+                                    <h4>Family Villa</h4>
+                                    <aside>
+                                        <i class="fa fa-map-marker mr-2"></i>
+                                        4127 Winding Way
+                                    </aside>
+                                </figure>
+                                <div class="ts-item__info-badge">$45,900</div>
+                            </a>
+
+                            <!--Card Body-->
+                            <div class="card-body ts-item__body">
+                                <div class="ts-description-lists">
+                                    <dl>
+                                        <dt>Area</dt>
+                                        <dd>325m<sup>2</sup></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bedrooms</dt>
+                                        <dd>2</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bathrooms</dt>
+                                        <dd>1</dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                            <!--Card Footer-->
+                            <a href="detail-01.html" class="card-footer">
+                                <span class="ts-btn-arrow">Detail</span>
+                            </a>
+
+                        </div>
+                        <!--end ts-item ts-card-->
+                    </div>
+                    <!--end Item col-md-4-->
+
+                    <!--Item-->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card ts-item ts-card">
+
+                            <!--Card Image-->
+                            <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-04.jpg">
+                                <div class="ts-item__info-badge">
+                                    $860,000
+                                </div>
+                                <figure class="ts-item__info">
+                                    <h4>Traditional Restaurant</h4>
+                                    <aside>
+                                        <i class="fa fa-map-marker mr-2"></i>
+                                        1350 Arbutus Drive
+                                    </aside>
+                                </figure>
+                            </a>
+
+                            <!--Card Body-->
+                            <div class="card-body">
+                                <div class="ts-description-lists">
+                                    <dl>
+                                        <dt>Area</dt>
+                                        <dd>325m<sup>2</sup></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bedrooms</dt>
+                                        <dd>2</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bathrooms</dt>
+                                        <dd>1</dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                            <!--Card Footer-->
+                            <a href="detail-01.html" class="card-footer">
+                                <span class="ts-btn-arrow">Detail</span>
+                            </a>
+
+                        </div>
+                        <!--end ts-item-->
+                    </div>
+                    <!--end Item col-md-4-->
+
+                    <!--Item-->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card ts-item ts-card">
+
+                            <!--Card Image-->
+                            <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-05.jpg">
+                                <figure class="ts-item__info">
+                                    <h4>White Cubes Resort</h4>
+                                    <aside>
+                                        <i class="fa fa-map-marker mr-2"></i>
+                                        4831 Worthington Drive
+                                    </aside>
+                                </figure>
+                                <div class="ts-item__info-badge">$435,000</div>
+                            </a>
+
+                            <!--Card Body-->
+                            <div class="card-body ts-item__body">
+                                <div class="ts-description-lists">
+                                    <dl>
+                                        <dt>Area</dt>
+                                        <dd>325m<sup>2</sup></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bedrooms</dt>
+                                        <dd>2</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bathrooms</dt>
+                                        <dd>1</dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                            <!--Card Footer-->
+                            <a href="detail-01.html" class="card-footer">
+                                <span class="ts-btn-arrow">Detail</span>
+                            </a>
+
+                        </div>
+                        <!--end ts-item ts-card-->
+                    </div>
+                    <!--end Item col-md-4-->
+
+                    <!--Item-->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card ts-item ts-card">
+
+                            <!--Card Image-->
+                            <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-06.jpg">
+                                <figure class="ts-item__info">
+                                    <h4>Bristol Tower Complex</h4>
+                                    <aside>
+                                        <i class="fa fa-map-marker mr-2"></i>
+                                        4127 Winding Way
+                                    </aside>
+                                </figure>
+                                <div class="ts-item__info-badge">$85,900</div>
+                            </a>
+
+                            <!--Card Body-->
+                            <div class="card-body ts-item__body">
+                                <div class="ts-description-lists">
+                                    <dl>
+                                        <dt>Area</dt>
+                                        <dd>325m<sup>2</sup></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bedrooms</dt>
+                                        <dd>2</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bathrooms</dt>
+                                        <dd>1</dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                            <!--Card Footer-->
+                            <a href="detail-01.html" class="card-footer">
+                                <span class="ts-btn-arrow">Detail</span>
+                            </a>
+
+                        </div>
+                        <!--end ts-item ts-card-->
+                    </div>
+                    <!--end Item col-md-4-->
+
+                    <!--Item-->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card ts-item ts-card">
+
+                            <!--Card Image-->
+                            <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-07.jpg">
+                                <figure class="ts-item__info">
+                                    <h4>River Apartments</h4>
+                                    <aside>
+                                        <i class="fa fa-map-marker mr-2"></i>
+                                        1350 Arbutus Drive
+                                    </aside>
+                                </figure>
+                                <div class="ts-item__info-badge">
+                                    $120,000
+                                </div>
+                            </a>
+
+                            <!--Card Body-->
+                            <div class="card-body">
+                                <div class="ts-description-lists">
+                                    <dl>
+                                        <dt>Area</dt>
+                                        <dd>325m<sup>2</sup></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bedrooms</dt>
+                                        <dd>2</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bathrooms</dt>
+                                        <dd>1</dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                            <!--Card Footer-->
+                            <a href="detail-01.html" class="card-footer">
+                                <span class="ts-btn-arrow">Detail</span>
+                            </a>
+
+                        </div>
+                        <!--end ts-item-->
+                    </div>
+                    <!--end Item col-md-4-->
+
+                    <!--Item-->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card ts-item ts-card">
+
+                            <div class="badge badge-dark">Rent</div>
+
+                            <!--Card Image-->
+                            <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-08.jpg">
+                                <figure class="ts-item__info">
+                                    <h4>Apartment for Rent</h4>
+                                    <aside>
+                                        <i class="fa fa-map-marker mr-2"></i>
+                                        4831 Worthington Drive
+                                    </aside>
+                                </figure>
+                                <div class="ts-item__info-badge">
+                                    <span>$480</span>
+                                    <small>/ month</small>
+                                </div>
+                            </a>
+
+                            <!--Card Body-->
+                            <div class="card-body ts-item__body">
+                                <div class="ts-description-lists">
+                                    <dl>
+                                        <dt>Area</dt>
+                                        <dd>325m<sup>2</sup></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bedrooms</dt>
+                                        <dd>2</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Bathrooms</dt>
+                                        <dd>1</dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                            <!--Card Footer-->
+                            <a href="detail-01.html" class="card-footer">
+                                <span class="ts-btn-arrow">Detail</span>
+                            </a>
+
+                        </div>
+                        <!--end ts-item ts-card-->
+                    </div>
+                    <!--end Item col-md-4-->
+
+                </div>
+                <!--end row-->
             </div>
+            <!--end container-->
         </section>
 
-        <!-- SLIDER
+        <!--PRICING
         =============================================================================================================-->
-        <section id="slider">
+        <section id="pricing" class="ts-block pt-0">
             <div class="container">
 
-                <h2 class="border-bottom pb-4 mb-5">
-                    Slider Homepage
-                </h2>
-
-                <div class="row">
-
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Default</h6>
-                            <a href="index-slider.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-slider-d.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Full Screen</h6>
-                            <a href="index-slider-fullscreen.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-slider-fs.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Vertical Form</h6>
-                            <a href="index-slider-form-vertical.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-slider-vf.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Horizontal Form</h6>
-                            <a href="index-slider-form-horizontal.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-slider-hf.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
+                <!--Title-->
+                <div class="ts-title text-center">
+                    <h2 class="mb-5">Affordable Prices</h2>
                 </div>
 
+                <!--Row-->
+                <div class="row no-gutters ts-cards-same-height">
+
+                    <!--Price Box-->
+                    <div class="col-sm-4 col-lg-4">
+                        <div class="card text-center ts-price-box">
+
+                            <!--Header-->
+                            <div class="card-header" data-bg-color="#dadada">
+                                <h5 class="text-white" data-bg-color="#000296">Basic</h5>
+                                <div class="ts-title">
+                                    <h3 class="font-weight-normal">Free</h3>
+                                    <small class="ts-opacity__50">Forever</small>
+                                </div>
+                            </div>
+
+                            <!--Body-->
+                            <div class="card-body p-0 border-bottom-0">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">1 Property</li>
+                                    <li class="list-group-item">1 Agent Profile</li>
+                                    <li class="list-group-item ts-na"><s>Agency Profile</s></li>
+                                    <li class="list-group-item ts-na"><s>Featured Properties</s></li>
+                                </ul>
+                            </div>
+
+                            <!--Footer-->
+                            <div class="card-footer bg-transparent pt-0 border-0">
+                                <a href="#" class="btn btn-outline-primary">Select Now</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--end price-box-->
+
+                    <!--Price Box Promoted-->
+                    <div class="col-sm-4 col-lg-4">
+                        <div class="card text-center ts-price-box ts-price-box__promoted">
+
+                            <!--Header-->
+                            <div class="card-header" data-bg-color="#00004c">
+                                <h5 class="text-white ts-bg-primary">Premium</h5>
+                                <div class="ts-title text-white">
+                                    <h3 class="font-weight-normal">
+                                        <sup>$</sup>9,99
+                                    </h3>
+                                    <small class="ts-opacity__50">per month</small>
+                                </div>
+                            </div>
+
+                            <!--Body-->
+                            <div class="card-body p-0">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">20 Properties</li>
+                                    <li class="list-group-item">10 Agent Profiles</li>
+                                    <li class="list-group-item">5 Agency Profiles</li>
+                                    <li class="list-group-item">Featured Properties</li>
+                                </ul>
+                            </div>
+
+                            <!--Footer-->
+                            <div class="card-footer bg-transparent pt-0 border-0">
+                                <a href="#" class="btn btn-primary">Select Now</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--end price-box-->
+
+                    <!--Price Box-->
+                    <div class="col-sm-4 col-lg-4">
+                        <div class="card text-center ts-price-box">
+
+                            <!--Header-->
+                            <div class="card-header" data-bg-color="#dadada">
+                                <h5 class="text-white" data-bg-color="#000296">Professional</h5>
+                                <div class="ts-title">
+                                    <h3 class="font-weight-normal">
+                                        <sup>$</sup>19,99
+                                    </h3>
+                                    <small class="ts-opacity__50">Per Month</small>
+                                </div>
+                            </div>
+
+                            <!--Body-->
+                            <div class="card-body p-0">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Unlimited Properties</li>
+                                    <li class="list-group-item">Unlimited Agent Profiles</li>
+                                    <li class="list-group-item">Unlimited Agency Profiles</li>
+                                    <li class="list-group-item">Featured Properties</li>
+                                </ul>
+                            </div>
+
+                            <!--Footer-->
+                            <div class="card-footer bg-transparent pt-0 border-0">
+                                <a href="#" class="btn btn-outline-primary">Select Now</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--end price-box-->
+
+                </div>
+                <!--end row-->
             </div>
+            <!--end container-->
         </section>
 
-        <!-- IMAGE
+        <!--ITEM CAROUSEL
         =============================================================================================================-->
-        <section id="image">
-            <div class="container">
+        <section class="ts-block" data-bg-pattern="assets/img/bg-pattern-dot.png">
 
-                <h2 class="border-bottom pb-4 mb-5">
-                    Image Homepage
-                </h2>
-
-                <div class="row">
-
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Horizontal Form</h6>
-                            <a href="index-image-form-horizontal-dark.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-image-hf.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Vertical Form</h6>
-                            <a href="index-image-form-vertical-light.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-image-vf.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Full Screen</h6>
-                            <a href="index-image-fullscreen.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-image-fs.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- PREVIEW
-                    =================================================================================================-->
-                    <div class="col-md-6">
-                        <div class="ts-preview">
-                            <h6>Video Background</h6>
-                            <a href="index-video-background.html" class="ts-shadow__sm">
-                                <img src="assets/img/index-images/home-image-video.jpg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
+            <!--Title-->
+            <div class="ts-title text-center">
+                <h2>Our Top Picks</h2>
             </div>
-        </section>
 
-        <section class="ts-block text-white" data-bg-color="#004efe">
-            <div class="container">
+            <!--Carousel-->
+            <div class="owl-carousel ts-items-carousel" data-owl-items="5" data-owl-dots="1">
 
-                <h2 class="mb-5">Header Variations</h2>
+                <!--Item-->
+                <div class="slide">
 
-                <h6 class="mb-4">Light Version</h6>
-                <img src="assets/img/index-images/header-light.jpg" alt="" class="mw-100 mb-5">
+                    <div class="card ts-item ts-card ts-item__lg">
 
-                <h6 class="mb-4">Dark Version</h6>
-                <img src="assets/img/index-images/header-dark.jpg" alt="" class="mw-100">
+                        <!--Ribbon-->
+                        <div class="ts-ribbon">
+                            <i class="fa fa-thumbs-up"></i>
+                        </div>
 
-            </div>
-        </section>
-
-        <section class="ts-block">
-            <div class="container">
-
-                <h2 class="mb-5">Property Detail</h2>
-
-                <div class="row">
-
-                    <div class="col-md-4">
-                        <h6 class="mb-4">Version 1</h6>
-                        <a href="detail-01.html">
-                            <img src="assets/img/index-images/page-01.jpg" alt="" class="mw-100">
+                        <!--Card Image-->
+                        <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-01.jpg">
+                            <div class="ts-item__info-badge">
+                                $350,000
+                            </div>
+                            <figure class="ts-item__info">
+                                <h4>Big Luxury Apartment</h4>
+                                <aside>
+                                    <i class="fa fa-map-marker mr-2"></i>
+                                    1350 Arbutus Drive
+                                </aside>
+                            </figure>
                         </a>
-                    </div>
 
-                    <div class="col-md-4">
-                        <h6 class="mb-4">Version 2</h6>
-                        <a href="detail-02.html">
-                            <img src="assets/img/index-images/page-02.jpg" alt="" class="mw-100">
+                        <!--Card Body-->
+                        <div class="card-body">
+                            <div class="ts-description-lists">
+                                <dl>
+                                    <dt>Area</dt>
+                                    <dd>325m<sup>2</sup></dd>
+                                </dl>
+                                <dl>
+                                    <dt>Bedrooms</dt>
+                                    <dd>2</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Bathrooms</dt>
+                                    <dd>1</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <!--Card Footer-->
+                        <a href="detail-01.html" class="card-footer">
+                            <span class="ts-btn-arrow">Detail</span>
                         </a>
-                    </div>
 
-                    <div class="col-md-4">
-                        <h6 class="mb-4">Version 3</h6>
-                        <a href="detail-03.html">
-                            <img src="assets/img/index-images/page-03.jpg" alt="" class="mw-100">
+                    </div>
+                    <!--end ts-item-->
+                </div>
+                <!--end slide-->
+
+                <!--Item-->
+                <div class="slide">
+
+                    <div class="card ts-item ts-card ts-item__lg">
+
+                        <!--Ribbon-->
+                        <div class="ts-ribbon-corner">
+                            <span>Updated</span>
+                        </div>
+
+                        <!--Card Image-->
+                        <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-02.jpg">
+                            <figure class="ts-item__info">
+                                <h4>Cozy Design Studio</h4>
+                                <aside>
+                                    <i class="fa fa-map-marker mr-2"></i>
+                                    4831 Worthington Drive
+                                </aside>
+                            </figure>
+                            <div class="ts-item__info-badge">$125,000</div>
                         </a>
-                    </div>
 
+                        <!--Card Body-->
+                        <div class="card-body ts-item__body">
+                            <div class="ts-description-lists">
+                                <dl>
+                                    <dt>Area</dt>
+                                    <dd>325m<sup>2</sup></dd>
+                                </dl>
+                                <dl>
+                                    <dt>Bedrooms</dt>
+                                    <dd>2</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Bathrooms</dt>
+                                    <dd>1</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <!--Card Footer-->
+                        <a href="detail-01.html" class="card-footer">
+                            <span class="ts-btn-arrow">Detail</span>
+                        </a>
+
+                    </div>
+                    <!--end ts-item ts-card-->
+                </div>
+                <!--end slide-->
+
+                <!--Item-->
+                <div class="slide">
+
+                    <div class="card ts-item ts-card ts-item__lg">
+
+                        <!--Card Image-->
+                        <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-03.jpg">
+                            <figure class="ts-item__info">
+                                <h4>Family Villa</h4>
+                                <aside>
+                                    <i class="fa fa-map-marker mr-2"></i>
+                                    4127 Winding Way
+                                </aside>
+                            </figure>
+                            <div class="ts-item__info-badge">$45,900</div>
+                        </a>
+
+                        <!--Card Body-->
+                        <div class="card-body ts-item__body">
+                            <div class="ts-description-lists">
+                                <dl>
+                                    <dt>Area</dt>
+                                    <dd>325m<sup>2</sup></dd>
+                                </dl>
+                                <dl>
+                                    <dt>Bedrooms</dt>
+                                    <dd>2</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Bathrooms</dt>
+                                    <dd>1</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <!--Card Footer-->
+                        <a href="detail-01.html" class="card-footer">
+                            <span class="ts-btn-arrow">Detail</span>
+                        </a>
+
+                    </div>
+                    <!--end ts-item ts-card-->
+                </div>
+                <!--end slide-->
+
+                <!--Item-->
+                <div class="slide">
+                    <div class="card ts-item ts-card ts-item__lg">
+
+                        <!--Card Image-->
+                        <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-04.jpg">
+                            <div class="ts-item__info-badge">
+                                $860,000
+                            </div>
+                            <figure class="ts-item__info">
+                                <h4>Traditional Restaurant</h4>
+                                <aside>
+                                    <i class="fa fa-map-marker mr-2"></i>
+                                    1350 Arbutus Drive
+                                </aside>
+                            </figure>
+                        </a>
+
+                        <!--Card Body-->
+                        <div class="card-body">
+                            <div class="ts-description-lists">
+                                <dl>
+                                    <dt>Area</dt>
+                                    <dd>325m<sup>2</sup></dd>
+                                </dl>
+                                <dl>
+                                    <dt>Bedrooms</dt>
+                                    <dd>2</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Bathrooms</dt>
+                                    <dd>1</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <!--Card Footer-->
+                        <a href="detail-01.html" class="card-footer">
+                            <span class="ts-btn-arrow">Detail</span>
+                        </a>
+
+                    </div>
+                    <!--end ts-item-->
+                </div>
+                <!--end slide-->
+
+                <!--Item-->
+                <div class="slide">
+                    <div class="card ts-item ts-card ts-item__lg">
+
+                        <!--Card Image-->
+                        <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-05.jpg">
+                            <figure class="ts-item__info">
+                                <h4>White Cubes Resort</h4>
+                                <aside>
+                                    <i class="fa fa-map-marker mr-2"></i>
+                                    4831 Worthington Drive
+                                </aside>
+                            </figure>
+                            <div class="ts-item__info-badge">$435,000</div>
+                        </a>
+
+                        <!--Card Body-->
+                        <div class="card-body ts-item__body">
+                            <div class="ts-description-lists">
+                                <dl>
+                                    <dt>Area</dt>
+                                    <dd>325m<sup>2</sup></dd>
+                                </dl>
+                                <dl>
+                                    <dt>Bedrooms</dt>
+                                    <dd>2</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Bathrooms</dt>
+                                    <dd>1</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <!--Card Footer-->
+                        <a href="detail-01.html" class="card-footer">
+                            <span class="ts-btn-arrow">Detail</span>
+                        </a>
+
+                    </div>
+                    <!--end ts-item ts-card-->
+                </div>
+                <!--end slide-->
+
+                <!--Item-->
+                <div class="slide">
+                    <div class="card ts-item ts-card ts-item__lg">
+
+                        <!--Card Image-->
+                        <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-06.jpg">
+                            <figure class="ts-item__info">
+                                <h4>Bristol Tower Complex</h4>
+                                <aside>
+                                    <i class="fa fa-map-marker mr-2"></i>
+                                    4127 Winding Way
+                                </aside>
+                            </figure>
+                            <div class="ts-item__info-badge">$85,900</div>
+                        </a>
+
+                        <!--Card Body-->
+                        <div class="card-body ts-item__body">
+                            <div class="ts-description-lists">
+                                <dl>
+                                    <dt>Area</dt>
+                                    <dd>325m<sup>2</sup></dd>
+                                </dl>
+                                <dl>
+                                    <dt>Bedrooms</dt>
+                                    <dd>2</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Bathrooms</dt>
+                                    <dd>1</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <!--Card Footer-->
+                        <a href="detail-01.html" class="card-footer">
+                            <span class="ts-btn-arrow">Detail</span>
+                        </a>
+
+                    </div>
+                    <!--end ts-item ts-card-->
+                </div>
+                <!--end slide-->
+
+                <!--Item-->
+                <div class="slide">
+                    <div class="card ts-item ts-card ts-item__lg">
+
+                        <!--Card Image-->
+                        <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-07.jpg">
+                            <figure class="ts-item__info">
+                                <h4>River Apartments</h4>
+                                <aside>
+                                    <i class="fa fa-map-marker mr-2"></i>
+                                    1350 Arbutus Drive
+                                </aside>
+                            </figure>
+                            <div class="ts-item__info-badge">
+                                $120,000
+                            </div>
+                        </a>
+
+                        <!--Card Body-->
+                        <div class="card-body">
+                            <div class="ts-description-lists">
+                                <dl>
+                                    <dt>Area</dt>
+                                    <dd>325m<sup>2</sup></dd>
+                                </dl>
+                                <dl>
+                                    <dt>Bedrooms</dt>
+                                    <dd>2</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Bathrooms</dt>
+                                    <dd>1</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <!--Card Footer-->
+                        <a href="detail-01.html" class="card-footer">
+                            <span class="ts-btn-arrow">Detail</span>
+                        </a>
+
+                    </div>
+                    <!--end ts-item-->
+                </div>
+                <!--end slide-->
+
+                <!--Item-->
+                <div class="slide">
+                    <div class="card ts-item ts-card ts-item__lg">
+
+                        <div class="badge badge-primary">Rent</div>
+
+                        <!--Card Image-->
+                        <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-08.jpg">
+                            <figure class="ts-item__info">
+                                <h4>Apartment for Rent</h4>
+                                <aside>
+                                    <i class="fa fa-map-marker mr-2"></i>
+                                    4831 Worthington Drive
+                                </aside>
+                            </figure>
+                            <div class="ts-item__info-badge">
+                                <span>$480</span>
+                                <small>/ month</small>
+                            </div>
+                        </a>
+
+                        <!--Card Body-->
+                        <div class="card-body ts-item__body">
+                            <div class="ts-description-lists">
+                                <dl>
+                                    <dt>Area</dt>
+                                    <dd>325m<sup>2</sup></dd>
+                                </dl>
+                                <dl>
+                                    <dt>Bedrooms</dt>
+                                    <dd>2</dd>
+                                </dl>
+                                <dl>
+                                    <dt>Bathrooms</dt>
+                                    <dd>1</dd>
+                                </dl>
+                            </div>
+                        </div>
+
+                        <!--Card Footer-->
+                        <a href="detail-01.html" class="card-footer">
+                            <span class="ts-btn-arrow">Detail</span>
+                        </a>
+
+                    </div>
+                    <!--end ts-item ts-card-->
+                </div>
+                <!--end slide-->
+
+
+            </div>
+        </section>
+        <!--end ts-block-->
+
+        <!--SUBMIT BANNER
+        =============================================================================================================-->
+        <section id="submit-banner" class="ts-block">
+            <div class="container">
+
+                <div class="ts-block-inside text-center ts-separate-bg-element" data-bg-image-opacity=".2" data-bg-image="assets/img/bg-chair.jpg" data-bg-color="#fff">
+                    <figure class="h1 font-weight-light mb-2">Have Some Property For Sale?</figure>
+                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <a href="submit.html" class="btn btn-dark">Submit Your Own</a>
                 </div>
 
+            </div>
+        </section>
+
+        <!--PARTNERS
+        =============================================================================================================-->
+        <section id="partners" class="ts-block pt-4 pb-0">
+            <div class="container">
+
+                <!--Logos-->
+                <div class="d-block d-md-flex justify-content-between align-items-center text-center ts-partners py-3">
+
+                    <a href="#">
+                        <img src="assets/img/logo-01.png" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img src="assets/img/logo-02.png" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img src="assets/img/logo-03.png" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img src="assets/img/logo-04.png" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img src="assets/img/logo-05.png" alt="">
+                    </a>
+
+                </div>
+                <!--end logos-->
             </div>
         </section>
 
     </main>
-    <!--end #ts-main-->
 
     <!--*********************************************************************************************************-->
     <!--************ FOOTER *************************************************************************************-->
     <!--*********************************************************************************************************-->
 
-    <footer id="ts-footer" class="mt-0 border-top">
+    <footer id="ts-footer">
 
-        <div class="container py-5">
-            <span class="small ts-opacity__50">(C) 2018 ThemeStarz, All Rights Reserved</span>
-        </div>
+        <!--MAIN FOOTER CONTENT
+        =============================================================================================================-->
+        <section id="ts-footer-main">
+            <div class="container">
+                <div class="row">
+
+                    <!--Brand and description-->
+                    <div class="col-md-6">
+                        <a href="#" class="brand">
+                            <img src="assets/img/logo.png" alt="">
+                        </a>
+                        <p class="mb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat tempor sapien.
+                            In lobortis posuere tincidunt. Curabitur malesuada tempus ligula nec maximus. Nam tortor
+                            arcu,
+                            tincidunt quis molestie non, sagittis dignissim ligula. Fusce est ipsum, pharetra in felis
+                            ac,
+                            lobortis volutpat diam.
+                        </p>
+                        <a href="#" class="btn btn-outline-dark mb-4">Contact Us</a>
+                    </div>
+
+                    <!--Navigation-->
+                    <div class="col-md-2">
+                        <h4>Navigation</h4>
+                        <nav class="nav flex-row flex-md-column mb-4">
+                            <a href="#" class="nav-link">Home</a>
+                            <a href="#" class="nav-link">Listing</a>
+                            <a href="#" class="nav-link">About Us</a>
+                            <a href="#" class="nav-link">Sign In</a>
+                            <a href="#" class="nav-link">Register</a>
+                            <a href="#" class="nav-link">Submit Property</a>
+                        </nav>
+                    </div>
+
+                    <!--Contact Info-->
+                    <div class="col-md-4">
+                        <h4>Contact</h4>
+                        <address class="ts-text-color-light">
+                            2590 Rocky Road
+                            <br>
+                            Philadelphia, PA 19108
+                            <br>
+                            <strong>Email: </strong>
+                            <a href="#" class="btn-link">office@example.com</a>
+                            <br>
+                            <strong>Phone:</strong>
+                            +1 215-606-0391
+                            <br>
+                            <strong>Skype: </strong>
+                            real.estate1
+                        </address>
+                    </div>
+
+                </div>
+                <!--end row-->
+            </div>
+            <!--end container-->
+        </section>
+        <!--end ts-footer-main-->
+
+        <!--SECONDARY FOOTER CONTENT
+        =============================================================================================================-->
+        <section id="ts-footer-secondary">
+            <div class="container">
+
+                <!--Copyright-->
+                <div class="ts-copyright">(C) 2018 ThemeStarz, All rights reserved</div>
+
+                <!--Social Icons-->
+                <div class="ts-footer-nav">
+                    <nav class="nav">
+                        <a href="#" class="nav-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="#" class="nav-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </nav>
+                </div>
+                <!--end ts-footer-nav-->
+
+            </div>
+            <!--end container-->
+        </section>
+        <!--end ts-footer-secondary-->
 
     </footer>
     <!--end #ts-footer-->
@@ -710,6 +2125,8 @@
 <script src="assets/js/jquery-3.3.1.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/custom.js"></script>
 
 </body>
