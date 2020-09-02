@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="ThemeStarz">
+
+    <!--CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/leaflet.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Kullanıcı Profil Sayfası</title>
+
+</head>
+
+<body>
+
+    <!-- WRAPPER
+    =================================================================================================================-->
+    <div class="ts-page-wrapper ts-has-bokeh-bg" id="page-top">
+
+        <!--*********************************************************************************************************-->
+        <!--HEADER **************************************************************************************************-->
+        <!--*********************************************************************************************************-->
+        <header id="ts-header" class="fixed-top">
+
+            <!-- SECONDARY NAVIGATION
+        =============================================================================================================-->
+            <nav id="ts-secondary-navigation" class="navbar p-0">
+                <div class="container justify-content-end justify-content-sm-between">
+
+                    <!--Left Side-->
+                    <div class="navbar-nav d-none d-sm-block">
+                        <!--Phone-->
+                        <span class="mr-4">
+                            <i class="fa fa-phone-square mr-1"></i>
+                            +1 123 456 789
+                        </span>
+                        <!--Email-->
+                        <a href="#">
+                            <i class="fa fa-envelope mr-1"></i>
+                            hello@example.com
+                        </a>
+                    </div>
+
+                    <!--Right Side-->
+                    <div class="navbar-nav flex-row">
+                        <!--Search Input-->
+                        <input type="text" class="form-control p-2 border-left bg-transparent w-auto" placeholder="Search">
+                    </div>
+
+                    <!--end navbar-nav-->
+                </div>
+                <!--end container-->
+            </nav>
+
+            <!--PRIMARY NAVIGATION
+        =============================================================================================================-->
+            <nav id="ts-primary-navigation" class="navbar navbar-expand-md navbar-light">
+                <div class="container">
+
+                    <!--Brand Logo-->
+                    <a class="navbar-brand" href="index-map-leaflet-fullscreen.html">
+                        <img src="assets/img/logo.png" alt="">
+                    </a>
+
+                    <!--Responsive Collapse Button-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrimary" aria-controls="navbarPrimary" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!--Collapsing Navigation-->
+                    <div class="collapse navbar-collapse" id="navbarPrimary">
+
+                        <!--LEFT NAVIGATION MAIN LEVEL
+                    =================================================================================================-->
+                        <ul class="navbar-nav">
+
+                            <!--HOME (Main level)
+                        =============================================================================================-->
+                            <li class="nav-item">
+
+                                <!--Main level link-->
+                                <a class="nav-link active" href="index.html">
+                                    Anasayfa
+                                    <span class="sr-only">(current)</span>
+                                </a>
+
+                            </li>
+                            <!--end HOME nav-item-->
+
+                            <!--TASARIM FIKIRLERI (Main level)
+                        =============================================================================================-->
+                            <li class="nav-item ts-has-child">
+
+                                <!--Main level link-->
+                                <a class="nav-link" href="#">Tasarım Fikirleri</a>
+
+                                <!-- List (1st level) -->
+                                <ul class="ts-child">
+
+                                    <!-- TASARIM FIKIRLERI (1st level)
+                                =====================================================================================-->
+                                    <li class="nav-item">
+
+                                        <a href="#" class="nav-link">Ev Tasarımı</a>
+
+                                    </li>
+
+                                    <li class="nav-item">
+
+                                        <a href="#" class="nav-link">İşyeri Tasarımı</a>
+
+                                    </li>
+                                    <!--end TASARIM FIKIRLERI (1st level)-->
+
+
+                                </ul>
+                                <!--end List (1st level) -->
+
+                            </li>
+                            <!--end TASARIM FIKIRLERI nav-item-->
+
+                            <!--PROJELER (Main level)
+                        =============================================================================================-->
+                            <li class="nav-item">
+
+                                <!--Main level link-->
+                                <a class="nav-link" href="#">Projeler</a>
+
+                            </li>
+                            <!--end PROJELER nav-item-->
+
+                            <!--BIR PROFESYONELE DANIS (Main level)
+                        =============================================================================================-->
+
+                            <li class="nav-item">
+                                <a class="btn btn-outline-primary btn-sm m-1 px-3" href="search-results.html">
+                                    <i class="fa fa-plus small mr-2"></i>
+                                    Bir Profesyonele Danış
+                                </a>
+                            </li>
+                            <!--end BIR PROFESYONELE DANIS nav-item-->
+
+                            <!--ILHAM PERISI (Main level)
+                        =============================================================================================-->
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">İlham Perisi</a>
+                            </li>
+                            <!--end ILHAM PERISI nav-item-->
+
+                            <!--MAKALELER (Main level)
+                        =============================================================================================-->
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">Makaleler</a>
+                            </li>
+                            <!--end MAKALELER nav-item-->
+
+                            <!--VIDEOLAR (Main level)
+                        =============================================================================================-->
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">Videolar</a>
+                            </li>
+                            <!--end VIDEOLAR nav-item-->
+
+                        </ul>
+                        <!--end Left navigation main level-->
+
+                        <!--RIGHT NAVIGATION MAIN LEVEL
+                    =================================================================================================-->
+                        <ul class="navbar-nav ml-auto">
+
+                            <!--LOGIN (Main level)
+                        =============================================================================================-->
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Giriş</a>
+                            </li>
+
+                            <!--REGISTER (Main level)
+                        =============================================================================================-->
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="register.html">Kayıt Ol</a>
+                            </li>
+
+                            <!--SUBMIT (Main level)
+                        =============================================================================================-->
+
+
+                        </ul>
+                        <!--end Right navigation-->
+
+                    </div>
+                    <!--end navbar-collapse-->
+                </div>
+                <!--end container-->
+            </nav>
+            <!--end #ts-primary-navigation.navbar-->
+
+        </header>
+        <!--end Header-->
+
+        <!--*********************************************************************************************************-->
+        <!-- MAIN ***************************************************************************************************-->
+        <!--*********************************************************************************************************-->
+
+        <main id="ts-main">
+
+            <!--BREADCRUMB
+            =========================================================================================================-->
+            <section id="breadcrumb">
+                <div class="container">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Kullanıcı Profili</li>
+                        </ol>
+                    </nav>
+                </div>
+            </section>
+
+            <!--PAGE TITLE
+            =========================================================================================================-->
+            <section id="page-title">
+                <div class="container">
+
+                    <div class="ts-title">
+                        <h1>Merhaba Leyla</h1>
+                    </div>
+
+                </div>
+            </section>
+
+            <!--KULLANICI INFO
+            =========================================================================================================-->
+            <section id="agent-info">
+                <div class="container">
+
+                    <!--Box-->
+                    <div class="ts-box">
+
+                        <!--Ribbon-->
+                        <div class="ts-ribbon">
+                            <i class="fa fa-thumbs-up"></i>
+                        </div>
+
+                        <!--Row-->
+                        <div class="row">
+
+                            <!--Profil Fotoğrafı-->
+                            <div class="col-md-4 ts-center__both">
+                                <div class="ts-circle__xxl ts-shadow__md" data-bg-image="assets/img/img-person-01.jpg"></div>
+                            </div>
+
+                            <!--Profil Bilgileri-->
+                            <div class="col-md-8">
+
+                                <div class="py-4">
+
+                                    <!--Title-->
+                                    <div class="ts-title mb-2">
+                                        <h2 class="mb-1">Profil Güncelleme</h2>
+                                    </div>
+
+                                    <!--Row-->
+                                    <div class="row">
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="isim">İsim</label>
+                                                <input type="text" class="form-control" id="isim" name="isim" required="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="soyisim">Soyisim</label>
+                                                <input type="text" class="form-control" id="soyisim" name="soyisim" required="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="phone">Cep Telefonu</label>
+                                                <input type="number" class="form-control" id="phone" name="phone" required="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="email">E-posta</label>
+                                                <input type="text" class="form-control" id="email" name="email" required="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="adres">Adres</label>
+                                                <input type="text" class="form-control" id="adres" name="adres" required="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="ilce">İlçe</label>
+                                                <input type="text" class="form-control" id="ilce" name="ilce" required="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="sehir">Şehir</label>
+                                                <input type="text" class="form-control" id="sehir" name="sehir" required="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <div class="file-upload">
+
+                                                    <div class="MultiFile-wrap" id="MultiFile1">
+                                                        <label for="files[]">Profil Fotoğrafı Güncelleme</label>
+                                                        <input type="file" name="files[]" class="file-upload-input with-preview MultiFile-applied" multiple="" title="Fotoğraf yüklemek için tıklayın" maxlength="10" accept="gif|jpg|png" id="MultiFile1" value="">
+                                                    </div>
+                                                    <span><i class="fa fa-plus-circle"></i>Tıklayın ya da Fotoğrafı Buraya Sürükleyin</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="py-3 col-md-12">
+                                            <button class="btn btn-outline-danger btn-lg float-left">
+                                                <i class="fa fa-times mr-2"></i>
+                                                Vazgeç
+                                            </button>
+                                            <button class="btn btn-primary btn-lg float-right">
+                                                <i class="fa fa-save ts-opacity__50 mr-2"></i>
+                                                Değişiklikleri Kaydet
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    <!--end row-->
+                                </div>
+                                <!--end p-4-->
+
+
+
+                            </div>
+                            <!--end col-md-8-->
+                        </div>
+                        <!--end row-->
+                    </div>
+                    <!--end ts-box-->
+
+                </div>
+                <!--end container-->
+            </section>
+            <!--end #agent-info-->
+
+            <!--ITEMS LISTING & SEARCH
+            =========================================================================================================-->
+            <section id="items-listing-and-search">
+                <div class="container">
+                    <div class="row flex-wrap-reverse">
+
+                        <!--LEFT SIDE
+                        =============================================================================================-->
+                        <div class="col-md-6">
+                            <h3 class="mb-4 pb-4">Favorilere Eklenenler</h3>
+                            
+                            <!--ITEMS LISTING
+                            =================================================================================-->
+                            <section id="items-listing">
+                                <!--Item-->
+                                <div class="card ts-item ts-item__list ts-card">
+
+                                    <!--Ribbon-->
+                                    <div class="ts-ribbon">
+                                        <i class="fa fa-thumbs-up"></i>
+                                    </div>
+
+                                    <!--Card Image-->
+                                    <a href="detail-01.html" class="card-img" data-bg-image="assets/img/img-item-thumb-01.jpg"></a>
+
+                                    <!--Card Body-->
+                                    <div class="card-body">
+
+                                        <figure class="ts-item__info">
+                                            <h4>Dalyan Mimarlık</h4>
+                                            <aside>
+                                                <i class="fa fa-map-marker mr-2"></i>
+                                                Bakırköy
+                                            </aside>
+                                        </figure>
+
+                                        <div>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        </div>
+                                    </div>
+
+                                    <!--Card Footer-->
+                                    <a href="detail-01.html" class="card-footer">
+                                        <span class="ts-btn-arrow">İncele</span>
+                                    </a>
+
+                                </div>
+
+                                <!--Item-->
+                                <div class="card ts-item ts-item__list ts-card">
+
+                                    <!--Ribbon-->
+                                    <div class="ts-ribbon-corner">
+                                        <span>Onaylı</span>
+                                    </div>
+
+                                    <!--Card Image-->
+                                    <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-02.jpg"></a>
+
+                                    <!--Card Body-->
+                                    <div class="card-body ts-item__body">
+
+                                        <figure class="ts-item__info">
+                                            <h4>Kuzu Dizayn Stüdyo</h4>
+                                            <aside>
+                                                <i class="fa fa-map-marker mr-2"></i>
+                                                Hasanboğuldu Köprüsü
+                                            </aside>
+                                        </figure>
+
+                                        <div class="ts-item__info-badge">$125,000</div>
+
+                                        <div class="ts-description-lists">
+                                            <dl>
+                                                <dt>Area</dt>
+                                                <dd>325m<sup>2</sup></dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Bedrooms</dt>
+                                                <dd>2</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Bathrooms</dt>
+                                                <dd>1</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+
+                                    <!--Card Footer-->
+                                    <a href="detail-01.html" class="card-footer ts-item__footer">
+                                        <span class="ts-btn-arrow">İncele</span>
+                                    </a>
+
+                                </div>
+
+                                <!--Item-->
+                                <div class="card ts-item ts-item__list ts-card">
+
+                                    <!--Card Image-->
+                                    <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-03.jpg"></a>
+
+                                    <!--Card Body-->
+                                    <div class="card-body ts-item__body">
+
+                                        <figure class="ts-item__info">
+                                            <h4>Family Villa</h4>
+                                            <aside>
+                                                <i class="fa fa-map-marker mr-2"></i>
+                                                4127 Winding Way
+                                            </aside>
+                                        </figure>
+
+                                        <div class="ts-item__info-badge">$45,900</div>
+
+                                        <div class="ts-description-lists">
+                                            <dl>
+                                                <dt>Area</dt>
+                                                <dd>325m<sup>2</sup></dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Bedrooms</dt>
+                                                <dd>2</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Bathrooms</dt>
+                                                <dd>1</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+
+                                    <!--Card Footer-->
+                                    <a href="detail-01.html" class="card-footer ts-item__footer">
+                                        <span class="ts-btn-arrow">İncele</span>
+                                    </a>
+
+                                </div>
+
+                                <!--Item-->
+                                <div class="card ts-item ts-item__list ts-card">
+
+                                    <!--Card Image-->
+                                    <a href="detail-01.html" class="card-img" data-bg-image="assets/img/img-item-thumb-04.jpg"></a>
+
+                                    <!--Card Body-->
+                                    <div class="card-body">
+
+                                        <figure class="ts-item__info">
+                                            <h4>Traditional Restaurant</h4>
+                                            <aside>
+                                                <i class="fa fa-map-marker mr-2"></i>
+                                                1350 Arbutus Drive
+                                            </aside>
+                                        </figure>
+
+
+                                        <div class="ts-description-lists">
+                                            <dl>
+                                                <dt>Area</dt>
+                                                <dd>325m<sup>2</sup></dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Bedrooms</dt>
+                                                <dd>2</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Bathrooms</dt>
+                                                <dd>1</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+
+                                    <!--Card Footer-->
+                                    <a href="detail-01.html" class="card-footer">
+                                        <span class="ts-btn-arrow">İncele</span>
+                                    </a>
+
+                                </div>
+                            </section>
+                            
+                        </div>
+                        <!--end col-md-6 / left side -->
+                        
+                        <!--RIGHT SIDE
+                        =============================================================================================-->
+                        <div class="col-md-6">
+                            <h3 class="mb-4 pb-4">Son Gezilenler</h3>
+                            
+                            <!--ITEMS LISTING
+                            =================================================================================-->
+                            <section id="items-listing">
+                               
+                               <!--Item-->
+                                <div class="card ts-item ts-item__list ts-card">
+
+                                    <!--Card Image-->
+                                    <a href="detail-01.html" class="card-img" data-bg-image="assets/img/img-item-thumb-04.jpg"></a>
+
+                                    <!--Card Body-->
+                                    <div class="card-body">
+
+                                        <figure class="ts-item__info">
+                                            <h4>Kayan İç Mimarlık</h4>
+                                            <aside>
+                                                <i class="fa fa-map-marker mr-2"></i>
+                                                Gölcük KOCAELİ
+                                            </aside>
+                                        </figure>
+
+                                        <div class="ts-description-lists">
+                                            <dl>
+                                                <dt>Area</dt>
+                                                <dd>325m<sup>2</sup></dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Bedrooms</dt>
+                                                <dd>2</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Bathrooms</dt>
+                                                <dd>1</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+
+                                    <!--Card Footer-->
+                                    <a href="detail-01.html" class="card-footer">
+                                        <span class="ts-btn-arrow">İncele</span>
+                                    </a>
+
+                                </div>
+                               
+                                <!--Item-->
+                                <div class="card ts-item ts-item__list ts-card">
+
+                                    <!--Ribbon-->
+                                    <div class="ts-ribbon">
+                                        <i class="fa fa-thumbs-up"></i>
+                                    </div>
+
+                                    <!--Card Image-->
+                                    <a href="detail-01.html" class="card-img" data-bg-image="assets/img/img-item-thumb-01.jpg"></a>
+
+                                    <!--Card Body-->
+                                    <div class="card-body">
+
+                                        <figure class="ts-item__info">
+                                            <h4>Big Luxury Apartment</h4>
+                                            <aside>
+                                                <i class="fa fa-map-marker mr-2"></i>
+                                                1350 Arbutus Drive
+                                            </aside>
+                                        </figure>
+
+                                        <div class="ts-item__info-badge">
+                                            AD
+                                        </div>
+
+                                        <div class="ts-description-lists">
+                                            <dl>
+                                                <dt>Area</dt>
+                                                <dd>325m<sup>2</sup></dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Bedrooms</dt>
+                                                <dd>2</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Bathrooms</dt>
+                                                <dd>1</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+
+                                    <!--Card Footer-->
+                                    <a href="detail-01.html" class="card-footer">
+                                        <span class="ts-btn-arrow">İncele</span>
+                                    </a>
+
+                                </div>
+
+                                <!--Item-->
+                                <div class="card ts-item ts-item__list ts-card">
+
+                                    <!--Ribbon-->
+                                    <div class="ts-ribbon-corner">
+                                        <span>Updated</span>
+                                    </div>
+
+                                    <!--Card Image-->
+                                    <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-02.jpg"></a>
+
+                                    <!--Card Body-->
+                                    <div class="card-body ts-item__body">
+
+                                        <figure class="ts-item__info">
+                                            <h4>Cozy Design Studio</h4>
+                                            <aside>
+                                                <i class="fa fa-map-marker mr-2"></i>
+                                                4831 Worthington Drive
+                                            </aside>
+                                        </figure>
+
+                                        <div class="ts-item__info-badge">$125,000</div>
+
+                                        <div class="ts-description-lists">
+                                            <dl>
+                                                <dt>Area</dt>
+                                                <dd>325m<sup>2</sup></dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Bedrooms</dt>
+                                                <dd>2</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Bathrooms</dt>
+                                                <dd>1</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+
+                                    <!--Card Footer-->
+                                    <a href="detail-01.html" class="card-footer ts-item__footer">
+                                        <span class="ts-btn-arrow">İncele</span>
+                                    </a>
+
+                                </div>
+
+                                <!--Item-->
+                                <div class="card ts-item ts-item__list ts-card">
+
+                                    <!--Card Image-->
+                                    <a href="detail-01.html" class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-03.jpg"></a>
+
+                                    <!--Card Body-->
+                                    <div class="card-body ts-item__body">
+
+                                        <figure class="ts-item__info">
+                                            <h4>Family Villa</h4>
+                                            <aside>
+                                                <i class="fa fa-map-marker mr-2"></i>
+                                                4127 Winding Way
+                                            </aside>
+                                        </figure>
+
+                                        <div class="ts-item__info-badge">$45,900</div>
+
+                                        <div class="ts-description-lists">
+                                            <dl>
+                                                <dt>Area</dt>
+                                                <dd>325m<sup>2</sup></dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Bedrooms</dt>
+                                                <dd>2</dd>
+                                            </dl>
+                                            <dl>
+                                                <dt>Bathrooms</dt>
+                                                <dd>1</dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+
+                                    <!--Card Footer-->
+                                    <a href="detail-01.html" class="card-footer ts-item__footer">
+                                        <span class="ts-btn-arrow">İncele</span>
+                                    </a>
+
+                                </div>
+
+                                
+                            </section>
+                            
+                        </div>
+                        <!--end col-md-6 / right side -->
+                        
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <!--end #ts-main-->
+
+        <!--*********************************************************************************************************-->
+        <!--************ FOOTER *************************************************************************************-->
+        <!--*********************************************************************************************************-->
+
+        <footer id="ts-footer">
+
+            <!--MAIN FOOTER CONTENT
+            =========================================================================================================-->
+            <section id="ts-footer-main">
+                <div class="container">
+                    <div class="row">
+
+                        <!--Brand and description-->
+                        <div class="col-md-6">
+                            <a href="#" class="brand">
+                                <img src="assets/img/logo.png" alt="">
+                            </a>
+                            <p class="mb-4">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat tempor sapien.
+                                In lobortis posuere tincidunt. Curabitur malesuada tempus ligula nec maximus. Nam tortor
+                                arcu,
+                                tincidunt quis molestie non, sagittis dignissim ligula. Fusce est ipsum, pharetra in felis
+                                ac,
+                                lobortis volutpat diam.
+                            </p>
+                            <a href="#" class="btn btn-outline-dark mb-4">Contact Us</a>
+                        </div>
+
+                        <!--Navigation-->
+                        <div class="col-md-2">
+                            <h4>Navigation</h4>
+                            <nav class="nav flex-row flex-md-column mb-4">
+                                <a href="#" class="nav-link">Home</a>
+                                <a href="#" class="nav-link">Listing</a>
+                                <a href="#" class="nav-link">About Us</a>
+                                <a href="#" class="nav-link">Sign In</a>
+                                <a href="#" class="nav-link">Register</a>
+                                <a href="#" class="nav-link">Submit Property</a>
+                            </nav>
+                        </div>
+
+                        <!--Contact Info-->
+                        <div class="col-md-4">
+                            <h4>Contact</h4>
+                            <address class="ts-text-color-light">
+                                2590 Rocky Road
+                                <br>
+                                Philadelphia, PA 19108
+                                <br>
+                                <strong>Email: </strong>
+                                <a href="#" class="btn-link">office@example.com</a>
+                                <br>
+                                <strong>Phone:</strong>
+                                +1 215-606-0391
+                                <br>
+                                <strong>Skype: </strong>
+                                real.estate1
+                            </address>
+                        </div>
+
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end container-->
+            </section>
+            <!--end ts-footer-main-->
+
+            <!--SECONDARY FOOTER CONTENT
+            =========================================================================================================-->
+            <section id="ts-footer-secondary">
+                <div class="container">
+
+                    <!--Copyright-->
+                    <div class="ts-copyright">(C) 2018 ThemeStarz, All rights reserved</div>
+
+                    <!--Social Icons-->
+                    <div class="ts-footer-nav">
+                        <nav class="nav">
+                            <a href="#" class="nav-link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="nav-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="nav-link">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                            <a href="#" class="nav-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </nav>
+                    </div>
+                    <!--end ts-footer-nav-->
+
+                </div>
+                <!--end container-->
+            </section>
+            <!--end ts-footer-secondary-->
+
+        </footer>
+        <!--end #ts-footer-->
+
+    </div>
+    <!--end page-->
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/leaflet.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/map-leaflet.js"></script>
+
+</body>
+
+</html>
