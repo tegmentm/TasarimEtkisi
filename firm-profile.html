@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/leaflet.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-	<title>MyHouse - Advanced Real Estate HTML Template by ThemeStarz</title>
+	<title>Firma Profil Sayfası</title>
 
 </head>
 
@@ -23,613 +23,184 @@
 <div class="ts-page-wrapper ts-has-bokeh-bg" id="page-top">
 
     <!--*********************************************************************************************************-->
-    <!--HEADER **************************************************************************************************-->
-    <!--*********************************************************************************************************-->
-    <header id="ts-header" class="fixed-top">
+        <!--HEADER **************************************************************************************************-->
+        <!--*********************************************************************************************************-->
+        <header id="ts-header" class="fixed-top">
 
-        <!-- SECONDARY NAVIGATION
+            <!-- SECONDARY NAVIGATION
         =============================================================================================================-->
-        <nav id="ts-secondary-navigation" class="navbar p-0">
-            <div class="container justify-content-end justify-content-sm-between">
+            <nav id="ts-secondary-navigation" class="navbar p-0">
+                <div class="container justify-content-end justify-content-sm-between">
 
-                <!--Left Side-->
-                <div class="navbar-nav d-none d-sm-block">
-                    <!--Phone-->
-                    <span class="mr-4">
+                    <!--Left Side-->
+                    <div class="navbar-nav d-none d-sm-block">
+                        <!--Phone-->
+                        <span class="mr-4">
                             <i class="fa fa-phone-square mr-1"></i>
                             +1 123 456 789
                         </span>
-                    <!--Email-->
-                    <a href="#">
-                        <i class="fa fa-envelope mr-1"></i>
-                        hello@example.com
-                    </a>
+                        <!--Email-->
+                        <a href="#">
+                            <i class="fa fa-envelope mr-1"></i>
+                            hello@example.com
+                        </a>
+                    </div>
+
+                    <!--Right Side-->
+                    <div class="navbar-nav flex-row">
+                        <!--Search Input-->
+                        <input type="text" class="form-control p-2 border-left bg-transparent w-auto" placeholder="Search">
+                    </div>
+
+                    <!--end navbar-nav-->
                 </div>
+                <!--end container-->
+            </nav>
 
-                <!--Right Side-->
-                <div class="navbar-nav flex-row">
-
-                    <!--Search Input-->
-                    <input type="text" class="form-control p-2 border-left bg-transparent w-auto" placeholder="Search">
-
-                    <!--Currency Select-->
-                    <select class="custom-select bg-transparent ts-text-small border-left" id="currency" name="currency">
-                        <option value="1">GBP</option>
-                        <option value="2">USD</option>
-                        <option value="3">EUR</option>
-                    </select>
-
-                    <!--Language Select-->
-                    <select class="custom-select bg-transparent ts-text-small border-left border-right" id="language" name="language">
-                        <option value="1">EN</option>
-                        <option value="2">FR</option>
-                        <option value="3">DE</option>
-                    </select>
-
-                </div>
-                <!--end navbar-nav-->
-            </div>
-            <!--end container-->
-        </nav>
-
-        <!--PRIMARY NAVIGATION
+            <!--PRIMARY NAVIGATION
         =============================================================================================================-->
-        <nav id="ts-primary-navigation" class="navbar navbar-expand-md navbar-light">
-            <div class="container">
+            <nav id="ts-primary-navigation" class="navbar navbar-expand-md navbar-light">
+                <div class="container">
 
-                <!--Brand Logo-->
-                <a class="navbar-brand" href="index-map-leaflet-fullscreen.html">
-                    <img src="assets/img/logo.png" alt="">
-                </a>
+                    <!--Brand Logo-->
+                    <a class="navbar-brand" href="index-map-leaflet-fullscreen.html">
+                        <img src="assets/img/logo.png" alt="">
+                    </a>
 
-                <!--Responsive Collapse Button-->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrimary" aria-controls="navbarPrimary" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <!--Responsive Collapse Button-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrimary" aria-controls="navbarPrimary" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <!--Collapsing Navigation-->
-                <div class="collapse navbar-collapse" id="navbarPrimary">
+                    <!--Collapsing Navigation-->
+                    <div class="collapse navbar-collapse" id="navbarPrimary">
 
-                    <!--LEFT NAVIGATION MAIN LEVEL
+                        <!--LEFT NAVIGATION MAIN LEVEL
                     =================================================================================================-->
-                    <ul class="navbar-nav">
+                        <ul class="navbar-nav">
 
-                        <!--HOME (Main level)
+                            <!--HOME (Main level)
                         =============================================================================================-->
-                        <li class="nav-item ts-has-child">
+                            <li class="nav-item">
 
-                            <!--Main level link-->
-                            <a class="nav-link active" href="#">
-                                Home
-                                <span class="sr-only">(current)</span>
-                            </a>
+                                <!--Main level link-->
+                                <a class="nav-link active" href="index.html">
+                                    Anasayfa
+                                    <span class="sr-only">(current)</span>
+                                </a>
 
-                            <!-- List (1st level) -->
-                            <ul class="ts-child">
+                            </li>
+                            <!--end HOME nav-item-->
 
-                                <!-- MAP (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item ts-has-child">
-
-                                    <a href="#" class="nav-link">Map</a>
-
-                                    <!--List (2nd level) -->
-                                    <ul class="ts-child">
-
-                                        <!-- OPENSTREETMAP (2nd level level)
-                                        =============================================================================-->
-                                        <li class="nav-item ts-has-child">
-
-                                            <a href="#" class="nav-link">OpenStreetMap</a>
-
-                                            <!--List (3rd level) -->
-                                            <ul class="ts-child">
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-leaflet-fullscreen.html" class="nav-link">Full Screen</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-leaflet-form-bottom.html" class="nav-link">Form Bottom</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-leaflet-half-map.html" class="nav-link">Half Map</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-leaflet-left-results.html" class="nav-link">Left Results</a>
-                                                </li>
-
-                                            </ul>
-
-                                        </li>
-                                        <!--end OpenStreetMap-->
-
-                                        <!-- MAPBOX (2nd level level)
-                                        =============================================================================-->
-                                        <li class="nav-item ts-has-child">
-
-                                            <a href="#" class="nav-link">MapBox</a>
-
-                                            <!--List (3rd level) -->
-                                            <ul class="ts-child">
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-mapbox-fullscreen.html" class="nav-link">Full Screen</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-mapbox-form-bottom.html" class="nav-link">Form Bottom</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-mapbox-half-map.html" class="nav-link">Half Map</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-mapbox-left-results.html" class="nav-link">Left Results</a>
-                                                </li>
-
-                                            </ul>
-
-                                        </li>
-                                        <!--end MapBox-->
-
-                                        <!-- GOOGLE (2nd level level)
-                                        =============================================================================-->
-                                        <li class="nav-item ts-has-child">
-
-                                            <a href="#" class="nav-link">Google</a>
-
-                                            <!--List (3rd level) -->
-                                            <ul class="ts-child">
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-google-fullscreen.html" class="nav-link">Full Screen</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-google-form-bottom.html" class="nav-link">Form Bottom</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-google-half-map.html" class="nav-link">Half Map</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-google-left-results.html" class="nav-link">Left Results</a>
-                                                </li>
-
-                                            </ul>
-
-                                        </li>
-                                        <!--end Google-->
-
-                                        <!-- HERE (2nd level level)
-                                        =============================================================================-->
-                                        <li class="nav-item ts-has-child">
-
-                                            <a href="#" class="nav-link">Here</a>
-
-                                            <!--List (3rd level) -->
-                                            <ul class="ts-child">
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-here-fullscreen.html" class="nav-link">Full Screen</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-here-form-bottom.html" class="nav-link">Form Bottom</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-here-half-map.html" class="nav-link">Half Map</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-here-left-results.html" class="nav-link">Left Results</a>
-                                                </li>
-
-                                            </ul>
-
-                                        </li>
-                                        <!--end Here-->
-
-                                        <!-- BING (2nd level level)
-                                        =============================================================================-->
-                                        <li class="nav-item ts-has-child">
-
-                                            <a href="#" class="nav-link">Bing</a>
-
-                                            <!--List (3rd level) -->
-                                            <ul class="ts-child">
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-bing-fullscreen.html" class="nav-link">Full Screen</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-bing-form-bottom.html" class="nav-link">Form Bottom</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-bing-half-map.html" class="nav-link">Half Map</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-bing-left-results.html" class="nav-link">Left Results</a>
-                                                </li>
-
-                                            </ul>
-
-                                        </li>
-                                        <!--end Bing-->
-
-                                    </ul>
-                                    <!--end List (2nd level)-->
-
-                                </li>
-                                <!--end MAP (1st level)-->
-
-                                <!-- SLIDER (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item ts-has-child">
-
-                                    <a href="#" class="nav-link">Slider</a>
-
-                                    <!--List (2nd level) -->
-                                    <ul class="ts-child">
-
-                                        <li class="nav-item">
-                                            <a href="index-slider.html" class="nav-link">Slider Default</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="index-slider-fullscreen.html" class="nav-link">Full Screen</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="index-slider-form-vertical.html" class="nav-link">Vertical Form</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="index-slider-form-horizontal.html" class="nav-link">Horizontal Form</a>
-                                        </li>
-
-                                    </ul>
-                                    <!--end List (2nd level) -->
-
-                                </li>
-                                <!--end SLIDER (1st level)-->
-
-                                <!-- IMAGE (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item ts-has-child">
-
-                                    <a href="#" class="nav-link">Image</a>
-
-                                    <!--List (2nd level) -->
-                                    <ul class="ts-child">
-
-                                        <li class="nav-item">
-                                            <a href="index-image-form-horizontal-dark.html" class="nav-link">Horizontal Form</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="index-image-form-vertical-light.html" class="nav-link">Vertical Form</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="index-image-fullscreen.html" class="nav-link">Full Screen</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="index-video-background.html" class="nav-link">Video Background</a>
-                                        </li>
-
-                                    </ul>
-                                    <!--end List (2nd level) -->
-
-                                </li>
-                                <!--end SLIDER (1st level)-->
-
-                            </ul>
-                            <!--end List (1st level) -->
-
-                        </li>
-                        <!--end HOME nav-item-->
-
-                        <!--LISTING (Main level)
+                            <!--TASARIM FIKIRLERI (Main level)
                         =============================================================================================-->
-                        <li class="nav-item ts-has-child">
+                            <li class="nav-item ts-has-child">
 
-                            <!--Main level link-->
-                            <a class="nav-link" href="#">Listing</a>
+                                <!--Main level link-->
+                                <a class="nav-link" href="#">Tasarım Fikirleri</a>
 
-                            <!-- List (1st level) -->
-                            <ul class="ts-child">
+                                <!-- List (1st level) -->
+                                <ul class="ts-child">
 
-                                <!-- CATEGORY ICONS (1st level)
+                                    <!-- TASARIM FIKIRLERI (1st level)
                                 =====================================================================================-->
-                                <li class="nav-item">
+                                    <li class="nav-item">
 
-                                    <a href="listing-category-icons.html" class="nav-link">Category Icons</a>
+                                        <a href="#" class="nav-link">Ev Tasarımı</a>
 
-                                </li>
-                                <!--end CATEGORY ICONS (1st level)-->
+                                    </li>
 
-                                <!-- GRID (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item ts-has-child">
+                                    <li class="nav-item">
 
-                                    <a href="#" class="nav-link">Grid</a>
+                                        <a href="#" class="nav-link">İşyeri Tasarımı</a>
 
-                                    <!--List (2nd level) -->
-                                    <ul class="ts-child">
+                                    </li>
+                                    <!--end TASARIM FIKIRLERI (1st level)-->
 
-                                        <li class="nav-item">
-                                            <a href="listing-grid-3-columns.html" class="nav-link">Grid 3 Columns</a>
-                                        </li>
 
-                                        <li class="nav-item">
-                                            <a href="listing-grid-4-columns.html" class="nav-link">Grid 4 Columns</a>
-                                        </li>
+                                </ul>
+                                <!--end List (1st level) -->
 
-                                        <li class="nav-item">
-                                            <a href="listing-grid-mixed.html" class="nav-link">Mixed</a>
-                                        </li>
+                            </li>
+                            <!--end TASARIM FIKIRLERI nav-item-->
 
-                                        <li class="nav-item">
-                                            <a href="listing-grid-sidebar-left.html" class="nav-link">Sidebar Left</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="listing-grid-sidebar-right.html" class="nav-link">Sidebar Right</a>
-                                        </li>
-
-                                    </ul>
-                                    <!--end List (2nd level) -->
-
-                                </li>
-                                <!--end GRID (1st level)-->
-
-                                <!-- LIST (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item ts-has-child">
-
-                                    <a href="#" class="nav-link">List</a>
-
-                                    <!--List (2nd level) -->
-                                    <ul class="ts-child">
-
-                                        <li class="nav-item">
-                                            <a href="listing-list-sidebar-left.html" class="nav-link">Sidebar Left</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="listing-list-sidebar-right.html" class="nav-link">Sidebar Right</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="listing-list-compact-sidebar.html" class="nav-link">Compact with Sidebar</a>
-                                        </li>
-
-                                    </ul>
-                                    <!--end List (2nd level) -->
-
-                                </li>
-                                <!--end LIST (1st level)-->
-
-                                <!-- PROPERTY (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item ts-has-child">
-
-                                    <a href="#" class="nav-link">Property</a>
-
-                                    <!--List (2nd level) -->
-                                    <ul class="ts-child">
-
-                                        <li class="nav-item">
-                                            <a href="detail-01.html" class="nav-link">Property Detail v1</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="detail-02.html" class="nav-link">Property Detail v2</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="detail-03.html" class="nav-link">Property Detail v3</a>
-                                        </li>
-
-                                    </ul>
-                                    <!--end List (2nd level) -->
-
-                                </li>
-                                <!--end PROPERTY (1st level)-->
-
-                            </ul>
-                            <!--end List (1st level) -->
-
-                        </li>
-                        <!--end LISTING nav-item-->
-
-                        <!--PAGES (Main level)
+                            <!--PROJELER (Main level)
                         =============================================================================================-->
-                        <li class="nav-item ts-has-child">
+                            <li class="nav-item">
 
-                            <!--Main level link-->
-                            <a class="nav-link" href="#">Pages</a>
+                                <!--Main level link-->
+                                <a class="nav-link" href="#">Projeler</a>
 
-                            <!-- List (1st level) -->
-                            <ul class="ts-child">
+                            </li>
+                            <!--end PROJELER nav-item-->
 
-                                <!-- AGENCY (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item ts-has-child">
-
-                                    <a href="#" class="nav-link">Agency</a>
-
-                                    <!--List (2nd level) -->
-                                    <ul class="ts-child">
-
-                                        <li class="nav-item">
-                                            <a href="agencies-list.html" class="nav-link">Agencies List</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="agency-detail.html" class="nav-link">Agency Detail</a>
-                                        </li>
-
-                                    </ul>
-                                    <!--end List (2nd level) -->
-
-                                </li>
-                                <!--end AGENCY (1st level)-->
-
-                                <!-- AGENTS (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item ts-has-child">
-
-                                    <a href="#" class="nav-link">Agents</a>
-
-                                    <!--List (2nd level) -->
-                                    <ul class="ts-child">
-
-                                        <li class="nav-item">
-                                            <a href="agencies-list.html" class="nav-link">Agents List</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="agent-detail-01.html" class="nav-link">Agent Detail v1</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="agent-detail-02.html" class="nav-link">Agent Detail v2</a>
-                                        </li>
-
-                                    </ul>
-                                    <!--end List (2nd level) -->
-
-                                </li>
-                                <!--end LIST (1st level)-->
-
-                                <!-- EDIT PROPERTY (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item">
-                                    <a href="edit-property.html" class="nav-link">Edit Property</a>
-                                </li>
-                                <!--end EDIT PROPERTY (1st level)-->
-
-                                <!-- FAQ (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item">
-                                    <a href="faq.html" class="nav-link">FAQ</a>
-                                </li>
-                                <!--end FAQ (1st level)-->
-
-                                <!-- LOGIN (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item">
-                                    <a href="login.html" class="nav-link">Login</a>
-                                </li>
-                                <!--end LOGIN (1st level)-->
-
-                                <!-- PRICING (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item">
-                                    <a href="pricing.html" class="nav-link">Pricing</a>
-                                </li>
-                                <!--end PRICING (1st level)-->
-
-                                <!-- REGISTER (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item">
-                                    <a href="register.html" class="nav-link">Register</a>
-                                </li>
-                                <!--end REGISTER (1st level)-->
-
-                                <!-- SUBMIT (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item">
-                                    <a href="submit.html" class="nav-link">Submit Property</a>
-                                </li>
-                                <!--end SUBMIT (1st level)-->
-
-                                <!-- SUBMIT PREVIEW (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item">
-                                    <a href="preview.html" class="nav-link">Submit Preview</a>
-                                </li>
-                                <!--end SUBMIT PREVIEW (1st level)-->
-
-                                <!-- SUBMITTED (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item">
-                                    <a href="submitted.html" class="nav-link">Submitted</a>
-                                </li>
-                                <!--end SUBMITTED(1st level)-->
-
-                            </ul>
-                            <!--end List (1st level) -->
-
-                        </li>
-                        <!--end PAGES nav-item-->
-
-                        <!--ABOUT US (Main level)
+                            <!--BIR PROFESYONELE DANIS (Main level)
                         =============================================================================================-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">About Us</a>
-                        </li>
-                        <!--end ABOUT US nav-item-->
 
-                        <!--CONTACT (Main level)
+                            <li class="nav-item">
+                                <a class="btn btn-outline-primary btn-sm m-1 px-3" href="search-results.html">
+                                    <i class="fa fa-plus small mr-2"></i>
+                                    Bir Profesyonele Danış
+                                </a>
+                            </li>
+                            <!--end BIR PROFESYONELE DANIS nav-item-->
+
+                            <!--ILHAM PERISI (Main level)
                         =============================================================================================-->
-                        <li class="nav-item">
-                            <a class="nav-link mr-2" href="contact.html">Contact</a>
-                        </li>
-                        <!--end CONTACT nav-item-->
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">İlham Perisi</a>
+                            </li>
+                            <!--end ILHAM PERISI nav-item-->
 
-                    </ul>
-                    <!--end Left navigation main level-->
+                            <!--MAKALELER (Main level)
+                        =============================================================================================-->
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">Makaleler</a>
+                            </li>
+                            <!--end MAKALELER nav-item-->
 
-                    <!--RIGHT NAVIGATION MAIN LEVEL
+                            <!--VIDEOLAR (Main level)
+                        =============================================================================================-->
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">Videolar</a>
+                            </li>
+                            <!--end VIDEOLAR nav-item-->
+
+                        </ul>
+                        <!--end Left navigation main level-->
+
+                        <!--RIGHT NAVIGATION MAIN LEVEL
                     =================================================================================================-->
-                    <ul class="navbar-nav ml-auto">
+                        <ul class="navbar-nav ml-auto">
 
-                        <!--LOGIN (Main level)
+                            <!--LOGIN (Main level)
                         =============================================================================================-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Giriş</a>
+                            </li>
 
-                        <!--REGISTER (Main level)
+                            <!--REGISTER (Main level)
                         =============================================================================================-->
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="register.html">Register</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="register.html">Kayıt Ol</a>
+                            </li>
 
-                        <!--SUBMIT (Main level)
+                            <!--SUBMIT (Main level)
                         =============================================================================================-->
-                        <li class="nav-item">
-                            <a class="btn btn-outline-primary btn-sm m-1 px-3" href="submit.html">
-                                <i class="fa fa-plus small mr-2"></i>
-                                Add Property
-                            </a>
-                        </li>
 
-                    </ul>
-                    <!--end Right navigation-->
 
+                        </ul>
+                        <!--end Right navigation-->
+
+                    </div>
+                    <!--end navbar-collapse-->
                 </div>
-                <!--end navbar-collapse-->
-            </div>
-            <!--end container-->
-        </nav>
-        <!--end #ts-primary-navigation.navbar-->
+                <!--end container-->
+            </nav>
+            <!--end #ts-primary-navigation.navbar-->
 
-    </header>
-    <!--end Header-->
+        </header>
+        <!--end Header-->
 
     <!--*********************************************************************************************************-->
     <!-- MAIN ***************************************************************************************************-->
@@ -643,9 +214,8 @@
             <div class="container">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Library</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                        <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"></li>
                     </ol>
                 </nav>
             </div>
@@ -660,7 +230,7 @@
                         <div class="ts-title">
                             <h1>
                                 <i class="fa fa-pencil-alt ts-opacity__30 mr-3"></i>
-                                Edit Property
+                                Profil Bilgilerini Düzenle
                             </h1>
                         </div>
                     </div>
@@ -683,126 +253,106 @@
                             <section id="basic-information" class="mb-5">
 
                                 <!--Title-->
-                                <h3 class="text-muted border-bottom">Basic Information</h3>
+                                <h3 class="text-muted border-bottom">Temel Bilgiler</h3>
 
                                 <!--Row-->
                                 <div class="row">
 
-                                    <!--Title-->
-                                    <div class="col-sm-8">
+                                    <!--Firma Adı-->
+                                    <div class="col-md-8">
                                         <div class="form-group">
-                                            <label for="title">Title</label>
-                                            <input type="text" class="form-control" id="title" name="title" value="Luxury Apartment" required>
+                                            <label for="title">Firma Ünvanı</label>
+                                            <input type="text" class="form-control" id="title" name="title" value="" required>
                                         </div>
                                     </div>
 
-                                    <!--Price-->
-                                    <div class="col-sm-4">
-                                        <div class="input-group">
-                                            <label for="price">Price</label>
-                                            <input type="text" class="form-control border-right-0" id="price" value="98,000">
-                                            <div class="input-group-append">
-                                                <span class="input-group-text bg-white border-left-0">$</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-12 col-md-4">
-
-                                        <div class="row">
-
-                                            <!--Area-->
-                                            <div class="col">
-                                                <div class="input-group">
-                                                    <label for="area">Area</label>
-                                                    <input type="text" class="form-control border-right-0" id="area" value="354">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text bg-white border-left-0">m<sup>2</sup></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!--Rooms-->
-                                            <div class="col">
-                                                <div class="form-group">
-                                                    <label for="rooms">Rooms</label>
-                                                    <input type="number" class="form-control" id="rooms" name="rooms" min="0" value="4" required>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <!--end row-->
-
-                                    </div>
-                                    <!--end col-md-4-->
-
-                                    <!--Type Select-->
-                                    <div class="col-sm-6 col-md-4">
+                                    <!--kategori Select-->
+                                    <div class="col-md-4">
                                         <div class="form-group">
-                                            <label for="type">Type</label>
-                                            <select class="custom-select" id="type" name="type">
-                                                <option value="1">Apartment</option>
-                                                <option value="">Select Type</option>
-                                                <option value="2">Villa</option>
-                                                <option value="3">Land</option>
-                                                <option value="4">Garage</option>
+                                            <label for="kategori">Kategori</label>
+                                            <select class="custom-select" id="kategori" name="kategori">
+                                                <option value="1">Kategori Seçin</option>
+                                                <option value="1">Mimar</option>
+                                                <option value="2">İç Mimar</option>
+                                                <option value="3">Yapı Denetim</option>
+                                                <option value="4">Mekanik Proje</option>
+                                                <option value="4">Elektrik Proje</option>
+                                                <option value="4">Statik Proje</option>
+                                                <option value="4">OSGB</option>
+                                                <option value="4">İSG</option>
+                                                <option value="4">Peyzaj Mimarı</option>
+                                                <option value="4">Çevre Mühendisi</option>
+                                                <option value="4">Yangın Güvenliği Danışmanı</option>
                                             </select>
                                         </div>
                                     </div>
-
-                                    <!--Status Select-->
-                                    <div class="col-sm-6 col-md-4">
+                                    
+                                    <!--Eposta-->
+                                    <div class="col-md-4">
                                         <div class="form-group">
-                                            <label for="status">Status</label>
-                                            <select class="custom-select" id="status" name="status">
-                                                <option value="1">Sale</option>
-                                                <option value="">Select Status</option>
-                                                <option value="2">Rent</option>
-                                            </select>
+                                            <label for="eposta">E-posta</label>
+                                            <input type="text" class="form-control" id="eposta" name="eposta" value="" required>
                                         </div>
                                     </div>
+                                    
+                                    <!--Telefon-->
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="phone">Telefon</label>
+                                            <input type="text" class="form-control" id="phone" name="phone" value="" required>
+                                        </div>
+                                    </div>
+                                    
+                                    <!--Websitesi-->
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="website">Web Sitesi</label>
+                                            <input type="text" class="form-control" id="website" name="website" value="" required>
+                                        </div>
+                                    </div>
+
 
                                 </div>
                                 <!--end row-->
                             </section>
 
-                            <!--LOCATION
+                            <!--LOKASYON
                                 =====================================================================================-->
                             <section id="location" class="mb-5">
 
                                 <!--Title-->
-                                <h3 class="text-muted border-bottom">Location</h3>
+                                <h3 class="text-muted border-bottom">LOKASYON</h3>
 
                                 <div class="row">
 
                                     <div class="col-sm-6">
 
-                                        <!--Address-->
+                                        <!--Adres-->
                                         <div class="input-group">
-                                            <label for="address">Address</label>
-                                            <input type="text" class="form-control border-right-0" id="address" value="489 London Street">
-                                            <div class="input-group-append" data-toggle="tooltip" data-placement="top" title="Find My Location">
+                                            <label for="address">Adres</label>
+                                            <input type="text" class="form-control border-right-0" id="address" value="Sağlık Sok. No:1">
+                                            <div class="input-group-append" data-toggle="tooltip" data-placement="top" title="Yerimi Bul">
                                                 <a href="#" class="input-group-text bg-white border-left-0 ">
                                                     <i class="fa fa-map-marker ts-text-color-primary"></i>
                                                 </a>
                                             </div>
                                         </div>
 
-                                        <!--City-->
+                                        <!--Şehir-->
                                         <div class="form-group">
-                                            <label for="city">City</label>
-                                            <input type="text" class="form-control" id="city" name="city" value="Ellensburg" required>
+                                            <label for="city">Şehir</label>
+                                            <input type="text" class="form-control" id="city" name="city" value="" required>
                                         </div>
 
                                         <!--State-->
                                         <div class="form-group">
-                                            <label for="state">State</label>
-                                            <input type="text" class="form-control" id="state" name="state" value="Washington" required>
+                                            <label for="ilce">İlçe</label>
+                                            <input type="text" class="form-control" id="ilce" name="ilce" value="" required>
                                         </div>
 
                                         <!--ZIP-->
                                         <div class="form-group mb-0">
-                                            <label for="zip">ZIP</label>
+                                            <label for="zip">Posta Kodu</label>
                                             <input type="number" class="form-control" id="zip" name="zip" value="" required>
                                         </div>
 
@@ -832,7 +382,7 @@
                             <section id="gallery" class="mb-5">
 
                                 <!--Title-->
-                                <h3 class="text-muted border-bottom">Gallery</h3>
+                                <h3 class="text-muted border-bottom">Foto Galeri</h3>
 
                                 <!--Uploaded images-->
                                 <div class="file-uploaded-images">
@@ -861,95 +411,134 @@
                                 <div class="file-upload-previews"></div>
                                 <div class="file-upload">
                                     <input type="file" name="files[]" class="file-upload-input with-preview" multiple title="Click to add files" maxlength="10" accept="gif|jpg|png">
-                                    <span><i class="fa fa-plus-circle"></i>Click or drag images here</span>
+                                    <span><i class="fa fa-plus-circle"></i>Tıklayın ya da fotoğrafı buraya sürükleyin</span>
                                 </div>
 
                             </section>
+                            
+                            
+                            <!--VİDEO
+                                =====================================================================================-->
+                            <section id="video" class="mb-5">
+                               
+                               <!--Title-->
+                                <h3 class="text-muted border-bottom">Tanıtım Videosu</h3>
+                                
+                                <!--Video Linki-->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="tanitim-videosu">Tanıtım Videosu Linki</label>
+                                            <input type="text" class="form-control" id="tanitim-videosu" name="tanitim-videosu" value="http://" required>
+                                        </div>
+                                    </div>
+                                
+                            </section>
+                            
+                            
+                             <!--Proje Yükle
+                                =====================================================================================-->
+                            <section id="proje-yukle" class="mb-5">
+                               
+                               <!--Title-->
+                                <h3 class="text-muted border-bottom">Proje Yükle</h3>
+                                
+                                <!--Proje Adı-->
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="tanitim-videosu">Proje Adı</label>
+                                            <input type="text" class="form-control" id="tanitim-videosu" name="tanitim-videosu" value="http://" required>
+                                        </div>
+                                    </div>
+                                
+                                <label for="files[]">Proje Fotoğrafları</label>
+                                <!--Uploaded images-->
+                                <div class="file-uploaded-images">
+                                    
+                                    <!--Image-->
+                                    <div class="image">
+                                        <figure class="remove-image"><i class="fa fa-times"></i></figure>
+                                        <img src="assets/img/img-item-thumb-01.jpg" alt="">
+                                    </div>
 
-                            <!--ADDITIONAL INFORMATION
+                                    <!--Image-->
+                                    <div class="image">
+                                        <figure class="remove-image"><i class="fa fa-times"></i></figure>
+                                        <img src="assets/img/img-item-thumb-02.jpg" alt="">
+                                    </div>
+
+                                    <!--Image-->
+                                    <div class="image">
+                                        <figure class="remove-image"><i class="fa fa-times"></i></figure>
+                                        <img src="assets/img/img-item-thumb-03.jpg" alt="">
+                                    </div>
+
+                                </div>
+
+                                <!--File upload-->
+                                <div class="file-upload-previews"></div>
+                                <div class="file-upload">
+                                    <input type="file" name="files[]" class="file-upload-input with-preview" multiple title="Click to add files" maxlength="10" accept="gif|jpg|png">
+                                    <span><i class="fa fa-plus-circle"></i>Tıklayın ya da fotoğrafı buraya sürükleyin</span>
+                                </div>
+                                
+                            </section>
+                            
+
+                            <!--DETAYLI Bilgi
                                 =====================================================================================-->
                             <section id="additional-information" class="mb-5">
 
                                 <!--Title-->
-                                <h3 class="text-muted border-bottom">Additional Information</h3>
+                                <h3 class="text-muted border-bottom">Detaylı Bilgi</h3>
 
                                 <!--Description-->
                                 <div class="form-group">
-                                    <label for="description">Description</label>
+                                    <label for="description">Hakkında</label>
                                     <textarea class="form-control" id="description" rows="4" name="description">
 Sed rhoncus arcu ut metus hendrerit gravida. Quisque eu urna neque. Maecenas consectetur, nisl euismod fermentum tempor, nunc ipsum pretium tellus, eget feugiat risus est tincidunt lacus. Vestibulum tortor erat, sodales sit amet dolor ut, dictum faucibus eros. Vivamus malesuada eleifend tellus at posuere
                                         </textarea>
                                 </div>
-
-                                <!--Row-->
-                                <div class="row">
-
-                                    <!--Bedrooms-->
-                                    <div class="col-sm-4">
-                                        <div class="form-group">
-                                            <label for="bedrooms">Bedrooms</label>
-                                            <input type="number" class="form-control" id="bedrooms" name="bedrooms" min="0" value="3">
-                                        </div>
-                                    </div>
-
-                                    <!--Bathrooms-->
-                                    <div class="col-sm-4">
-                                        <div class="form-group">
-                                            <label for="bathrooms">Bathrooms</label>
-                                            <input type="number" class="form-control" id="bathrooms" name="bathrooms" min="0" value="2">
-                                        </div>
-                                    </div>
-
-                                    <!--Garages-->
-                                    <div class="col-sm-4">
-                                        <div class="form-group">
-                                            <label for="garages">Garages</label>
-                                            <input type="number" class="form-control" id="garages" name="garages" min="0" value="2">
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!--end row-->
-
+                                
+                                <!--Uzmanlık ALANLARI-->
                                 <div id="features-checkboxes">
-                                    <h6 class="mb-3">Features</h6>
+                                    <h6 class="mb-3">Başlıca Uzmanlık Alanları</h6>
 
                                     <!--Checkboxes-->
                                     <div class="ts-column-count-3">
 
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="ch_1" name="features[]" value="ch_1" checked>
-                                            <label class="custom-control-label" for="ch_1">Air conditioning</label>
+                                            <label class="custom-control-label" for="ch_1">İç Mimarlık</label>
                                         </div>
 
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="ch_2" name="features[]" value="ch_2" checked>
-                                            <label class="custom-control-label" for="ch_2">Bedding</label>
+                                            <label class="custom-control-label" for="ch_2">Mimarlık</label>
                                         </div>
 
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="ch_3" name="features[]" value="ch_3">
-                                            <label class="custom-control-label" for="ch_3">Heating</label>
+                                            <label class="custom-control-label" for="ch_3">Proje</label>
                                         </div>
 
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="ch_4" name="features[]" value="ch_4">
-                                            <label class="custom-control-label" for="ch_4">Internet</label>
+                                            <label class="custom-control-label" for="ch_4">Uygulama</label>
                                         </div>
 
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="ch_5" name="features[]" value="ch_5">
-                                            <label class="custom-control-label" for="ch_5">Microwave</label>
+                                            <label class="custom-control-label" for="ch_5">3D Tasarım</label>
                                         </div>
 
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="ch_6" name="features[]" value="ch_6">
-                                            <label class="custom-control-label" for="ch_6">Smoking allowed</label>
+                                            <label class="custom-control-label" for="ch_6">Danışmanlık</label>
                                         </div>
 
                                         <div class="custom-control custom-checkbox">
                                             <input type="checkbox" class="custom-control-input" id="ch_7" name="features[]" value="ch_7" checked>
-                                            <label class="custom-control-label" for="ch_7">Terrace</label>
+                                            <label class="custom-control-label" for="ch_7">Ruhsat</label>
                                         </div>
 
                                         <div class="custom-control custom-checkbox">
@@ -989,13 +578,13 @@ Sed rhoncus arcu ut metus hendrerit gravida. Quisque eu urna neque. Maecenas con
                             <hr>
 
                             <section class="py-3">
-                                <button class="btn btn-outline-secondary btn-lg float-left">
+                                <button class="btn btn-outline-danger btn-lg col-md-4 mt-4">
                                     <i class="fa fa-times mr-2"></i>
-                                    Discard Changes
+                                    Vazgeç
                                 </button>
-                                <button class="btn btn-primary btn-lg float-right">
+                                <button class="btn btn-primary btn-lg col-md-4 float-right mt-4">
                                     <i class="fa fa-save ts-opacity__50 mr-2"></i>
-                                    Save Changes
+                                    Değişiklikleri Kaydet
                                 </button>
                             </section>
 
