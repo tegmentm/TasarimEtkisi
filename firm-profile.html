@@ -246,11 +246,62 @@
 
                         <div class="offset-lg-1 col-lg-10">
 
-                            <form id="form-edit" class="ts-form">
+
+                            <!--TAB START =========================================================================================================-->
+
+                            <ul class="nav nav-tabs" id="firm-profile-tabs" role="tablist">
+
+                                <!--Temel Bilgiler tab-->
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="basic-information-tab" data-toggle="tab" href="#basic-information" role="tab" aria-controls="basic-information" aria-selected="true">
+                                        <h3>Temel Bilgiler</h3>
+                                    </a>
+                                </li>
+
+                                <!--Lokasyon tab-->
+                                <li class="nav-item">
+                                    <a class="nav-link" id="location-tab" data-toggle="tab" href="#location" role="tab" aria-controls="location" aria-selected="false">
+                                        <h3>Lokasyon</h3>
+                                    </a>
+                                </li>
+                                
+                                <!--Foto Galeri tab-->
+                                <li class="nav-item">
+                                    <a class="nav-link" id="gallery-tab" data-toggle="tab" href="#gallery" role="tab" aria-controls="gallery" aria-selected="false">
+                                        <h3>Foto Galeri</h3>
+                                    </a>
+                                </li>
+                                
+                                <!--Video tab-->
+                                <li class="nav-item">
+                                    <a class="nav-link" id="video-tab" data-toggle="tab" href="#video" role="tab" aria-controls="video" aria-selected="false">
+                                        <h3>Tanıtım Videosu</h3>
+                                    </a>
+                                </li>
+                                
+                                <!--Proje Yukle tab-->
+                                <li class="nav-item">
+                                    <a class="nav-link" id="proje-yukle-tab" data-toggle="tab" href="#proje-yukle" role="tab" aria-controls="proje-yukle" aria-selected="false">
+                                        <h3>Proje Yükle</h3>
+                                    </a>
+                                </li>
+                                
+                                <!--Detaylı Bilgi tab-->
+                                <li class="nav-item">
+                                    <a class="nav-link" id="additional-information-tab" data-toggle="tab" href="#additional-information" role="tab" aria-controls="additional-information" aria-selected="false">
+                                        <h3>Detaylı Bilgi</h3>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                            <div class="tab-content">
+
+
 
                                 <!--BASIC INFORMATION
                                 =====================================================================================-->
-                                <section id="basic-information" class="mb-5 card p-3">
+                                <section id="basic-information" class="mb-5 ts-box p-3 tab-pane active" role="tabpanel" aria-labelledby="basic-information-tab">
                                     <form id="form-edit" class="ts-form">
                                         <!--Title-->
                                         <h3 class="text-muted border-bottom">Temel Bilgiler</h3>
@@ -313,66 +364,67 @@
 
 
                                         </div>
-                                        <div class="card-footer"><button class="btn btn-primary p-2 float-right">Temel Bilgileri Kaydet</button></div>
+                                        
+                                        <div class="form-group clearfix mt-2"><button class="btn btn-primary p-2 float-right">Temel Bilgileri Kaydet</button></div>
                                         <!--end row-->
                                     </form>
                                 </section>
 
                                 <!--LOKASYON
                                 =====================================================================================-->
-                                <section id="location" class="mb-5 card p-3">
+                                <section id="location" class="mb-5 card p-3 tab-pane" role="tabpanel" aria-labelledby="location-tab">
                                     <form id="form-edit" class="ts-form">
 
-                                    <!--Title-->
-                                    <h3 class="text-muted border-bottom">LOKASYON</h3>
+                                        <!--Title-->
+                                        <h3 class="text-muted border-bottom">LOKASYON</h3>
 
-                                    <div class="row">
+                                        <div class="row">
 
-                                        <div class="col-sm-6">
+                                            <div class="col-sm-6">
 
-                                            <!--Adres-->
-                                            <div class="input-group">
-                                                <label for="address">Adres</label>
-                                                <input type="text" class="form-control border-right-0" id="address" value="Sağlık Sok. No:1">
-                                                <div class="input-group-append" data-toggle="tooltip" data-placement="top" title="Yerimi Bul">
-                                                    <a href="#" class="input-group-text bg-white border-left-0 ">
-                                                        <i class="fa fa-map-marker ts-text-color-primary"></i>
-                                                    </a>
+                                                <!--Adres-->
+                                                <div class="input-group">
+                                                    <label for="address">Adres</label>
+                                                    <input type="text" class="form-control border-right-0" id="address" value="Sağlık Sok. No:1">
+                                                    <div class="input-group-append" data-toggle="tooltip" data-placement="top" title="Yerimi Bul">
+                                                        <a href="#" class="input-group-text bg-white border-left-0 ">
+                                                            <i class="fa fa-map-marker ts-text-color-primary"></i>
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
 
-                                            <!--Şehir-->
-                                            <div class="form-group">
-                                                <label for="city">Şehir</label>
-                                                <input type="text" class="form-control" id="city" name="city" value="" required>
-                                            </div>
+                                                <!--Şehir-->
+                                                <div class="form-group">
+                                                    <label for="city">Şehir</label>
+                                                    <input type="text" class="form-control" id="city" name="city" value="" required>
+                                                </div>
 
-                                            <!--State-->
-                                            <div class="form-group">
-                                                <label for="ilce">İlçe</label>
-                                                <input type="text" class="form-control" id="ilce" name="ilce" value="" required>
-                                            </div>
+                                                <!--State-->
+                                                <div class="form-group">
+                                                    <label for="ilce">İlçe</label>
+                                                    <input type="text" class="form-control" id="ilce" name="ilce" value="" required>
+                                                </div>
 
-                                            <!--ZIP-->
-                                            <div class="form-group mb-0">
-                                                <label for="zip">Posta Kodu</label>
-                                                <input type="number" class="form-control" id="zip" name="zip" value="" required>
+                                                <!--ZIP-->
+                                                <div class="form-group mb-0">
+                                                    <label for="zip">Posta Kodu</label>
+                                                    <input type="number" class="form-control" id="zip" name="zip" value="" required>
+                                                </div>
+
                                             </div>
+                                            <!--end col-md-6-->
+
+                                            <!--Map-->
+                                            <div class="col-sm-6">
+                                                <div id="ts-map-simple" class="ts-map ts-shadow__sm h-100" data-ts-map-leaflet-provider="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}{r}.png" data-ts-map-zoom="12" data-ts-map-center-latitude="40.702411" data-ts-map-center-longitude="-73.556842" data-ts-map-scroll-wheel="1" data-ts-map-marker-drag="1" data-ts-map-controls="0"></div>
+                                            </div>
+                                            <!--end col-md-6-->
 
                                         </div>
-                                        <!--end col-md-6-->
 
-                                        <!--Map-->
-                                        <div class="col-sm-6">
-                                            <div id="ts-map-simple" class="ts-map ts-shadow__sm h-100" data-ts-map-leaflet-provider="https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}{r}.png" data-ts-map-zoom="12" data-ts-map-center-latitude="40.702411" data-ts-map-center-longitude="-73.556842" data-ts-map-scroll-wheel="1" data-ts-map-marker-drag="1" data-ts-map-controls="0"></div>
-                                        </div>
-                                        <!--end col-md-6-->
+                                        <div class="form-group clearfix mt-2"><button class="btn btn-primary p-2 float-right">Lokasyon Bilgilerini Kaydet</button></div>
+                                        <!--end row-->
 
-                                    </div>
-
-                                    <div class="card-footer"><button class="btn btn-primary p-2 float-right">Lokasyon Bilgilerini Kaydet</button></div>
-                                    <!--end row-->
-                                    
                                     </form>
 
                                 </section>
@@ -380,90 +432,13 @@
 
                                 <!--GALLERY
                                 =====================================================================================-->
-                                <section id="gallery" class="mb-5 card p-3">
-                                    
+                                <section id="gallery" class="mb-5 card p-3 tab-pane" role="tabpanel" aria-labelledby="gallery-tab">
+
                                     <form id="form-edit" class="ts-form">
 
-                                    <!--Title-->
-                                    <h3 class="text-muted border-bottom">Foto Galeri</h3>
+                                        <!--Title-->
+                                        <h3 class="text-muted border-bottom">Foto Galeri</h3>
 
-                                    <!--Uploaded images-->
-                                    <div class="file-uploaded-images">
-
-                                        <!--Image-->
-                                        <div class="image">
-                                            <figure class="remove-image"><i class="fa fa-times"></i></figure>
-                                            <img src="assets/img/img-item-thumb-01.jpg" alt="">
-                                        </div>
-
-                                        <!--Image-->
-                                        <div class="image">
-                                            <figure class="remove-image"><i class="fa fa-times"></i></figure>
-                                            <img src="assets/img/img-item-thumb-02.jpg" alt="">
-                                        </div>
-
-                                        <!--Image-->
-                                        <div class="image">
-                                            <figure class="remove-image"><i class="fa fa-times"></i></figure>
-                                            <img src="assets/img/img-item-thumb-03.jpg" alt="">
-                                        </div>
-
-                                    </div>
-
-                                    <!--File upload-->
-                                    <div class="file-upload-previews"></div>
-                                    <div class="file-upload">
-                                        <input type="file" name="files[]" class="file-upload-input with-preview" multiple title="Click to add files" maxlength="10" accept="gif|jpg|png">
-                                        <span><i class="fa fa-plus-circle"></i>Tıklayın ya da fotoğrafı buraya sürükleyin</span>
-                                    </div>
-
-                                    <div class="card-footer"><button class="btn btn-primary p-2 float-right">Fotoğrafları Kaydet</button></div>
-                                    
-                                    </form>
-
-                                </section>
-
-
-                                <!--VİDEO
-                                =====================================================================================-->
-                                <section id="video" class="mb-5 card p-3">
-                                    
-                                    <form id="form-edit" class="ts-form">
-
-                                    <!--Title-->
-                                    <h3 class="text-muted border-bottom">Tanıtım Videosu</h3>
-
-                                    <!--Video Linki-->
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <label for="tanitim-videosu">Tanıtım Videosu Linki</label>
-                                            <input type="text" class="form-control" id="tanitim-videosu" name="tanitim-videosu" value="http://" required>
-                                        </div>
-                                    </div>
-
-                                    <div class="card-footer"><button class="btn btn-primary p-2 float-right">Videoyu Kaydet</button></div>
-                                    </form>
-
-                                </section>
-
-
-                                <!--Proje Yükle
-                                =====================================================================================-->
-                                <section id="proje-yukle" class="mb-5 card p-3">
-                                    
-                                    <form id="form-edit" class="ts-form">
-
-                                    <!--Title-->
-                                    <h3 class="text-muted border-bottom">Proje Yükle</h3>
-
-                                    <!--Proje Adı-->
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <label for="proje-adi">Proje Adı</label>
-                                            <input type="text" class="form-control" id="proje-adi" name="proje-adi" value="" required>
-                                        </div>
-
-                                        <label for="files[]">Proje Fotoğrafları</label>
                                         <!--Uploaded images-->
                                         <div class="file-uploaded-images">
 
@@ -494,10 +469,87 @@
                                             <span><i class="fa fa-plus-circle"></i>Tıklayın ya da fotoğrafı buraya sürükleyin</span>
                                         </div>
 
-                                    </div>
+                                        <div class="form-group clearfix mt-2"><button class="btn btn-primary p-2 float-right">Fotoğrafları Kaydet</button></div>
 
-                                    <div class="card-footer"><button class="btn btn-primary p-2 float-right">Projeleri Kaydet</button></div>
-                                    
+                                    </form>
+
+                                </section>
+
+
+                                <!--VİDEO
+                                =====================================================================================-->
+                                <section id="video" class="mb-5 card p-3 tab-pane" role="tabpanel" aria-labelledby="video-tab">
+
+                                    <form id="form-edit" class="ts-form">
+
+                                        <!--Title-->
+                                        <h3 class="text-muted border-bottom">Tanıtım Videosu</h3>
+
+                                        <!--Video Linki-->
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="tanitim-videosu">Tanıtım Videosu Linki</label>
+                                                <input type="text" class="form-control" id="tanitim-videosu" name="tanitim-videosu" value="http://" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group clearfix mt-2"><button class="btn btn-primary p-2 float-right">Videoyu Kaydet</button></div>
+                                    </form>
+
+                                </section>
+
+
+                                <!--Proje Yükle
+                                =====================================================================================-->
+                                <section id="proje-yukle" class="mb-5 card p-3 tab-pane" role="tabpanel" aria-labelledby="video-tab">
+
+                                    <form id="form-edit" class="ts-form">
+
+                                        <!--Title-->
+                                        <h3 class="text-muted border-bottom">Proje Yükle</h3>
+
+                                        <!--Proje Adı-->
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="proje-adi">Proje Adı</label>
+                                                <input type="text" class="form-control" id="proje-adi" name="proje-adi" value="" required>
+                                            </div>
+
+                                            <label for="files[]">Proje Fotoğrafları</label>
+                                            <!--Uploaded images-->
+                                            <div class="file-uploaded-images">
+
+                                                <!--Image-->
+                                                <div class="image">
+                                                    <figure class="remove-image"><i class="fa fa-times"></i></figure>
+                                                    <img src="assets/img/img-item-thumb-01.jpg" alt="">
+                                                </div>
+
+                                                <!--Image-->
+                                                <div class="image">
+                                                    <figure class="remove-image"><i class="fa fa-times"></i></figure>
+                                                    <img src="assets/img/img-item-thumb-02.jpg" alt="">
+                                                </div>
+
+                                                <!--Image-->
+                                                <div class="image">
+                                                    <figure class="remove-image"><i class="fa fa-times"></i></figure>
+                                                    <img src="assets/img/img-item-thumb-03.jpg" alt="">
+                                                </div>
+
+                                            </div>
+
+                                            <!--File upload-->
+                                            <div class="file-upload-previews"></div>
+                                            <div class="file-upload">
+                                                <input type="file" name="files[]" class="file-upload-input with-preview" multiple title="Click to add files" maxlength="10" accept="gif|jpg|png">
+                                                <span><i class="fa fa-plus-circle"></i>Tıklayın ya da fotoğrafı buraya sürükleyin</span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="form-group clearfix mt-2"><button class="btn btn-primary p-2 float-right">Projeleri Kaydet</button></div>
+
                                     </form>
 
                                 </section>
@@ -505,116 +557,105 @@
 
                                 <!--DETAYLI Bilgi
                                 =====================================================================================-->
-                                <section id="additional-information" class="mb-5 card p-3">
-                                    
+                                <section id="additional-information" class="mb-5 card p-3 tab-pane" role="tabpanel" aria-labelledby="additional-information-tab">
+
                                     <form id="form-edit" class="ts-form">
 
-                                    <!--Title-->
-                                    <h3 class="text-muted border-bottom">Detaylı Bilgi</h3>
+                                        <!--Title-->
+                                        <h3 class="text-muted border-bottom">Detaylı Bilgi</h3>
 
-                                    <!--Description-->
-                                    <div class="form-group">
-                                        <label for="description">Hakkında</label>
-                                        <textarea class="form-control" id="description" rows="4" name="description">
+                                        <!--Description-->
+                                        <div class="form-group">
+                                            <label for="description">Hakkında</label>
+                                            <textarea class="form-control" id="description" rows="4" name="description">
 Sed rhoncus arcu ut metus hendrerit gravida. Quisque eu urna neque. Maecenas consectetur, nisl euismod fermentum tempor, nunc ipsum pretium tellus, eget feugiat risus est tincidunt lacus. Vestibulum tortor erat, sodales sit amet dolor ut, dictum faucibus eros. Vivamus malesuada eleifend tellus at posuere
                                         </textarea>
-                                    </div>
+                                        </div>
 
-                                    <!--Uzmanlık ALANLARI-->
-                                    <div id="features-checkboxes">
-                                        <h6 class="mb-3">Başlıca Uzmanlık Alanları</h6>
+                                        <!--Uzmanlık ALANLARI-->
+                                        <div id="features-checkboxes">
+                                            <h6 class="mb-3">Başlıca Uzmanlık Alanları</h6>
 
-                                        <!--Checkboxes-->
-                                        <div class="ts-column-count-3">
+                                            <!--Checkboxes-->
+                                            <div class="ts-column-count-3">
 
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_1" name="features[]" value="ch_1" checked>
-                                                <label class="custom-control-label" for="ch_1">İç Mimarlık</label>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="ch_1" name="features[]" value="ch_1" checked>
+                                                    <label class="custom-control-label" for="ch_1">İç Mimarlık</label>
+                                                </div>
+
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="ch_2" name="features[]" value="ch_2" checked>
+                                                    <label class="custom-control-label" for="ch_2">Mimarlık</label>
+                                                </div>
+
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="ch_3" name="features[]" value="ch_3">
+                                                    <label class="custom-control-label" for="ch_3">Proje</label>
+                                                </div>
+
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="ch_4" name="features[]" value="ch_4">
+                                                    <label class="custom-control-label" for="ch_4">Uygulama</label>
+                                                </div>
+
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="ch_5" name="features[]" value="ch_5">
+                                                    <label class="custom-control-label" for="ch_5">3D Tasarım</label>
+                                                </div>
+
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="ch_6" name="features[]" value="ch_6">
+                                                    <label class="custom-control-label" for="ch_6">Danışmanlık</label>
+                                                </div>
+
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="ch_7" name="features[]" value="ch_7" checked>
+                                                    <label class="custom-control-label" for="ch_7">Ruhsat</label>
+                                                </div>
+
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="ch_8" name="features[]" value="ch_8">
+                                                    <label class="custom-control-label" for="ch_8">Balcony</label>
+                                                </div>
+
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="ch_9" name="features[]" value="ch_9">
+                                                    <label class="custom-control-label" for="ch_9">Iron</label>
+                                                </div>
+
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="ch_10" name="features[]" value="ch_10">
+                                                    <label class="custom-control-label" for="ch_10">Hi-Fi</label>
+                                                </div>
+
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="ch_11" name="features[]" value="ch_11">
+                                                    <label class="custom-control-label" for="ch_11">Beach</label>
+                                                </div>
+
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="ch_12" name="features[]" value="ch_12">
+                                                    <label class="custom-control-label" for="ch_12">Parking</label>
+                                                </div>
+
                                             </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_2" name="features[]" value="ch_2" checked>
-                                                <label class="custom-control-label" for="ch_2">Mimarlık</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_3" name="features[]" value="ch_3">
-                                                <label class="custom-control-label" for="ch_3">Proje</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_4" name="features[]" value="ch_4">
-                                                <label class="custom-control-label" for="ch_4">Uygulama</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_5" name="features[]" value="ch_5">
-                                                <label class="custom-control-label" for="ch_5">3D Tasarım</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_6" name="features[]" value="ch_6">
-                                                <label class="custom-control-label" for="ch_6">Danışmanlık</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_7" name="features[]" value="ch_7" checked>
-                                                <label class="custom-control-label" for="ch_7">Ruhsat</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_8" name="features[]" value="ch_8">
-                                                <label class="custom-control-label" for="ch_8">Balcony</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_9" name="features[]" value="ch_9">
-                                                <label class="custom-control-label" for="ch_9">Iron</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_10" name="features[]" value="ch_10">
-                                                <label class="custom-control-label" for="ch_10">Hi-Fi</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_11" name="features[]" value="ch_11">
-                                                <label class="custom-control-label" for="ch_11">Beach</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_12" name="features[]" value="ch_12">
-                                                <label class="custom-control-label" for="ch_12">Parking</label>
-                                            </div>
+                                            <!--end ts-column-count-3-->
 
                                         </div>
-                                        <!--end ts-column-count-3-->
+                                        <!--end #features-checkboxes-->
 
-                                    </div>
-                                    <!--end #features-checkboxes-->
+                                        <div class="form-group clearfix mt-2"><button class="btn btn-primary p-2 float-right">Hakkında Kısmını Kaydet</button></div>
 
-                                    <div class="card-footer"><button class="btn btn-primary p-2 float-right">Hakkında Kısmını Kaydet</button></div>
-                                    
                                     </form>
 
                                 </section>
                                 <!--end #additional-information-->
 
-                                <hr>
 
-                                <section class="py-3">
-                                    <button class="btn btn-outline-danger btn-lg col-md-4 mt-4">
-                                        <i class="fa fa-times mr-2"></i>
-                                        Vazgeç
-                                    </button>
-                                    <button class="btn btn-primary btn-lg col-md-4 float-right mt-4">
-                                        <i class="fa fa-save ts-opacity__50 mr-2"></i>
-                                        Tüm Değişiklikleri Kaydet
-                                    </button>
-                                </section>
 
-                            </form>
-                            <!--end #form-submit-->
+                            </div>
+
 
                         </div>
                         <!--end offset-lg-1 col-lg-10-->
