@@ -571,14 +571,18 @@
 
                                 <!--Proje Düzenle
                                 =====================================================================================-->
-                                <section id="proje-duzenle" class="mb-5 card p-3 tab-pane" role="tabpanel" aria-labelledby="proje-duzenle-tab">
+                                <section id="proje-duzenle" class="mb-5 tab-pane" role="tabpanel" aria-labelledby="proje-duzenle-tab">
+
+
 
 
 
                                     <!--Title-->
-                                    <h3 class="text-muted border-bottom">Proje Düzenle</h3>
 
-                                    <div class="col-12 mb-5">
+                                    <h3 class="text-muted border-bottom">Proje Seç</h3>
+
+
+                                    <div class="col-12 mb-5 card p-3">
                                         <h5>Proje Listesi</h5>
 
                                         <table class="table table-hover">
@@ -620,52 +624,55 @@
 
 
                                     </div>
-                                    <hr>
 
-                                    <form id="form-edit" class="ts-form">
-                                        <!--Proje Adı-->
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label for="proje-adi">Proje Adı</label>
-                                                <input type="text" class="form-control" id="proje-adi" name="proje-adi" value="" required>
-                                            </div>
+                                    <h3 class="text-muted border-bottom">Proje Düzenle</h3>
 
-                                            <label for="files[]">Proje Fotoğrafları</label>
-                                            <!--Uploaded images-->
-                                            <div class="file-uploaded-images">
-
-                                                <!--Image-->
-                                                <div class="image">
-                                                    <figure class="remove-image"><i class="fa fa-times"></i></figure>
-                                                    <img src="assets/img/img-item-thumb-01.jpg" alt="">
+                                    <div class="col-12 mb-5 card p-3">
+                                        <form id="form-edit" class="ts-form">
+                                            <!--Proje Adı-->
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <label for="proje-adi">Proje Adı</label>
+                                                    <input type="text" class="form-control" id="proje-adi" name="proje-adi" value="" required>
                                                 </div>
 
-                                                <!--Image-->
-                                                <div class="image">
-                                                    <figure class="remove-image"><i class="fa fa-times"></i></figure>
-                                                    <img src="assets/img/img-item-thumb-02.jpg" alt="">
+                                                <label for="files[]">Proje Fotoğrafları</label>
+                                                <!--Uploaded images-->
+                                                <div class="file-uploaded-images">
+
+                                                    <!--Image-->
+                                                    <div class="image">
+                                                        <figure class="remove-image"><i class="fa fa-times"></i></figure>
+                                                        <img src="assets/img/img-item-thumb-01.jpg" alt="">
+                                                    </div>
+
+                                                    <!--Image-->
+                                                    <div class="image">
+                                                        <figure class="remove-image"><i class="fa fa-times"></i></figure>
+                                                        <img src="assets/img/img-item-thumb-02.jpg" alt="">
+                                                    </div>
+
+                                                    <!--Image-->
+                                                    <div class="image">
+                                                        <figure class="remove-image"><i class="fa fa-times"></i></figure>
+                                                        <img src="assets/img/img-item-thumb-03.jpg" alt="">
+                                                    </div>
+
                                                 </div>
 
-                                                <!--Image-->
-                                                <div class="image">
-                                                    <figure class="remove-image"><i class="fa fa-times"></i></figure>
-                                                    <img src="assets/img/img-item-thumb-03.jpg" alt="">
+                                                <!--File upload-->
+                                                <div class="file-upload-previews"></div>
+                                                <div class="file-upload">
+                                                    <input type="file" name="files[]" class="file-upload-input with-preview" multiple title="Click to add files" maxlength="10" accept="gif|jpg|png">
+                                                    <span><i class="fa fa-plus-circle"></i>Tıklayın ya da fotoğrafı buraya sürükleyin</span>
                                                 </div>
 
                                             </div>
 
-                                            <!--File upload-->
-                                            <div class="file-upload-previews"></div>
-                                            <div class="file-upload">
-                                                <input type="file" name="files[]" class="file-upload-input with-preview" multiple title="Click to add files" maxlength="10" accept="gif|jpg|png">
-                                                <span><i class="fa fa-plus-circle"></i>Tıklayın ya da fotoğrafı buraya sürükleyin</span>
-                                            </div>
+                                            <div class="form-group clearfix mt-2"><button class="btn btn-primary p-2 float-right">Değişikliği Kaydet</button></div>
 
-                                        </div>
-
-                                        <div class="form-group clearfix mt-2"><button class="btn btn-primary p-2 float-right">Değişikliği Kaydet</button></div>
-
-                                    </form>
+                                        </form>
+                                    </div>
 
                                 </section>
 
