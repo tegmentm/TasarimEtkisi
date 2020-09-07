@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/font-awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>MyHouse - Advanced Real Estate HTML Template by ThemeStarz</title>
+    <title>Makaleler</title>
 
 </head>
 
@@ -22,613 +22,184 @@
 <div class="ts-page-wrapper ts-has-bokeh-bg" id="page-top">
 
     <!--*********************************************************************************************************-->
-    <!--HEADER **************************************************************************************************-->
-    <!--*********************************************************************************************************-->
-    <header id="ts-header" class="fixed-top">
+        <!--HEADER **************************************************************************************************-->
+        <!--*********************************************************************************************************-->
+        <header id="ts-header" class="fixed-top">
 
-        <!-- SECONDARY NAVIGATION
+            <!-- SECONDARY NAVIGATION
         =============================================================================================================-->
-        <nav id="ts-secondary-navigation" class="navbar p-0">
-            <div class="container justify-content-end justify-content-sm-between">
+            <nav id="ts-secondary-navigation" class="navbar p-0">
+                <div class="container justify-content-end justify-content-sm-between">
 
-                <!--Left Side-->
-                <div class="navbar-nav d-none d-sm-block">
-                    <!--Phone-->
-                    <span class="mr-4">
+                    <!--Left Side-->
+                    <div class="navbar-nav d-none d-sm-block">
+                        <!--Phone-->
+                        <span class="mr-4">
                             <i class="fa fa-phone-square mr-1"></i>
                             +1 123 456 789
                         </span>
-                    <!--Email-->
-                    <a href="#">
-                        <i class="fa fa-envelope mr-1"></i>
-                        hello@example.com
-                    </a>
+                        <!--Email-->
+                        <a href="#">
+                            <i class="fa fa-envelope mr-1"></i>
+                            hello@example.com
+                        </a>
+                    </div>
+
+                    <!--Right Side-->
+                    <div class="navbar-nav flex-row">
+                        <!--Search Input-->
+                        <input type="text" class="form-control p-2 border-left bg-transparent w-auto" placeholder="Search">
+                    </div>
+
+                    <!--end navbar-nav-->
                 </div>
+                <!--end container-->
+            </nav>
 
-                <!--Right Side-->
-                <div class="navbar-nav flex-row">
-
-                    <!--Search Input-->
-                    <input type="text" class="form-control p-2 border-left bg-transparent w-auto" placeholder="Search">
-
-                    <!--Currency Select-->
-                    <select class="custom-select bg-transparent ts-text-small border-left" id="currency" name="currency">
-                        <option value="1">GBP</option>
-                        <option value="2">USD</option>
-                        <option value="3">EUR</option>
-                    </select>
-
-                    <!--Language Select-->
-                    <select class="custom-select bg-transparent ts-text-small border-left border-right" id="language" name="language">
-                        <option value="1">EN</option>
-                        <option value="2">FR</option>
-                        <option value="3">DE</option>
-                    </select>
-
-                </div>
-                <!--end navbar-nav-->
-            </div>
-            <!--end container-->
-        </nav>
-
-        <!--PRIMARY NAVIGATION
+            <!--PRIMARY NAVIGATION
         =============================================================================================================-->
-        <nav id="ts-primary-navigation" class="navbar navbar-expand-md navbar-light">
-            <div class="container">
+            <nav id="ts-primary-navigation" class="navbar navbar-expand-md navbar-light">
+                <div class="container">
 
-                <!--Brand Logo-->
-                <a class="navbar-brand" href="index-map-leaflet-fullscreen.html">
-                    <img src="assets/img/logo.png" alt="">
-                </a>
+                    <!--Brand Logo-->
+                    <a class="navbar-brand" href="index-map-leaflet-fullscreen.html">
+                        <img src="assets/img/logo.png" alt="">
+                    </a>
 
-                <!--Responsive Collapse Button-->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrimary" aria-controls="navbarPrimary" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <!--Responsive Collapse Button-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPrimary" aria-controls="navbarPrimary" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <!--Collapsing Navigation-->
-                <div class="collapse navbar-collapse" id="navbarPrimary">
+                    <!--Collapsing Navigation-->
+                    <div class="collapse navbar-collapse" id="navbarPrimary">
 
-                    <!--LEFT NAVIGATION MAIN LEVEL
+                        <!--LEFT NAVIGATION MAIN LEVEL
                     =================================================================================================-->
-                    <ul class="navbar-nav">
+                        <ul class="navbar-nav">
 
-                        <!--HOME (Main level)
+                            <!--HOME (Main level)
                         =============================================================================================-->
-                        <li class="nav-item ts-has-child">
+                            <li class="nav-item">
 
-                            <!--Main level link-->
-                            <a class="nav-link active" href="#">
-                                Home
-                                <span class="sr-only">(current)</span>
-                            </a>
+                                <!--Main level link-->
+                                <a class="nav-link active" href="index.html">
+                                    Anasayfa
+                                    <span class="sr-only">(current)</span>
+                                </a>
 
-                            <!-- List (1st level) -->
-                            <ul class="ts-child">
+                            </li>
+                            <!--end HOME nav-item-->
 
-                                <!-- MAP (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item ts-has-child">
-
-                                    <a href="#" class="nav-link">Map</a>
-
-                                    <!--List (2nd level) -->
-                                    <ul class="ts-child">
-
-                                        <!-- OPENSTREETMAP (2nd level level)
-                                        =============================================================================-->
-                                        <li class="nav-item ts-has-child">
-
-                                            <a href="#" class="nav-link">OpenStreetMap</a>
-
-                                            <!--List (3rd level) -->
-                                            <ul class="ts-child">
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-leaflet-fullscreen.html" class="nav-link">Full Screen</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-leaflet-form-bottom.html" class="nav-link">Form Bottom</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-leaflet-half-map.html" class="nav-link">Half Map</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-leaflet-left-results.html" class="nav-link">Left Results</a>
-                                                </li>
-
-                                            </ul>
-
-                                        </li>
-                                        <!--end OpenStreetMap-->
-
-                                        <!-- MAPBOX (2nd level level)
-                                        =============================================================================-->
-                                        <li class="nav-item ts-has-child">
-
-                                            <a href="#" class="nav-link">MapBox</a>
-
-                                            <!--List (3rd level) -->
-                                            <ul class="ts-child">
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-mapbox-fullscreen.html" class="nav-link">Full Screen</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-mapbox-form-bottom.html" class="nav-link">Form Bottom</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-mapbox-half-map.html" class="nav-link">Half Map</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-mapbox-left-results.html" class="nav-link">Left Results</a>
-                                                </li>
-
-                                            </ul>
-
-                                        </li>
-                                        <!--end MapBox-->
-
-                                        <!-- GOOGLE (2nd level level)
-                                        =============================================================================-->
-                                        <li class="nav-item ts-has-child">
-
-                                            <a href="#" class="nav-link">Google</a>
-
-                                            <!--List (3rd level) -->
-                                            <ul class="ts-child">
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-google-fullscreen.html" class="nav-link">Full Screen</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-google-form-bottom.html" class="nav-link">Form Bottom</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-google-half-map.html" class="nav-link">Half Map</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-google-left-results.html" class="nav-link">Left Results</a>
-                                                </li>
-
-                                            </ul>
-
-                                        </li>
-                                        <!--end Google-->
-
-                                        <!-- HERE (2nd level level)
-                                        =============================================================================-->
-                                        <li class="nav-item ts-has-child">
-
-                                            <a href="#" class="nav-link">Here</a>
-
-                                            <!--List (3rd level) -->
-                                            <ul class="ts-child">
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-here-fullscreen.html" class="nav-link">Full Screen</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-here-form-bottom.html" class="nav-link">Form Bottom</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-here-half-map.html" class="nav-link">Half Map</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-here-left-results.html" class="nav-link">Left Results</a>
-                                                </li>
-
-                                            </ul>
-
-                                        </li>
-                                        <!--end Here-->
-
-                                        <!-- BING (2nd level level)
-                                        =============================================================================-->
-                                        <li class="nav-item ts-has-child">
-
-                                            <a href="#" class="nav-link">Bing</a>
-
-                                            <!--List (3rd level) -->
-                                            <ul class="ts-child">
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-bing-fullscreen.html" class="nav-link">Full Screen</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-bing-form-bottom.html" class="nav-link">Form Bottom</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-bing-half-map.html" class="nav-link">Half Map</a>
-                                                </li>
-
-                                                <li class="nav-item">
-                                                    <a href="index-map-bing-left-results.html" class="nav-link">Left Results</a>
-                                                </li>
-
-                                            </ul>
-
-                                        </li>
-                                        <!--end Bing-->
-
-                                    </ul>
-                                    <!--end List (2nd level)-->
-
-                                </li>
-                                <!--end MAP (1st level)-->
-
-                                <!-- SLIDER (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item ts-has-child">
-
-                                    <a href="#" class="nav-link">Slider</a>
-
-                                    <!--List (2nd level) -->
-                                    <ul class="ts-child">
-
-                                        <li class="nav-item">
-                                            <a href="index-slider.html" class="nav-link">Slider Default</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="index-slider-fullscreen.html" class="nav-link">Full Screen</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="index-slider-form-vertical.html" class="nav-link">Vertical Form</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="index-slider-form-horizontal.html" class="nav-link">Horizontal Form</a>
-                                        </li>
-
-                                    </ul>
-                                    <!--end List (2nd level) -->
-
-                                </li>
-                                <!--end SLIDER (1st level)-->
-
-                                <!-- IMAGE (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item ts-has-child">
-
-                                    <a href="#" class="nav-link">Image</a>
-
-                                    <!--List (2nd level) -->
-                                    <ul class="ts-child">
-
-                                        <li class="nav-item">
-                                            <a href="index-image-form-horizontal-dark.html" class="nav-link">Horizontal Form</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="index-image-form-vertical-light.html" class="nav-link">Vertical Form</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="index-image-fullscreen.html" class="nav-link">Full Screen</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="index-video-background.html" class="nav-link">Video Background</a>
-                                        </li>
-
-                                    </ul>
-                                    <!--end List (2nd level) -->
-
-                                </li>
-                                <!--end SLIDER (1st level)-->
-
-                            </ul>
-                            <!--end List (1st level) -->
-
-                        </li>
-                        <!--end HOME nav-item-->
-
-                        <!--LISTING (Main level)
+                            <!--TASARIM FIKIRLERI (Main level)
                         =============================================================================================-->
-                        <li class="nav-item ts-has-child">
+                            <li class="nav-item ts-has-child">
 
-                            <!--Main level link-->
-                            <a class="nav-link" href="#">Listing</a>
+                                <!--Main level link-->
+                                <a class="nav-link" href="#">Tasarım Fikirleri</a>
 
-                            <!-- List (1st level) -->
-                            <ul class="ts-child">
+                                <!-- List (1st level) -->
+                                <ul class="ts-child">
 
-                                <!-- CATEGORY ICONS (1st level)
+                                    <!-- TASARIM FIKIRLERI (1st level)
                                 =====================================================================================-->
-                                <li class="nav-item">
+                                    <li class="nav-item">
 
-                                    <a href="listing-category-icons.html" class="nav-link">Category Icons</a>
+                                        <a href="#" class="nav-link">Ev Tasarımı</a>
 
-                                </li>
-                                <!--end CATEGORY ICONS (1st level)-->
+                                    </li>
 
-                                <!-- GRID (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item ts-has-child">
+                                    <li class="nav-item">
 
-                                    <a href="#" class="nav-link">Grid</a>
+                                        <a href="#" class="nav-link">İşyeri Tasarımı</a>
 
-                                    <!--List (2nd level) -->
-                                    <ul class="ts-child">
+                                    </li>
+                                    <!--end TASARIM FIKIRLERI (1st level)-->
 
-                                        <li class="nav-item">
-                                            <a href="listing-grid-3-columns.html" class="nav-link">Grid 3 Columns</a>
-                                        </li>
 
-                                        <li class="nav-item">
-                                            <a href="listing-grid-4-columns.html" class="nav-link">Grid 4 Columns</a>
-                                        </li>
+                                </ul>
+                                <!--end List (1st level) -->
 
-                                        <li class="nav-item">
-                                            <a href="listing-grid-mixed.html" class="nav-link">Mixed</a>
-                                        </li>
+                            </li>
+                            <!--end TASARIM FIKIRLERI nav-item-->
 
-                                        <li class="nav-item">
-                                            <a href="listing-grid-sidebar-left.html" class="nav-link">Sidebar Left</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="listing-grid-sidebar-right.html" class="nav-link">Sidebar Right</a>
-                                        </li>
-
-                                    </ul>
-                                    <!--end List (2nd level) -->
-
-                                </li>
-                                <!--end GRID (1st level)-->
-
-                                <!-- LIST (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item ts-has-child">
-
-                                    <a href="#" class="nav-link">List</a>
-
-                                    <!--List (2nd level) -->
-                                    <ul class="ts-child">
-
-                                        <li class="nav-item">
-                                            <a href="listing-list-sidebar-left.html" class="nav-link">Sidebar Left</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="listing-list-sidebar-right.html" class="nav-link">Sidebar Right</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="listing-list-compact-sidebar.html" class="nav-link">Compact with Sidebar</a>
-                                        </li>
-
-                                    </ul>
-                                    <!--end List (2nd level) -->
-
-                                </li>
-                                <!--end LIST (1st level)-->
-
-                                <!-- PROPERTY (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item ts-has-child">
-
-                                    <a href="#" class="nav-link">Property</a>
-
-                                    <!--List (2nd level) -->
-                                    <ul class="ts-child">
-
-                                        <li class="nav-item">
-                                            <a href="detail-01.html" class="nav-link">Property Detail v1</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="detail-02.html" class="nav-link">Property Detail v2</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="detail-03.html" class="nav-link">Property Detail v3</a>
-                                        </li>
-
-                                    </ul>
-                                    <!--end List (2nd level) -->
-
-                                </li>
-                                <!--end PROPERTY (1st level)-->
-
-                            </ul>
-                            <!--end List (1st level) -->
-
-                        </li>
-                        <!--end LISTING nav-item-->
-
-                        <!--PAGES (Main level)
+                            <!--PROJELER (Main level)
                         =============================================================================================-->
-                        <li class="nav-item ts-has-child">
+                            <li class="nav-item">
 
-                            <!--Main level link-->
-                            <a class="nav-link" href="#">Pages</a>
+                                <!--Main level link-->
+                                <a class="nav-link" href="#">Projeler</a>
 
-                            <!-- List (1st level) -->
-                            <ul class="ts-child">
+                            </li>
+                            <!--end PROJELER nav-item-->
 
-                                <!-- AGENCY (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item ts-has-child">
-
-                                    <a href="#" class="nav-link">Agency</a>
-
-                                    <!--List (2nd level) -->
-                                    <ul class="ts-child">
-
-                                        <li class="nav-item">
-                                            <a href="agencies-list.html" class="nav-link">Agencies List</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="agency-detail.html" class="nav-link">Agency Detail</a>
-                                        </li>
-
-                                    </ul>
-                                    <!--end List (2nd level) -->
-
-                                </li>
-                                <!--end AGENCY (1st level)-->
-
-                                <!-- AGENTS (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item ts-has-child">
-
-                                    <a href="#" class="nav-link">Agents</a>
-
-                                    <!--List (2nd level) -->
-                                    <ul class="ts-child">
-
-                                        <li class="nav-item">
-                                            <a href="agencies-list.html" class="nav-link">Agents List</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="agent-detail-01.html" class="nav-link">Agent Detail v1</a>
-                                        </li>
-
-                                        <li class="nav-item">
-                                            <a href="agent-detail-02.html" class="nav-link">Agent Detail v2</a>
-                                        </li>
-
-                                    </ul>
-                                    <!--end List (2nd level) -->
-
-                                </li>
-                                <!--end LIST (1st level)-->
-
-                                <!-- EDIT PROPERTY (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item">
-                                    <a href="edit-property.html" class="nav-link">Edit Property</a>
-                                </li>
-                                <!--end EDIT PROPERTY (1st level)-->
-
-                                <!-- FAQ (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item">
-                                    <a href="faq.html" class="nav-link">FAQ</a>
-                                </li>
-                                <!--end FAQ (1st level)-->
-
-                                <!-- LOGIN (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item">
-                                    <a href="login.html" class="nav-link">Login</a>
-                                </li>
-                                <!--end LOGIN (1st level)-->
-
-                                <!-- PRICING (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item">
-                                    <a href="pricing.html" class="nav-link">Pricing</a>
-                                </li>
-                                <!--end PRICING (1st level)-->
-
-                                <!-- REGISTER (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item">
-                                    <a href="register.html" class="nav-link">Register</a>
-                                </li>
-                                <!--end REGISTER (1st level)-->
-
-                                <!-- SUBMIT (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item">
-                                    <a href="submit.html" class="nav-link">Submit Property</a>
-                                </li>
-                                <!--end SUBMIT (1st level)-->
-
-                                <!-- SUBMIT PREVIEW (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item">
-                                    <a href="preview.html" class="nav-link">Submit Preview</a>
-                                </li>
-                                <!--end SUBMIT PREVIEW (1st level)-->
-
-                                <!-- SUBMITTED (1st level)
-                                =====================================================================================-->
-                                <li class="nav-item">
-                                    <a href="submitted.html" class="nav-link">Submitted</a>
-                                </li>
-                                <!--end SUBMITTED(1st level)-->
-
-                            </ul>
-                            <!--end List (1st level) -->
-
-                        </li>
-                        <!--end PAGES nav-item-->
-
-                        <!--ABOUT US (Main level)
+                            <!--BIR PROFESYONELE DANIS (Main level)
                         =============================================================================================-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="about-us.html">About Us</a>
-                        </li>
-                        <!--end ABOUT US nav-item-->
 
-                        <!--CONTACT (Main level)
+                            <li class="nav-item">
+                                <a class="btn btn-outline-primary btn-sm m-1 px-3" href="search-results.html">
+                                    <i class="fa fa-plus small mr-2"></i>
+                                    Bir Profesyonele Danış
+                                </a>
+                            </li>
+                            <!--end BIR PROFESYONELE DANIS nav-item-->
+
+                            <!--ILHAM PERISI (Main level)
                         =============================================================================================-->
-                        <li class="nav-item">
-                            <a class="nav-link mr-2" href="contact.html">Contact</a>
-                        </li>
-                        <!--end CONTACT nav-item-->
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">İlham Perisi</a>
+                            </li>
+                            <!--end ILHAM PERISI nav-item-->
 
-                    </ul>
-                    <!--end Left navigation main level-->
+                            <!--MAKALELER (Main level)
+                        =============================================================================================-->
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">Makaleler</a>
+                            </li>
+                            <!--end MAKALELER nav-item-->
 
-                    <!--RIGHT NAVIGATION MAIN LEVEL
+                            <!--VIDEOLAR (Main level)
+                        =============================================================================================-->
+                            <li class="nav-item">
+                                <a class="nav-link mr-2" href="#">Videolar</a>
+                            </li>
+                            <!--end VIDEOLAR nav-item-->
+
+                        </ul>
+                        <!--end Left navigation main level-->
+
+                        <!--RIGHT NAVIGATION MAIN LEVEL
                     =================================================================================================-->
-                    <ul class="navbar-nav ml-auto">
+                        <ul class="navbar-nav ml-auto">
 
-                        <!--LOGIN (Main level)
+                            <!--LOGIN (Main level)
                         =============================================================================================-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Login</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Giriş</a>
+                            </li>
 
-                        <!--REGISTER (Main level)
+                            <!--REGISTER (Main level)
                         =============================================================================================-->
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="register.html">Register</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="register.html">Kayıt Ol</a>
+                            </li>
 
-                        <!--SUBMIT (Main level)
+                            <!--SUBMIT (Main level)
                         =============================================================================================-->
-                        <li class="nav-item">
-                            <a class="btn btn-outline-primary btn-sm m-1 px-3" href="submit.html">
-                                <i class="fa fa-plus small mr-2"></i>
-                                Add Property
-                            </a>
-                        </li>
 
-                    </ul>
-                    <!--end Right navigation-->
 
+                        </ul>
+                        <!--end Right navigation-->
+
+                    </div>
+                    <!--end navbar-collapse-->
                 </div>
-                <!--end navbar-collapse-->
-            </div>
-            <!--end container-->
-        </nav>
-        <!--end #ts-primary-navigation.navbar-->
+                <!--end container-->
+            </nav>
+            <!--end #ts-primary-navigation.navbar-->
 
-    </header>
-    <!--end Header-->
+        </header>
+        <!--end Header-->
 
     <!--*********************************************************************************************************-->
     <!-- MAIN ***************************************************************************************************-->
@@ -642,9 +213,8 @@
             <div class="container">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Library</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                        <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Makaleler</li>
                     </ol>
                 </nav>
             </div>
@@ -656,245 +226,88 @@
             <div class="container">
 
                 <div class="ts-title">
-                    <h1>Search Results</h1>
+                    <h1>Makaleler</h1>
                 </div>
 
             </div>
         </section>
 
-        <!--SEARCH FORM
+        <!--Hero Article
         =========================================================================================================-->
-        <section id="search-form">
+        <section id="hero-article">
             <div class="container">
+            
+            <div class="row">
 
-                <form id="form-search" class="ts-form">
+                        <!--Item-->
+                        <a href="#" class="card ts-item ts-item__list ts-item__compact ts-card col-md-6">
 
-                    <section class="ts-box p-0">
+                            <!--Card Image-->
+                            <div class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-06.jpg"></div>
 
-                        <!--PRIMARY SEARCH INPUTS
-                        =========================================================================================-->
-                        <div class="form-row px-4 py-3">
+                            <!--Card Body-->
+                            <div class="card-body ts-item__body">
 
-                            <!--Keyword-->
-                            <div class="col-sm-12 col-md-4">
-                                <div class="form-group my-2">
-                                    <input type="text" class="form-control" id="keyword" name="keyword" placeholder="Address, City or ZIP">
+                                <figure class="ts-item__info">
+                                    <h4>Bristol Tower Complex</h4>
+                                    <aside>
+                                        <i class="fa fa-id-badge mr-2"></i>
+                                        Mimar Oya BİLİR
+                                    </aside>
+                                </figure>
+
+                                <div class="ts-item__info-badge">Makale</div>
+
+                                <div class="ts-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima mollitia fuga dolorem esse laudantium commodi aut iusto reprehenderit, ex voluptates dignissimos adipisci ea doloremque similique minus ducimus eveniet nostrum quas.</p>
                                 </div>
                             </div>
 
-                            <!--Other inputs-->
-                            <div class="col-md-8">
-                                <div class="form-row">
-
-                                    <!--Type-->
-                                    <div class="col-sm-3">
-                                        <select class="custom-select my-2" id="type" name="type">
-                                            <option value="">Type</option>
-                                            <option value="1">Apartment</option>
-                                            <option value="2">Villa</option>
-                                            <option value="3">Land</option>
-                                            <option value="4">Garage</option>
-                                        </select>
-                                    </div>
-
-                                    <!--Status-->
-                                    <div class="col-sm-3">
-                                        <select class="custom-select my-2" id="status" name="status">
-                                            <option value="">Status</option>
-                                            <option value="1">Rent</option>
-                                            <option value="2">Sale</option>
-                                        </select>
-                                    </div>
-
-                                    <!--Max Price-->
-                                    <div class="col-sm-3">
-                                        <div class="input-group my-2">
-                                            <input type="text" class="form-control border-right-0" id="price" placeholder="Max Price">
-                                            <div class="input-group-append">
-                                                <span class="input-group-text bg-white border-left-0">$</span>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!--Submit button-->
-                                    <div class="col-sm-3">
-                                        <div class="form-group my-2">
-                                            <button type="submit" class="btn btn-primary w-100" id="search-btn">Search</button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!--end row-->
+                            <!--Card Footer-->
+                            <div class="card-footer ts-item__footer">
+                                <span class="ts-btn-arrow">OKU</span>
                             </div>
-                            <!--end col-md-8-->
 
-                        </div>
-                        <!--end form-row-->
+                        </a>
 
-                        <!--MORE OPTIONS - ADVANCED SEARCH
-                        =========================================================================================-->
-                        <div class="ts-bg-light px-4 py-2 border-top">
+                        <!--Item-->
+                        <a href="#" class="card ts-item ts-item__list ts-item__compact ts-card col-md-6">
 
-                            <!--More Options Button-->
-                            <a href="#more-options-collapse" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="more-options-collapse">
-                                <i class="fa fa-plus-circle ts-text-color-primary mr-2"></i>
-                                More Options
-                            </a>
+                            <!--Card Image-->
+                            <div class="card-img" data-bg-image="assets/img/img-item-thumb-07.jpg"></div>
 
-                            <!--Hidden Form-->
-                            <div class="collapse" id="more-options-collapse">
+                            <!--Card Body-->
+                            <div class="card-body">
 
-                                <!--Padding-->
-                                <div class="py-4">
+                                <figure class="ts-item__info">
+                                    <h4>River Apartments</h4>
+                                    <aside>
+                                        <i class="fa fa-id-badge mr-2"></i>
+                                        Mimar Salim KAFA
+                                    </aside>
+                                </figure>
 
-                                    <!--Row-->
-                                    <div class="form-row">
+                                <div class="ts-item__info-badge">Makale</div>
 
-                                        <!--Bedrooms-->
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <label for="bedrooms">Bedrooms</label>
-                                                <input type="number" class="form-control" id="bedrooms" name="bedrooms" min="0">
-                                            </div>
-                                        </div>
-
-                                        <!--Bathrooms-->
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <label for="bathrooms">Bathrooms</label>
-                                                <input type="number" class="form-control" id="bathrooms" name="bathrooms" min="0">
-                                            </div>
-                                        </div>
-
-                                        <!--Garages-->
-                                        <div class="col-sm-4">
-                                            <div class="form-group">
-                                                <label for="garages">Garages</label>
-                                                <input type="number" class="form-control" id="garages" name="garages" min="0">
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <!--end row-->
-
-                                    <!--Checkboxes-->
-                                    <div id="features-checkboxes" class="w-100">
-                                        <h6 class="mb-3">Features</h6>
-
-                                        <div class="ts-column-count-3">
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_1" name="features[]" value="ch_1">
-                                                <label class="custom-control-label" for="ch_1">Air conditioning</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_2" name="features[]" value="ch_2">
-                                                <label class="custom-control-label" for="ch_2">Bedding</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_3" name="features[]" value="ch_3">
-                                                <label class="custom-control-label" for="ch_3">Heating</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_4" name="features[]" value="ch_4">
-                                                <label class="custom-control-label" for="ch_4">Internet</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_5" name="features[]" value="ch_5">
-                                                <label class="custom-control-label" for="ch_5">Microwave</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_6" name="features[]" value="ch_6">
-                                                <label class="custom-control-label" for="ch_6">Smoking allowed</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_7" name="features[]" value="ch_7">
-                                                <label class="custom-control-label" for="ch_7">Terrace</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_8" name="features[]" value="ch_8">
-                                                <label class="custom-control-label" for="ch_8">Balcony</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_9" name="features[]" value="ch_9">
-                                                <label class="custom-control-label" for="ch_9">Iron</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_10" name="features[]" value="ch_10">
-                                                <label class="custom-control-label" for="ch_10">Hi-Fi</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_11" name="features[]" value="ch_11">
-                                                <label class="custom-control-label" for="ch_11">Beach</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_12" name="features[]" value="ch_12">
-                                                <label class="custom-control-label" for="ch_12">Parking</label>
-                                            </div>
-
-                                        </div>
-                                        <!--end ts-column-count-3-->
-
-                                    </div>
-                                    <!--end #features-checkboxes-->
-
+                                <div class="ts-description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro quos, illum vero magni sint est iure numquam ad, recusandae fugit consectetur ipsam adipisci quasi dolorum id dolore. Dolor, quidem porro.</p>
                                 </div>
-                                <!--end Padding-->
+
                             </div>
-                            <!--end more-options-collapse-->
 
-                        </div>
-                        <!--end ts-bg-light-->
-                    </section>
+                            <!--Card Footer-->
+                            <div class="card-footer">
+                                <span class="ts-btn-arrow">OKU</span>
+                            </div>
 
-                </form>
-                <!--end #form-search-->
+                        </a>
 
+                    </div>
+            
             </div>
             <!--end container-->
         </section>
-        <!--end #search-form-->
-
-        <!--DISPLAY CONTROL
-        =========================================================================================================-->
-        <section id="display-control">
-            <div class="container clearfix">
-
-                <!--Display selector on the left-->
-                <div class="float-left">
-                    <a href="#" class="btn btn-outline-secondary active px-3 mr-2 mb-2 ts-btn-border-muted">
-                        <i class="fa fa-th-large"></i>
-                    </a>
-                    <a href="#" class="btn btn-outline-secondary px-3 mb-2 ts-btn-border-muted">
-                        <i class="fa fa-th-list"></i>
-                    </a>
-                </div>
-
-                <!--Display selector on the right-->
-                <div class="float-none float-sm-right pl-2 ts-center__vertical">
-                    <label for="sorting" class="mb-0 mr-2 text-nowrap">Sort by:</label>
-                    <select class="custom-select bg-transparent" id="sorting" name="sorting">
-                        <option value="">Default</option>
-                        <option value="1">Price lowest first</option>
-                        <option value="2">Price highest first</option>
-                        <option value="3">Distance</option>
-                    </select>
-                </div>
-
-            </div>
-            <!--end container-->
-        </section>
+        <!--end #hero-article-->
 
         <!--ITEMS LISTING
         =========================================================================================================-->
@@ -1161,7 +574,7 @@
                     <div class="col-sm-12 col-lg-6 flex-column">
 
                         <!--Item-->
-                        <a href="detail-01.html" class="card ts-item ts-item__list ts-item__compact ts-card h-50">
+                        <a href="#" class="card ts-item ts-item__list ts-item__compact ts-card h-50">
 
                             <!--Card Image-->
                             <div class="card-img ts-item__image" data-bg-image="assets/img/img-item-thumb-06.jpg"></div>
