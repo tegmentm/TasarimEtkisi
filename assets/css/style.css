@@ -5665,3 +5665,7 @@ Z. Stiller
 #one-cikan-tabs .nav-item h3 {
     font-size: .91rem;
 }
+
+#firm-profile-tabs a.nav-link h3 {
+    font-size: 1.3rem
+}
