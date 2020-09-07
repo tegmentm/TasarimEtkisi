@@ -582,7 +582,7 @@
                                     <h3 class="text-muted border-bottom">Proje Seç</h3>
 
 
-                                    <div class="col-12 mb-5 card p-3">
+                                    <div class="mb-5 card p-3">
                                         <h5>Proje Listesi</h5>
 
                                         <table class="table table-hover">
@@ -590,6 +590,8 @@
                                                 <tr>
                                                     <th scope="col">#</th>
                                                     <th scope="col">Proje Adı</th>
+                                                    <th scope="col">Başlangıç Tarihi</th>
+                                                    <th scope="col">Durumu</th>
                                                     <th scope="col">İşlem</th>
                                                 </tr>
                                             </thead>
@@ -597,6 +599,8 @@
                                                 <tr>
                                                     <th scope="row">1</th>
                                                     <td>Nef İstanbul</td>
+                                                    <td>01.01.2000</td>
+                                                    <td>Tamamlanmış</td>
                                                     <td class="center">
                                                         <a href="javascript:void(0)" class="text-primary mr-3" data-toggle="tooltip" title="Düzenle"><i class="fa fa-window-restore" aria-hidden="true"></i> Düzenle</a>
                                                         <a href="javascript:void(0)" class="text-danger" title="Sil" data-toggle="tooltip"><i class="fa fa-trash" aria-hidden="true"></i> Sil</a>
@@ -605,6 +609,8 @@
                                                 <tr>
                                                     <th scope="row">2</th>
                                                     <td>Avrasya Tower</td>
+                                                    <td>01.01.2000</td>
+                                                    <td>Devam Ediyor</td>
                                                     <td class="center">
                                                         <a href="javascript:void(0)" class="text-primary mr-3" data-toggle="tooltip" title="Düzenle"><i class="fa fa-window-restore" aria-hidden="true"></i> Düzenle</a>
                                                         <a href="javascript:void(0)" class="text-danger" title="Sil" data-toggle="tooltip"><i class="fa fa-trash" aria-hidden="true"></i> Sil</a>
@@ -613,6 +619,8 @@
                                                 <tr>
                                                     <th scope="row">3</th>
                                                     <td>Ahmet Taşkın Müzesi</td>
+                                                    <td>01.01.2000</td>
+                                                    <td>Tamamlanmış</td>
                                                     <td class="center">
                                                         <a href="javascript:void(0)" class="text-primary mr-3" data-toggle="tooltip" title="Düzenle"><i class="fa fa-window-restore" aria-hidden="true"></i> Düzenle</a>
                                                         <a href="javascript:void(0)" class="text-danger" title="Sil" data-toggle="tooltip"><i class="fa fa-trash" aria-hidden="true"></i> Sil</a>
@@ -627,45 +635,63 @@
 
                                     <h3 class="text-muted border-bottom">Proje Düzenle</h3>
 
-                                    <div class="col-12 mb-5 card p-3">
+                                    <div class="mb-5 card p-3">
                                         <form id="form-edit" class="ts-form">
                                             <!--Proje Adı-->
-                                            <div class="col-12">
-                                                <div class="form-group">
+                                            <div class="row">
+                                                <div class="form-group col-12">
                                                     <label for="proje-adi">Proje Adı</label>
                                                     <input type="text" class="form-control" id="proje-adi" name="proje-adi" value="" required>
                                                 </div>
 
-                                                <label for="files[]">Proje Fotoğrafları</label>
-                                                <!--Uploaded images-->
-                                                <div class="file-uploaded-images">
+                                                <div class="form-group col-md-6">
+                                                    <label for="proje-adi">Proje Durumu</label>
 
-                                                    <!--Image-->
-                                                    <div class="image">
-                                                        <figure class="remove-image"><i class="fa fa-times"></i></figure>
-                                                        <img src="assets/img/img-item-thumb-01.jpg" alt="">
-                                                    </div>
-
-                                                    <!--Image-->
-                                                    <div class="image">
-                                                        <figure class="remove-image"><i class="fa fa-times"></i></figure>
-                                                        <img src="assets/img/img-item-thumb-02.jpg" alt="">
-                                                    </div>
-
-                                                    <!--Image-->
-                                                    <div class="image">
-                                                        <figure class="remove-image"><i class="fa fa-times"></i></figure>
-                                                        <img src="assets/img/img-item-thumb-03.jpg" alt="">
-                                                    </div>
-
+                                                    <select class="custom-select ts-selected" id="proje-adi" name="proje-adi">
+                                                       <option value="">Proje Durumu Seç</option>
+                                                        <option value="1">Tamamlanmış</option>
+                                                        <option value="">Devam Ediyor</option>
+                                                    </select>
                                                 </div>
 
-                                                <!--File upload-->
-                                                <div class="file-upload-previews"></div>
-                                                <div class="file-upload">
-                                                    <input type="file" name="files[]" class="file-upload-input with-preview" multiple title="Click to add files" maxlength="10" accept="gif|jpg|png">
-                                                    <span><i class="fa fa-plus-circle"></i>Tıklayın ya da fotoğrafı buraya sürükleyin</span>
+                                                <div class="form-group col-md-6">
+                                                    <label for="proje-adi">Başlangıç Tarihi</label>
+                                                    <input type="text" class="form-control" id="proje-adi" name="proje-adi" value="" required>
                                                 </div>
+
+                                                <div class="col-12">
+                                                    <label for="files[]">Proje Fotoğrafları</label>
+                                                    <!--Uploaded images-->
+                                                    <div class="file-uploaded-images">
+
+                                                        <!--Image-->
+                                                        <div class="image">
+                                                            <figure class="remove-image"><i class="fa fa-times"></i></figure>
+                                                            <img src="assets/img/img-item-thumb-01.jpg" alt="">
+                                                        </div>
+
+                                                        <!--Image-->
+                                                        <div class="image">
+                                                            <figure class="remove-image"><i class="fa fa-times"></i></figure>
+                                                            <img src="assets/img/img-item-thumb-02.jpg" alt="">
+                                                        </div>
+
+                                                        <!--Image-->
+                                                        <div class="image">
+                                                            <figure class="remove-image"><i class="fa fa-times"></i></figure>
+                                                            <img src="assets/img/img-item-thumb-03.jpg" alt="">
+                                                        </div>
+
+                                                    </div>
+
+                                                    <!--File upload-->
+                                                    <div class="file-upload-previews"></div>
+                                                    <div class="file-upload">
+                                                        <input type="file" name="files[]" class="file-upload-input with-preview" multiple title="Click to add files" maxlength="10" accept="gif|jpg|png">
+                                                        <span><i class="fa fa-plus-circle"></i>Tıklayın ya da fotoğrafı buraya sürükleyin</span>
+                                                    </div>
+                                                </div>
+
 
                                             </div>
 
