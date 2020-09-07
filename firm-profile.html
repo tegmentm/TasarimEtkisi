@@ -225,23 +225,23 @@
             =========================================================================================================-->
             <section id="page-title">
                 <div class="container">
-                   
-                   <div class="d-block d-sm-flex justify-content-between">
 
-                    <!--Title-->
-                    <div class="ts-title mb-0">
-                        <h1><i class="fa fa-pencil-alt ts-opacity__30 mr-3"></i>
-                                    Profil Bilgilerini Düzenle</h1>
-                        
+                    <div class="d-block d-sm-flex justify-content-between">
+
+                        <!--Title-->
+                        <div class="ts-title mb-0">
+                            <h1><i class="fa fa-pencil-alt ts-opacity__30 mr-3"></i>
+                                Profil Bilgilerini Düzenle</h1>
+
+                        </div>
+
+                        <!--Price-->
+                        <h4>
+                            <a class="btn btn-primary p-3 ts-shadow__sm text-light" href="firm-detail.html"><i class="fa fa-eye ts-opacity__80 mr-3" aria-hidden="true"></i> Profili Görüntüle </a>
+                        </h4>
+
                     </div>
 
-                    <!--Price-->
-                    <h4>
-                        <a class="btn btn-primary p-3 ts-shadow__sm text-light" href="firm-detail.html" ><i class="fa fa-eye ts-opacity__80 mr-3" aria-hidden="true"></i> Profili Görüntüle </a>
-                    </h4>
-
-                </div>
-                   
                 </div>
             </section>
 
@@ -271,28 +271,35 @@
                                         <h3>Lokasyon</h3>
                                     </a>
                                 </li>
-                                
+
                                 <!--Foto Galeri tab-->
                                 <li class="nav-item">
                                     <a class="nav-link" id="gallery-tab" data-toggle="tab" href="#gallery" role="tab" aria-controls="gallery" aria-selected="false">
                                         <h3>Foto Galeri</h3>
                                     </a>
                                 </li>
-                                
+
                                 <!--Video tab-->
                                 <li class="nav-item">
                                     <a class="nav-link" id="video-tab" data-toggle="tab" href="#video" role="tab" aria-controls="video" aria-selected="false">
                                         <h3>Tanıtım Videosu</h3>
                                     </a>
                                 </li>
-                                
+
                                 <!--Proje Yukle tab-->
                                 <li class="nav-item">
                                     <a class="nav-link" id="proje-yukle-tab" data-toggle="tab" href="#proje-yukle" role="tab" aria-controls="proje-yukle" aria-selected="false">
                                         <h3>Proje Yükle</h3>
                                     </a>
                                 </li>
-                                
+
+                                <!--Proje Duzenle tab-->
+                                <li class="nav-item">
+                                    <a class="nav-link" id="proje-duzenle-tab" data-toggle="tab" href="#proje-duzenle" role="tab" aria-controls="proje-duzenle" aria-selected="false">
+                                        <h3>Proje Düzenle</h3>
+                                    </a>
+                                </li>
+
                                 <!--Detaylı Bilgi tab-->
                                 <li class="nav-item">
                                     <a class="nav-link" id="additional-information-tab" data-toggle="tab" href="#additional-information" role="tab" aria-controls="additional-information" aria-selected="false">
@@ -371,7 +378,7 @@
 
 
                                         </div>
-                                        
+
                                         <div class="form-group clearfix mt-2"><button class="btn btn-primary p-2 float-right">Temel Bilgileri Kaydet</button></div>
                                         <!--end row-->
                                     </form>
@@ -508,7 +515,7 @@
 
                                 <!--Proje Yükle
                                 =====================================================================================-->
-                                <section id="proje-yukle" class="mb-5 card p-3 tab-pane" role="tabpanel" aria-labelledby="video-tab">
+                                <section id="proje-yukle" class="mb-5 card p-3 tab-pane" role="tabpanel" aria-labelledby="proje-yukle-tab">
 
                                     <form id="form-edit" class="ts-form">
 
@@ -556,6 +563,107 @@
                                         </div>
 
                                         <div class="form-group clearfix mt-2"><button class="btn btn-primary p-2 float-right">Projeleri Kaydet</button></div>
+
+                                    </form>
+
+                                </section>
+
+
+                                <!--Proje Düzenle
+                                =====================================================================================-->
+                                <section id="proje-duzenle" class="mb-5 card p-3 tab-pane" role="tabpanel" aria-labelledby="proje-duzenle-tab">
+
+
+
+                                    <!--Title-->
+                                    <h3 class="text-muted border-bottom">Proje Düzenle</h3>
+
+                                    <div class="col-12 mb-5">
+                                        <h5>Proje Listesi</h5>
+
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Proje Adı</th>
+                                                    <th scope="col">İşlem</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Nef İstanbul</td>
+                                                    <td class="center">
+                                                        <a href="javascript:void(0)" class="text-primary mr-3" data-toggle="tooltip" title="Düzenle"><i class="fa fa-window-restore" aria-hidden="true"></i> Düzenle</a>
+                                                        <a href="javascript:void(0)" class="text-danger" title="Sil" data-toggle="tooltip"><i class="fa fa-trash" aria-hidden="true"></i> Sil</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Avrasya Tower</td>
+                                                    <td class="center">
+                                                        <a href="javascript:void(0)" class="text-primary mr-3" data-toggle="tooltip" title="Düzenle"><i class="fa fa-window-restore" aria-hidden="true"></i> Düzenle</a>
+                                                        <a href="javascript:void(0)" class="text-danger" title="Sil" data-toggle="tooltip"><i class="fa fa-trash" aria-hidden="true"></i> Sil</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Ahmet Taşkın Müzesi</td>
+                                                    <td class="center">
+                                                        <a href="javascript:void(0)" class="text-primary mr-3" data-toggle="tooltip" title="Düzenle"><i class="fa fa-window-restore" aria-hidden="true"></i> Düzenle</a>
+                                                        <a href="javascript:void(0)" class="text-danger" title="Sil" data-toggle="tooltip"><i class="fa fa-trash" aria-hidden="true"></i> Sil</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+
+
+                                    </div>
+                                    <hr>
+
+                                    <form id="form-edit" class="ts-form">
+                                        <!--Proje Adı-->
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="proje-adi">Proje Adı</label>
+                                                <input type="text" class="form-control" id="proje-adi" name="proje-adi" value="" required>
+                                            </div>
+
+                                            <label for="files[]">Proje Fotoğrafları</label>
+                                            <!--Uploaded images-->
+                                            <div class="file-uploaded-images">
+
+                                                <!--Image-->
+                                                <div class="image">
+                                                    <figure class="remove-image"><i class="fa fa-times"></i></figure>
+                                                    <img src="assets/img/img-item-thumb-01.jpg" alt="">
+                                                </div>
+
+                                                <!--Image-->
+                                                <div class="image">
+                                                    <figure class="remove-image"><i class="fa fa-times"></i></figure>
+                                                    <img src="assets/img/img-item-thumb-02.jpg" alt="">
+                                                </div>
+
+                                                <!--Image-->
+                                                <div class="image">
+                                                    <figure class="remove-image"><i class="fa fa-times"></i></figure>
+                                                    <img src="assets/img/img-item-thumb-03.jpg" alt="">
+                                                </div>
+
+                                            </div>
+
+                                            <!--File upload-->
+                                            <div class="file-upload-previews"></div>
+                                            <div class="file-upload">
+                                                <input type="file" name="files[]" class="file-upload-input with-preview" multiple title="Click to add files" maxlength="10" accept="gif|jpg|png">
+                                                <span><i class="fa fa-plus-circle"></i>Tıklayın ya da fotoğrafı buraya sürükleyin</span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="form-group clearfix mt-2"><button class="btn btn-primary p-2 float-right">Değişikliği Kaydet</button></div>
 
                                     </form>
 
