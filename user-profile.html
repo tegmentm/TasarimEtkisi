@@ -328,18 +328,24 @@
                                             </div>
 
                                         </div>
+                                        <div class="col-12 mt-4">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <button class="btn btn-danger btn-lg col-12 my-2">
+                                                        <i class="fa fa-times mr-2"></i>
+                                                        Vazgeç
+                                                    </button>
+                                                </div>
 
-                                        <div class="py-3 col-md-12">
-                                            <button class="btn btn-outline-danger btn-lg col-md-6 mt-4">
-                                                <i class="fa fa-times mr-2"></i>
-                                                Vazgeç
-                                            </button>
-                                            <button class="btn btn-primary btn-lg col-md-6 mt-4">
-                                                <i class="fa fa-save ts-opacity__50 mr-2"></i>
-                                                Değişiklikleri Kaydet
-                                            </button>
+                                                <div class="col-md-6">
+                                                    <button class="btn btn-primary btn-lg col-12 my-2">
+                                                        <i class="fa fa-save ts-opacity__50 mr-2"></i>
+                                                        Değişiklikleri Kaydet
+                                                    </button>
+                                                </div>
+                                            </div>
+
                                         </div>
-
                                     </div>
                                     <!--end row-->
                                 </div>
@@ -363,13 +369,36 @@
             =========================================================================================================-->
             <section id="items-listing-and-search">
                 <div class="container">
-                    <div class="row flex-wrap-reverse">
+                        
+                        
+                        
+                        
+                        <ul class="nav nav-tabs" id="login-register-tabs" role="tablist">
+                           
+                           <!--Favoriler tab-->
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="favoriler-tab" data-toggle="tab" href="#favoriler" role="tab" aria-controls="favoriler" aria-selected="true">
+                                        <h3>Favoriler</h3>
+                                    </a>
+                                </li>
 
-                        <!--LEFT SIDE
-                        =============================================================================================-->
-                        <div class="col-md-6">
-                            <h3 class="mb-4 pb-4">Favorilere Eklenenler</h3>
+                                <!--Son Gezilenler tab-->
+                                <li class="nav-item">
+                                    <a class="nav-link" id="son-gezilenler-tab" data-toggle="tab" href="#son-gezilenler" role="tab" aria-controls="son-gezilenler" aria-selected="true">
+                                        <h3>Son Gezilenler</h3>
+                                    </a>
+                                </li>
                             
+                        </ul>
+                        
+                        <div class="tab-content">
+                           
+                           
+                           <!-- favoriler
+                            =================================================================================-->
+                            <div class="tab-pane active" id="favoriler" role="tabpanel" aria-labelledby="favoriler">
+                                <h3 class="mb-4 pb-4">Favorilere Eklenenler</h3>
+
                             <!--ITEMS LISTING
                             =================================================================================-->
                             <section id="items-listing">
@@ -401,9 +430,11 @@
                                     </div>
 
                                     <!--Card Footer-->
-                                    <a href="detail-01.html" class="card-footer">
-                                        <span class="ts-btn-arrow">İncele</span>
-                                    </a>
+                                    <span class="card-footer">
+                                        <span class="ts-btn-arrow"><a href="detail-01.html"> İncele</a></span>
+                                        <a href="" class="btn btn-outline-danger btn-sm float-right">Favorilerden Çıkar</a>
+                                    </span>
+                                    
 
                                 </div>
 
@@ -537,20 +568,21 @@
 
                                 </div>
                             </section>
+                            </div>
                             
-                        </div>
-                        <!--end col-md-6 / left side -->
-                        
-                        <!--RIGHT SIDE
-                        =============================================================================================-->
-                        <div class="col-md-6">
+                            
+                            
+                            <!-- son gezilenler
+                            =================================================================================-->
+                            <div class="tab-pane" id="son-gezilenler" role="tabpanel" aria-labelledby="son-gezilenler">
+                            
                             <h3 class="mb-4 pb-4">Son Gezilenler</h3>
-                            
+
                             <!--ITEMS LISTING
                             =================================================================================-->
                             <section id="items-listing">
-                               
-                               <!--Item-->
+
+                                <!--Item-->
                                 <div class="card ts-item ts-item__list ts-card">
 
                                     <!--Card Image-->
@@ -589,7 +621,7 @@
                                     </a>
 
                                 </div>
-                               
+
                                 <!--Item-->
                                 <div class="card ts-item ts-item__list ts-card">
 
@@ -728,13 +760,14 @@
 
                                 </div>
 
-                                
+
                             </section>
+                            </div>
+
                             
                         </div>
-                        <!--end col-md-6 / right side -->
                         
-                    </div>
+
                 </div>
             </section>
 
