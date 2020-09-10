@@ -5673,3 +5673,11 @@ Z. Stiller
 #hero-video-side-list {
     margin-bottom: 1.875rem;
 }
+
+.gallery-index .img-h-30 {
+    height: 30vh
+}
+
+#custom-gallery-item .ts-item__info {
+    bottom: 0
+}
