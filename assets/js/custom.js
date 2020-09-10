@@ -221,7 +221,28 @@ $(document).ready(function($) {
         $popupImage.magnificPopup({
             type:'image',
             fixedContentPos: false,
-            gallery: { enabled:true },
+            gallery: { enabled:false},
+            removalDelay: 300,
+            mainClass: 'mfp-fade',
+            callbacks: {
+                // This prevents pushing the entire page to the right after opening Magnific popup image
+                open: function() {
+                    $(".page-wrapper, .navbar-nav").css("margin-right", getScrollBarWidth());
+                },
+                close: function() {
+                    $(".page-wrapper, .navbar-nav").css("margin-right", 0);
+                }
+            }
+        });
+    }
+    
+    var $popupImageNG = $(".popup-image-ng");
+
+    if ( $popupImageNG.length > 0 ) {
+        $popupImageNG.magnificPopup({
+            type:'image',
+            fixedContentPos: false,
+            gallery: { enabled:false},
             removalDelay: 300,
             mainClass: 'mfp-fade',
             callbacks: {
