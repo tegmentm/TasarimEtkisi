@@ -221,7 +221,7 @@ $(document).ready(function($) {
         $popupImage.magnificPopup({
             type:'image',
             fixedContentPos: false,
-            gallery: { enabled:false},
+            gallery: { enabled:true},
             removalDelay: 300,
             mainClass: 'mfp-fade',
             callbacks: {
