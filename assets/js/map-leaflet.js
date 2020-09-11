@@ -244,7 +244,7 @@ $(document).ready(function($) {
                         ( ( loadedMarkersData[i]["badge"] !== undefined && loadedMarkersData[i]["badge"].length > 0 ) ? '<div class="badge badge-dark">' + loadedMarkersData[i]["badge"] + '</div>' : "" ) +
                         '<div class="ts-infobox__content">' +
                             '<figure class="ts-item__info">' +
-                                ( ( loadedMarkersData[i]["kategori"] !== undefined ) ? '<div class="ts-item__info-badge>'loadedMarkersData[i]["kategori"]'</div>' : "" ) +
+                                ( ( loadedMarkersData[i]["kategori"] !== undefined ) ? '<div class="ts-item__info-badge>'+loadedMarkersData[i]["kategori"]+'</div>' : "" ) +
                                 ( ( loadedMarkersData[i]["title"] !== undefined && loadedMarkersData[i]["title"].length > 0 ) ? '<h4>' + loadedMarkersData[i]["title"] + '</h4>' : "" ) +
                                 ( ( loadedMarkersData[i]["address"] !== undefined && loadedMarkersData[i]["address"].length > 0 ) ? '<aside><i class="fa fa-map-marker mr-2"></i>' + loadedMarkersData[i]["address"] + '</aside>' : "" ) +
                             '</figure>' +
