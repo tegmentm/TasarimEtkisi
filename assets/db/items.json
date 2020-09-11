@@ -70,19 +70,20 @@
   },
   {
     "id": 5,
-    "title": "White Cubes Resort",
+    "title": "MİCA DESİGN",
     "price": 435000,
     "category": 2,
     "status": 1,
     "marker_image": "assets/img/img-item-thumb-05.jpg",
     "url": "detail-01.html",
-    "address": "189 Cumberland Walk, Fontanelle, Utah, 6343",
+    "address": "Defterdar Mh Münzevi kışla Cd No:1 Eyüp İstanbul",
     "area": 600,
     "bedrooms": 3,
     "bathrooms": 2,
     "rooms": 1,
-    "latitude": "40.75650784637493",
-    "longitude": "-73.59074512194826"
+    "latitude": "41.038451",
+    "longitude": "28.928485",
+      "kategori": "Mobilya - Dekorasyon"
   },
   {
     "id": 6,
