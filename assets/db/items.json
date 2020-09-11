@@ -122,26 +122,6 @@
     "address": "871 Central Avenue, Freelandville",
     "latitude": "40.690288655835346",
     "longitude": "-73.7107364244385",
-    "badge": "Rent",
-    "area": 368,
-    "bedrooms": 4,
-    "bathrooms": 2,
-    "rooms": 2,
-    "additional_info": [
-      {
-        "title": "Area",
-        "value": "87m<sup>2</sup>"
-      },
-      {
-        "title": "Rooms",
-        "value": "3"
-      },
-      {
-        "title": "Pets",
-        "value": "Allowed"
-      }
-    ]
-  },
   {
     "id": 9,
     "title": "White Scapes Complex",
