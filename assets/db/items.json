@@ -1,7 +1,7 @@
 
 [
   {
-    "id": 100,
+    "id": 1,
     "title": "LAMONETA DESIGN & PRODUCTION",
     "price": -1,
     "reklam": true,
@@ -12,9 +12,6 @@
     "latitude": "41.009830",
     "longitude": "29.155510",
     "ribbon": "<i class='fa fa-thumbs-up'></i>",
-    "rooms": 1,
-    "f__air_condition": 1,
-    "f__microwave": 1,
     "kategori": "Mimar"
   },
   {
@@ -83,13 +80,12 @@
     "rooms": 1,
     "latitude": "41.038451",
     "longitude": "28.928485",
-      "kategori": "Mobilya - Dekorasyon"
+    "kategori": "Mobilya - Dekorasyon"
   },
   {
     "id": 6,
-    "title": "Bristol Tower Complex",
+    "title": "Sia Moore Archıtecture",
     "price": 85900,
-    "additional_info": "",
     "marker_image": "assets/img/img-item-thumb-06.jpg",
     "url": "detail-01.html",
     "address": "180 Grant Avenue, Onton",
