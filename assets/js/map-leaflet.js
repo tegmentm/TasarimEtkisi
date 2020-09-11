@@ -95,7 +95,7 @@ $(document).ready(function($) {
     }
 
     //==================================================================================================================
-    // Create DIV with the markers data
+    // Create DIV with the markers data ---- harita işaretçisi içeriği
     // =================================================================================================================
     function createMarkers() {
 
@@ -112,7 +112,7 @@ $(document).ready(function($) {
                     '<a href="#" class="ts-marker" data-ts-id="' + loadedMarkersData[i]["id"] + '" data-ts-ln="' + i + '">' +
                     ( ( loadedMarkersData[i]["ribbon"] !== undefined ) ? '<div class="ts-marker__feature">' + loadedMarkersData[i]["ribbon"] + '</div>' : "" ) +
                     ( ( loadedMarkersData[i]["title"] !== undefined ) ? '<div class="ts-marker__title">' + loadedMarkersData[i]["title"] + '</div>' : "" ) +
-                    ( ( loadedMarkersData[i]["reklam"] !== undefined ) ? '<div class="ts-marker__info">' + 'AD' + '</div>' : "" ) +
+                    ( ( loadedMarkersData[i]["reklam"] !== undefined ) ? '<div class="ts-marker__info">' + 'deneme' + '</div>' : "" ) +
                     ( ( loadedMarkersData[i]["marker_image"] !== undefined ) ? '<div class="ts-marker__image ts-black-gradient" style="background-image: url(' + loadedMarkersData[i]["marker_image"] + ')"></div>' : '<div class="ts-marker__image ts-black-gradient" style="background-image: url(assets/img/marker-default-img.png)"></div>' ) +
                     '</a>' +
                 '</div>';
@@ -224,7 +224,7 @@ $(document).ready(function($) {
     }
 
     //==================================================================================================================
-    // Create Infobox HTML element
+    // Create Infobox HTML element ----- Tıklanınca Açılan Kutu İçeriği
     //==================================================================================================================
 
     function createInfoBoxHTML(parameters) {
@@ -244,7 +244,7 @@ $(document).ready(function($) {
                         ( ( loadedMarkersData[i]["badge"] !== undefined && loadedMarkersData[i]["badge"].length > 0 ) ? '<div class="badge badge-dark">' + loadedMarkersData[i]["badge"] + '</div>' : "" ) +
                         '<div class="ts-infobox__content">' +
                             '<figure class="ts-item__info">' +
-                                ( ( loadedMarkersData[i]["reklam"] !== undefined ) ? '<div class="ts-item__info-badge">' + loadedMarkersData[i]["reklam"] + '</div>' : "" ) +
+                                ( ( loadedMarkersData[i]["reklam"] !== undefined ) ? '<div class="ts-item__info-badge">AD</div>' : "" ) +
                                 ( ( loadedMarkersData[i]["title"] !== undefined && loadedMarkersData[i]["title"].length > 0 ) ? '<h4>' + loadedMarkersData[i]["title"] + '</h4>' : "" ) +
                                 ( ( loadedMarkersData[i]["address"] !== undefined && loadedMarkersData[i]["address"].length > 0 ) ? '<aside><i class="fa fa-map-marker mr-2"></i>' + loadedMarkersData[i]["address"] + '</aside>' : "" ) +
                             '</figure>' +
@@ -254,10 +254,6 @@ $(document).ready(function($) {
                 '</div>' +
             '</div>';
     }
-
-    //==================================================================================================================
-    // Create Additional Info HTML element
-    //==================================================================================================================
 
     
 
@@ -308,13 +304,13 @@ $(document).ready(function($) {
                         ( ( loadedMarkersData[i]["ribbon_corner"] !== undefined ) ? '<div class="ts-ribbon-corner"><span>' + loadedMarkersData[i]["ribbon_corner"] + '</span></div>' : "" ) +
                         '<div href="detail-01.html" class="card-img ts-item__image" style="background-image: url(' + loadedMarkersData[id]["marker_image"] + ')"></div>' +
                         '<div class="card-body">' +
-                            ( ( loadedMarkersData[i]["reklam"]) ? '<div class="ts-item__info-badge">' + 'AD' + '</div>'  : "" ) +
+                            ( ( loadedMarkersData[id]["reklam"] !== undefined ) ? '<div class="ts-item__info-badge">' + 'AD' + '</div>'  : "" ) +
                             '<figure class="ts-item__info">' +
                                 '<h4>' + loadedMarkersData[id]["title"] + '</h4>' +
                                 '<aside>' +
                                 '<i class="fa fa-map-marker mr-2"></i>' + loadedMarkersData[id]["address"] + '</aside>' +
                             '</figure>' + 
-                            ( ( loadedMarkersData[i]["kategori"] !== undefined ) ? '<div class="text-secondary">' + loadedMarkersData[i]["kategori"] + '</div>' : "" ) +
+                            ( ( loadedMarkersData[i]["kategori"] !== undefined ) ? '<div class="text-secondary">' + loadedMarkersData[id]["kategori"] + '</div>' : "" ) +
                         '</div>' +
                         '<div class="card-footer">' +
                             '<span class="ts-btn-arrow">Detail</span>' +
