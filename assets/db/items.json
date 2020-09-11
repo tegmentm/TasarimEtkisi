@@ -14,7 +14,8 @@
     "ribbon": "<i class='fa fa-thumbs-up'></i>",
     "rooms": 1,
     "f__air_condition": 1,
-    "f__microwave": 1
+    "f__microwave": 1,
+    "kategori": "Mimar"
   },
   {
     "id": 2,
@@ -30,7 +31,8 @@
     "bedrooms": 1,
     "bathrooms": 3,
     "rooms": 5,
-    "f__microwave": 1
+    "f__microwave": 1,
+    "kategori": "İç Mimar"
   },
   {
     "id": 3,
