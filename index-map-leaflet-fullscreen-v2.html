@@ -213,20 +213,25 @@
             <!-- MAP
             =========================================================================================================-->
             <div class="ts-map ts-shadow__sm">
-
+                
                 <!-- FORM
                 =====================================================================================================-->
                 <div class="ts-form__map-search ts-z-index__2">
                     <!--Form-->
-                     <!--Form-->
-                        <form class="ts-form py-3 px-4 ts-border-radius__md ts-shadow__md" data-bg-color="rgba(255,255,255,.9)">
+                    <form class="ts-form">
+
+                        <!--Collapse button-->
+                        <a href=".ts-form-collapse" data-toggle="collapse" class="ts-center__vertical justify-content-between">
+                            <h5 class="mb-0">Aramanızı Filtreleyin</h5>
+                        </a>
+
+                        <!--Form-->
+                        <div class="ts-form-collapse ts-xs-hide-collapse collapse show">
 
                             <!--Keyword-->
-                            <div class="form-group my-2">
-                                <input type="text" class="form-control" id="keyword" name="keyword" placeholder="Adres ya da Şehir">
-                            </div>
+                            <input type="text" class="form-control" id="keyword" name="keyword" placeholder="Adres ya da Şehir">
 
-                            <!--Type-->
+                            <!--Category-->
                             <select class="custom-select my-2" id="kategori" name="kategori">
                                 <option value="">Kategori</option>
                                 <option value="1">Mimar</option>
@@ -242,14 +247,130 @@
                                 <option value="4">Yangın Güvenliği Danışmanı</option>
                             </select>
 
-
-
                             <!--Submit button-->
-                            <div class="form-group my-2">
-                                <button type="submit" class="btn btn-primary w-100" id="search-btn">Arama Yap</button>
+                            <div class="form-group mt-2 mb-3">
+                                <button type="submit" class="btn btn-primary w-100" id="search-btn">Ara</button>
                             </div>
 
-                        </form>
+                            <!--More Options Button
+                            
+                            <a href="#more-options-collapse" class="collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="more-options-collapse">
+                                <i class="fa fa-plus-circle ts-text-color-primary mr-2 ts-visible-on-collapsed"></i>
+                                <i class="fa fa-minus-circle ts-text-color-primary mr-2 ts-visible-on-uncollapsed"></i>
+                                More Options
+                            </a> 
+                            -->
+
+                            <!--Hidden Form-->
+                            <div class="collapse" id="more-options-collapse">
+
+                                <!--Padding-->
+                                <div class="pt-4">
+
+                                    <!--Row-->
+                                    <div class="form-row">
+
+                                        <!--Bedrooms-->
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="bedrooms">Bedrooms</label>
+                                                <input type="number" class="form-control" id="bedrooms" name="bedrooms" min="0">
+                                            </div>
+                                        </div>
+
+                                        <!--Bathrooms-->
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="bathrooms">Bathrooms</label>
+                                                <input type="number" class="form-control" id="bathrooms" name="bathrooms" min="0">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!--end row-->
+
+                                    <!--Checkboxes-->
+                                    <div id="features-checkboxes" class="w-100">
+                                        <h6 class="mb-3">Features</h6>
+
+                                        <div class="">
+
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="ch_1" name="features[]" value="ch_1">
+                                                <label class="custom-control-label" for="ch_1">Air conditioning</label>
+                                            </div>
+
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="ch_2" name="features[]" value="ch_2">
+                                                <label class="custom-control-label" for="ch_2">Bedding</label>
+                                            </div>
+
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="ch_3" name="features[]" value="ch_3">
+                                                <label class="custom-control-label" for="ch_3">Heating</label>
+                                            </div>
+
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="ch_4" name="features[]" value="ch_4">
+                                                <label class="custom-control-label" for="ch_4">Internet</label>
+                                            </div>
+
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="ch_5" name="features[]" value="ch_5">
+                                                <label class="custom-control-label" for="ch_5">Microwave</label>
+                                            </div>
+
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="ch_6" name="features[]" value="ch_6">
+                                                <label class="custom-control-label" for="ch_6">Smoking
+                                                    allowed</label>
+                                            </div>
+
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="ch_7" name="features[]" value="ch_7">
+                                                <label class="custom-control-label" for="ch_7">Terrace</label>
+                                            </div>
+
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="ch_8" name="features[]" value="ch_8">
+                                                <label class="custom-control-label" for="ch_8">Balcony</label>
+                                            </div>
+
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="ch_9" name="features[]" value="ch_9">
+                                                <label class="custom-control-label" for="ch_9">Iron</label>
+                                            </div>
+
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="ch_10" name="features[]" value="ch_10">
+                                                <label class="custom-control-label" for="ch_10">Hi-Fi</label>
+                                            </div>
+
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="ch_11" name="features[]" value="ch_11">
+                                                <label class="custom-control-label" for="ch_11">Beach</label>
+                                            </div>
+
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="ch_12" name="features[]" value="ch_12">
+                                                <label class="custom-control-label" for="ch_12">Parking</label>
+                                            </div>
+
+                                        </div>
+                                        <!--end ts-column-count-3-->
+
+                                    </div>
+                                    <!--end #features-checkboxes-->
+
+                                </div>
+                                <!--end Padding-->
+                            </div>
+                            <!--end more-options-collapse-->
+
+                        </div>
+                        <!--end ts-form-collapse-->
+
+                    </form>
                     <!--end ts-form-->
                 </div>
                 <!--end ts-form__map-search-->
