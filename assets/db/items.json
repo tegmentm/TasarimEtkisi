@@ -74,10 +74,10 @@
         "title": "PRAMO PREFABRİCATED & STEEL",
         "marker_image": "assets/img/img-item-thumb-07.jpg",
         "url": "detail-01.html",
-        "address": "E-5 Yanyol cd. Çeşni Sk. No:5/5 İstanbul, Türkiye",
         "latitude": "40.869934",
         "longitude": "29.270456",
-        "kategori": "İnşaat"
+        "kategori": "İnşaat",
+        "address": "lorem   ipsum"
   },
     {
         "id": 8,
@@ -261,7 +261,7 @@
     {
         "id": 25,
         "title": "ESRA AŞIKOĞLU",
-        "marker_image": "assets/img/img-item-thumb-24.jpg",
+        "marker_image": "assets/img/img-item-thumb-242.jpg",
         "url": "detail-01.html",
         "address": "İstoç 16. Ada No:68 Bağcılar İstanbul",
         "latitude": "41.077022",
