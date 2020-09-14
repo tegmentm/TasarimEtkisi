@@ -261,8 +261,9 @@
     {
         "id": 25,
         "title": "ESRA AŞIKOĞLU",
-        "marker_image": "assets/img/img-item-thumb-25.jpg",
+        "marker_image": "assets/img/img-item-thumb-24.jpg",
         "url": "detail-01.html",
+        "address": "İstoç 16. Ada No:68 Bağcılar İstanbul",
         "latitude": "41.077022",
         "longitude": "29.042624",
         "kategori": "Mimar"
