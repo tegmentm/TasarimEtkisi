@@ -255,7 +255,7 @@ $(document).ready(function($) {
                                 ( ( loadedMarkersData[i]["title"] !== undefined && loadedMarkersData[i]["title"].length > 0 ) ? '<h4>' + loadedMarkersData[i]["title"] + '</h4>' : "" ) +
                                 ( ( loadedMarkersData[i]["address"] !== undefined && loadedMarkersData[i]["address"].length > 0 ) ? '<aside><i class="fa fa-map-marker mr-2"></i>' + loadedMarkersData[i]["address"] + '</aside>' : "" ) +
                             '</figure>' +
-                            
+                            additionalInfoHTML({display: displayAdditionalInfo, i: i}) +
                             '</div>' +
                         '<div class="ts-infobox_image" style="background-image: url(' + loadedMarkersData[i]["marker_image"] + ')"></div>' +
                     '</a>' +
@@ -263,7 +263,32 @@ $(document).ready(function($) {
             '</div>';
     }
 
+    //==================================================================================================================
+    // Create Additional Info HTML element
+    //==================================================================================================================
 
+    function additionalInfoHTML(parameters) {
+        var i = parameters["i"];
+        var displayParameter;
+
+        var additionalInfoHtml = "";
+        for (var a = 0; a < parameters["display"].length; a++) {
+            displayParameter = parameters["display"][a];
+            if (loadedMarkersData[i][displayParameter[0]] !== undefined) {
+                additionalInfoHtml +=
+                    '<dl>' +
+                        '<dt>' + displayParameter[1] + '</dt>' +
+                        '<dd>' + loadedMarkersData[i][displayParameter[0]] + ((displayParameter[a] === "area") ? unit : "") + '</dd>' +
+                    '</dl>';
+            }
+        }
+        if (additionalInfoHtml) {
+            return '<div class="ts-description-lists">' + additionalInfoHtml + '</div>';
+        }
+        else {
+            return "";
+        }
+    }
 
     //==================================================================================================================
     // Create SideBar HTML Results
@@ -318,7 +343,7 @@ $(document).ready(function($) {
                                 '<aside>' +
                                 '<i class="fa fa-map-marker mr-2"></i>' + loadedMarkersData[id]["address"] + '</aside>' +
                             '</figure>' +
-                            
+                            additionalInfoHTML({display: displayAdditionalInfo, i: i}) +
                         '</div>' +
                         '<div class="card-footer">' +
                             '<span class="ts-btn-arrow">Detail</span>' +
