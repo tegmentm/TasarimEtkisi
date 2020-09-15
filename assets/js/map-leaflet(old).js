@@ -34,13 +34,6 @@ $(document).ready(function($) {
         var mapBoxAccessToken = mapElement.attr("data-ts-map-mapbox-access-token");
         var mapBoxId = mapElement.attr("data-ts-map-mapbox-id");
 
-        if (mapElement.attr("data-ts-display-additional-info")) {
-            var displayAdditionalInfoTemp = mapElement.attr("data-ts-display-additional-info").split(";");
-            var displayAdditionalInfo = [];
-            for (var i = 0; i < displayAdditionalInfoTemp.length; i++) {
-                displayAdditionalInfo.push(displayAdditionalInfoTemp[i].split("_"));
-            }
-        }
 
         // Default map zoom
         if (!mapDefaultZoom) {
@@ -102,7 +95,7 @@ $(document).ready(function($) {
     }
 
     //==================================================================================================================
-    // Create DIV with the markers data
+    // Create DIV with the markers data ---- harita işaretçisi içeriği
     // =================================================================================================================
     function createMarkers() {
 
@@ -119,7 +112,7 @@ $(document).ready(function($) {
                     '<a href="#" class="ts-marker" data-ts-id="' + loadedMarkersData[i]["id"] + '" data-ts-ln="' + i + '">' +
                     ( ( loadedMarkersData[i]["ribbon"] !== undefined ) ? '<div class="ts-marker__feature">' + loadedMarkersData[i]["ribbon"] + '</div>' : "" ) +
                     ( ( loadedMarkersData[i]["title"] !== undefined ) ? '<div class="ts-marker__title">' + loadedMarkersData[i]["title"] + '</div>' : "" ) +
-                    ( ( loadedMarkersData[i]["price"] !== undefined && loadedMarkersData[i]["price"] > 0 ) ? '<div class="ts-marker__info">' + formatPrice(loadedMarkersData[i]["price"]) + '</div>' : "" ) +
+                    ( ( loadedMarkersData[i]["kategori"] !== undefined ) ? '<div class="ts-marker__info">'+loadedMarkersData[i]["kategori"]+'</div>' : "" ) +
                     ( ( loadedMarkersData[i]["marker_image"] !== undefined ) ? '<div class="ts-marker__image ts-black-gradient" style="background-image: url(' + loadedMarkersData[i]["marker_image"] + ')"></div>' : '<div class="ts-marker__image ts-black-gradient" style="background-image: url(assets/img/marker-default-img.png)"></div>' ) +
                     '</a>' +
                 '</div>';
@@ -231,7 +224,7 @@ $(document).ready(function($) {
     }
 
     //==================================================================================================================
-    // Create Infobox HTML element
+    // Create Infobox HTML element ----- Tıklanınca Açılan Kutu İçeriği
     //==================================================================================================================
 
     function createInfoBoxHTML(parameters) {
@@ -251,11 +244,10 @@ $(document).ready(function($) {
                         ( ( loadedMarkersData[i]["badge"] !== undefined && loadedMarkersData[i]["badge"].length > 0 ) ? '<div class="badge badge-dark">' + loadedMarkersData[i]["badge"] + '</div>' : "" ) +
                         '<div class="ts-infobox__content">' +
                             '<figure class="ts-item__info">' +
-                                ( ( loadedMarkersData[i]["price"] !== undefined && loadedMarkersData[i]["price"] > 0 ) ? '<div class="ts-item__info-badge">' + formatPrice(loadedMarkersData[i]["price"]) + '</div>' : "" ) +
+                                ( ( loadedMarkersData[i]["kategori"] !== undefined ) ? '<div class="ts-item__info-badge>'+loadedMarkersData[i]["kategori"]+'</div>' : "" ) +
                                 ( ( loadedMarkersData[i]["title"] !== undefined && loadedMarkersData[i]["title"].length > 0 ) ? '<h4>' + loadedMarkersData[i]["title"] + '</h4>' : "" ) +
                                 ( ( loadedMarkersData[i]["address"] !== undefined && loadedMarkersData[i]["address"].length > 0 ) ? '<aside><i class="fa fa-map-marker mr-2"></i>' + loadedMarkersData[i]["address"] + '</aside>' : "" ) +
                             '</figure>' +
-                            additionalInfoHTML({display: displayAdditionalInfo, i: i}) +
                             '</div>' +
                         '<div class="ts-infobox_image" style="background-image: url(' + loadedMarkersData[i]["marker_image"] + ')"></div>' +
                     '</a>' +
@@ -263,35 +255,10 @@ $(document).ready(function($) {
             '</div>';
     }
 
-    //==================================================================================================================
-    // Create Additional Info HTML element
-    //==================================================================================================================
-
-    function additionalInfoHTML(parameters) {
-        var i = parameters["i"];
-        var displayParameter;
-
-        var additionalInfoHtml = "";
-        for (var a = 0; a < parameters["display"].length; a++) {
-            displayParameter = parameters["display"][a];
-            if (loadedMarkersData[i][displayParameter[0]] !== undefined) {
-                additionalInfoHtml +=
-                    '<dl>' +
-                        '<dt>' + displayParameter[1] + '</dt>' +
-                        '<dd>' + loadedMarkersData[i][displayParameter[0]] + ((displayParameter[a] === "area") ? unit : "") + '</dd>' +
-                    '</dl>';
-            }
-        }
-        if (additionalInfoHtml) {
-            return '<div class="ts-description-lists">' + additionalInfoHtml + '</div>';
-        }
-        else {
-            return "";
-        }
-    }
+    
 
     //==================================================================================================================
-    // Create SideBar HTML Results
+    // Create SideBar HTML Results --------- SONUC KUTULARI
     //==================================================================================================================
     function createSideBarResult() {
 
@@ -337,13 +304,13 @@ $(document).ready(function($) {
                         ( ( loadedMarkersData[i]["ribbon_corner"] !== undefined ) ? '<div class="ts-ribbon-corner"><span>' + loadedMarkersData[i]["ribbon_corner"] + '</span></div>' : "" ) +
                         '<div href="detail-01.html" class="card-img ts-item__image" style="background-image: url(' + loadedMarkersData[id]["marker_image"] + ')"></div>' +
                         '<div class="card-body">' +
-                            '<div class="ts-item__info-badge">' + formatPrice(loadedMarkersData[id]["price"]) + '</div>' +
+                            ( ( loadedMarkersData[id]["reklam"] !== undefined ) ? '<div class="ts-item__info-badge">' + 'AD' + '</div>'  : "" ) +
                             '<figure class="ts-item__info">' +
                                 '<h4>' + loadedMarkersData[id]["title"] + '</h4>' +
                                 '<aside>' +
-                                '<i class="fa fa-map-marker mr-2"></i>' + loadedMarkersData[id]["address"] + '</aside>' +
-                            '</figure>' +
-                            additionalInfoHTML({display: displayAdditionalInfo, i: i}) +
+                                '<i class="fa fa-map-marker mr-2"></i> İncele </aside>' +
+                            '</figure>' + 
+                            ( ( loadedMarkersData[id]["kategori"] !== undefined ) ? '<div class="text-secondary">' + loadedMarkersData[id]["kategori"] + '</div>' : "" ) +
                         '</div>' +
                         '<div class="card-footer">' +
                             '<span class="ts-btn-arrow">Detail</span>' +
@@ -417,9 +384,6 @@ $(document).ready(function($) {
         }
     }, ".ts-result");
 
-    function formatPrice(price) {
-        return Number(price).toLocaleString(locale, {style: 'currency', currency: currency}).replace(/\D\d\d$/, '');
-    }
 
 
     var simpleMapId = "ts-map-simple";
