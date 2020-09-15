@@ -222,7 +222,7 @@
 
                         <!--Collapse button-->
                         <a href=".ts-form-collapse" data-toggle="collapse" class="ts-center__vertical justify-content-between">
-                            <h5 class="mb-0">Search Filter</h5>
+                            <h5 class="mb-0">Arama Yap</h5>
                         </a>
 
                         <!--Form-->
@@ -230,153 +230,29 @@
 
                             <!--Keyword-->
                             <div class="form-group my-2 pt-2">
-                                <input type="text" class="form-control" id="keyword" name="keyword" placeholder="Address, City or ZIP">
+                                <input type="text" class="form-control" id="keyword" name="keyword" placeholder="Adres ya da Şehir">
                             </div>
 
-                            <!--Category-->
-                            <select class="custom-select my-2" id="type" name="category">
-                                <option value="">Type</option>
-                                <option value="1">Apartment</option>
-                                <option value="2">Villa</option>
-                                <option value="3">Land</option>
-                                <option value="4">Garage</option>
+                            <!--Type-->
+                            <select class="custom-select my-2" id="kategori" name="kategori">
+                                <option value="">Kategori</option>
+                                <option value="1">Mimar</option>
+                                <option value="2">İç Mimar</option>
+                                <option value="3">Yapı Denetim</option>
+                                <option value="4">Mekanik Proje</option>
+                                <option value="4">Elektrik Proje</option>
+                                <option value="4">Statik Proje</option>
+                                <option value="4">OSGB</option>
+                                <option value="4">İSG</option>
+                                <option value="4">Peyzaj Mimarı</option>
+                                <option value="4">Çevre Mühendisi</option>
+                                <option value="4">Yangın Güvenliği Danışmanı</option>
                             </select>
-
-                            <!--Status-->
-                            <select class="custom-select my-2" id="status" name="status">
-                                <option value="">Status</option>
-                                <option value="1">Sale</option>
-                                <option value="2">Rent</option>
-                            </select>
-
-                            <!--Max Price-->
-                            <select class="custom-select my-2" id="price" name="price">
-                                <option value="">Max Price</option>
-                                <option value="5000">$5,000</option>
-                                <option value="10000">$10,000</option>
-                                <option value="50000">$50,000</option>
-                                <option value="100000">$100,000</option>
-                                <option value="100000>">> $100,000</option>
-                            </select>
-
+                            
                             <!--Submit button-->
                             <div class="form-group mt-2 mb-3">
-                                <button type="submit" class="btn btn-primary w-100" id="search-btn">Search</button>
+                                <button type="submit" class="btn btn-primary w-100" id="search-btn">Ara</button>
                             </div>
-
-                            <!--More Options Button-->
-                            <a href="#more-options-collapse" class="collapsed" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="more-options-collapse">
-                                <i class="fa fa-plus-circle ts-text-color-primary mr-2 ts-visible-on-collapsed"></i>
-                                <i class="fa fa-minus-circle ts-text-color-primary mr-2 ts-visible-on-uncollapsed"></i>
-                                More Options
-                            </a>
-
-                            <!--Hidden Form-->
-                            <div class="collapse" id="more-options-collapse">
-
-                                <!--Padding-->
-                                <div class="pt-4">
-
-                                    <!--Row-->
-                                    <div class="form-row">
-
-                                        <!--Bedrooms-->
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label for="bedrooms">Bedrooms</label>
-                                                <input type="number" class="form-control" id="bedrooms" name="bedrooms" min="0">
-                                            </div>
-                                        </div>
-
-                                        <!--Bathrooms-->
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label for="bathrooms">Bathrooms</label>
-                                                <input type="number" class="form-control" id="bathrooms" name="bathrooms" min="0">
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <!--end row-->
-
-                                    <!--Checkboxes-->
-                                    <div id="features-checkboxes" class="w-100">
-                                        <h6 class="mb-3">Features</h6>
-
-                                        <div class="">
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_1" name="features[]" value="ch_1">
-                                                <label class="custom-control-label" for="ch_1">Air conditioning</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_2" name="features[]" value="ch_2">
-                                                <label class="custom-control-label" for="ch_2">Bedding</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_3" name="features[]" value="ch_3">
-                                                <label class="custom-control-label" for="ch_3">Heating</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_4" name="features[]" value="ch_4">
-                                                <label class="custom-control-label" for="ch_4">Internet</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_5" name="features[]" value="ch_5">
-                                                <label class="custom-control-label" for="ch_5">Microwave</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_6" name="features[]" value="ch_6">
-                                                <label class="custom-control-label" for="ch_6">Smoking
-                                                    allowed</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_7" name="features[]" value="ch_7">
-                                                <label class="custom-control-label" for="ch_7">Terrace</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_8" name="features[]" value="ch_8">
-                                                <label class="custom-control-label" for="ch_8">Balcony</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_9" name="features[]" value="ch_9">
-                                                <label class="custom-control-label" for="ch_9">Iron</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_10" name="features[]" value="ch_10">
-                                                <label class="custom-control-label" for="ch_10">Hi-Fi</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_11" name="features[]" value="ch_11">
-                                                <label class="custom-control-label" for="ch_11">Beach</label>
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="ch_12" name="features[]" value="ch_12">
-                                                <label class="custom-control-label" for="ch_12">Parking</label>
-                                            </div>
-
-                                        </div>
-                                        <!--end ts-column-count-3-->
-
-                                    </div>
-                                    <!--end #features-checkboxes-->
-
-                                </div>
-                                <!--end Padding-->
-                            </div>
-                            <!--end more-options-collapse-->
-
                         </div>
                         <!--end ts-form-collapse-->
 
