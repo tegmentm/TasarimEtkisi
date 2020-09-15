@@ -249,15 +249,13 @@ $(document).ready(function($) {
 
                     '<a href="' + loadedMarkersData[i]["url"] + '" class="ts-infobox__wrapper ts-black-gradient">' +
                         ( ( loadedMarkersData[i]["badge"] !== undefined && loadedMarkersData[i]["badge"].length > 0 ) ? '<div class="badge badge-dark">' + loadedMarkersData[i]["badge"] + '</div>' : "" ) +
-                        
                         '<div class="ts-infobox__content">' +
-                        
                             '<figure class="ts-item__info">' +
                                 ( ( loadedMarkersData[i]["reklam"] !== undefined ) ? '<div class="ts-item__info-badge">AD</div>' : "" ) +
                                 ( ( loadedMarkersData[i]["title"] !== undefined && loadedMarkersData[i]["title"].length > 0 ) ? '<h4>' + loadedMarkersData[i]["title"] + '</h4>' : "" ) +
                                 ( ( loadedMarkersData[i]["address"] !== undefined) ? '<aside><i class="fa fa-map-marker mr-2"></i>' + loadedMarkersData[i]["address"] + '</aside>' : "" ) +
                             '</figure>' +
-                            ( ( loadedMarkersData[i]["kategori"] !== undefined ) ? '<div class="border-top pt-1">'+'<i class="fa fa-briefcase mr-2" aria-hidden="true"></i>'+ loadedMarkersData[i]["kategori"]+'</div>' : "" ) +
+                            
                             '</div>' +
                         '<div class="ts-infobox_image" style="background-image: url(' + loadedMarkersData[i]["marker_image"] + ')"></div>' +
                     '</a>' +
