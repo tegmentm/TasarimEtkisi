@@ -253,7 +253,7 @@ $(document).ready(function($) {
                             '<figure class="ts-item__info">' +
                                 ( ( loadedMarkersData[i]["reklam"] !== undefined ) ? '<div class="ts-item__info-badge">AD</div>' : "" ) +
                                 ( ( loadedMarkersData[i]["title"] !== undefined && loadedMarkersData[i]["title"].length > 0 ) ? '<h4>' + loadedMarkersData[i]["title"] + '</h4>' : "" ) +
-                                ( ( loadedMarkersData[i]["address"] !== undefined && loadedMarkersData[i]["address"].length > 0 ) ? '<aside><i class="fa fa-map-marker mr-2"></i>' + loadedMarkersData[i]["address"] + '</aside>' : "" ) +
+                                ( ( loadedMarkersData[i]["address"] !== undefined) ? '<aside><i class="fa fa-map-marker mr-2"></i>' + loadedMarkersData[i]["address"] + '</aside>' : "" ) +
                             '</figure>' +
                             
                             '</div>' +
@@ -317,8 +317,11 @@ $(document).ready(function($) {
                                 '<h4>' + loadedMarkersData[id]["title"] + '</h4>' +
                                 '<aside>' +
                                 '<i class="fa fa-map-marker mr-2"></i>' + loadedMarkersData[id]["address"] + '</aside>' +
+                
                             '</figure>' +
                             
+                        ( ( loadedMarkersData[id]["kategori"] !== undefined ) ? '<div class="border-top pt-1 text-secondary">'+'<i class="fa fa-briefcase mr-2" aria-hidden="true"></i>'+ loadedMarkersData[id]["kategori"]+'</div>' : "" ) +
+                
                         '</div>' +
                         '<div class="card-footer">' +
                             '<span class="ts-btn-arrow">Detail</span>' +

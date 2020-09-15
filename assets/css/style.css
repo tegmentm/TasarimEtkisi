@@ -3763,7 +3763,7 @@ body.ts-full-screen-page {
     white-space: normal;
     margin: .25rem;
     width: 19rem;
-    height: 6rem;
+    height: 7rem; /* değiştirildi - eski değer 6rem */
 }
 
 .ts-results__horizontal .ts-result h4, .ts-results__vertical-list .ts-result h4 {
